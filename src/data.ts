@@ -1,9 +1,18 @@
+import { useEffect } from 'react'
 import { budget, institutions, planned } from 'virtual:field-guide-data'
 import type { Institution } from './schema'
 
 export { budget, institutions, planned }
 
 export const NOT_CONFIRMED = 'Not yet confirmed'
+export const SITE_NAME = 'Glen Ridge Field Guide'
+
+/** Set the browser tab title for a page; the home page passes nothing. */
+export function useTitle(title?: string) {
+  useEffect(() => {
+    document.title = title ? `${title} | ${SITE_NAME}` : SITE_NAME
+  }, [title])
+}
 
 export function findInstitution(id: string | undefined): Institution | undefined {
   return institutions.find((i) => i.id === id)

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { formatDate, institutions, isAppointed, isElected, matchesQuery, namedMembers, NOT_CONFIRMED, oldestVerified, planned } from '../data'
+import { formatDate, institutions, isAppointed, isElected, matchesQuery, namedMembers, NOT_CONFIRMED, oldestVerified, planned, useTitle } from '../data'
 import { CATEGORIES, type CategoryId } from '../categories'
 import type { Institution, Planned, Source } from '../schema'
 
@@ -110,6 +110,7 @@ function RelationshipMap() {
 }
 
 export default function Home() {
+  useTitle()
   const [filter, setFilter] = useState<Filter>('all')
   const [query, setQuery] = useState('')
   const verified = oldestVerified()
@@ -156,6 +157,15 @@ export default function Home() {
               <span className="inst-card__summary">
                 How the property tax levy splits among the schools, the borough and the county, and who sets each
                 budget.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/at-a-glance" className="card card--link inst-card inst-card--tool">
+              <span className="inst-card__name">Glen Ridge at a glance</span>
+              <span className="inst-card__summary">
+                Every body on one printable page: what it does, when it meets and how to reach it.
               </span>
               <span className="inst-card__meta">Open →</span>
             </Link>

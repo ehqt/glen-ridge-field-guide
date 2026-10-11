@@ -681,14 +681,6 @@ a.pill {
   color: var(--text-2);
 }
 
-@media print {
-  .site-nav,
-  .skip-link,
-  .chips,
-  .search {
-    display: none;
-  }
-}
 
 /* Report an error */
 
@@ -882,4 +874,173 @@ a.pill {
 
 .card--ink .card__title {
   color: #fff;
+}
+
+/* Standalone links get a 44px touch target. Links inside running text stay inline. */
+
+nav[aria-label='Breadcrumb'] a,
+.verified a.text-link,
+.budget-card > a.text-link,
+.map__elected a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.verified {
+  gap: 2px;
+}
+
+.list li > a.text-link:only-child {
+  display: inline-block;
+  padding-block: 11px;
+}
+
+.list:has(> li > a.text-link:only-child) {
+  gap: 0;
+}
+
+/* One-page summary */
+
+.one-pager__table {
+  table-layout: auto;
+  min-width: 640px;
+}
+
+.one-pager__table th,
+.one-pager__table td {
+  padding: 12px 16px;
+  font-size: 15px;
+}
+
+.one-pager__table tbody th a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.one-pager__category,
+.one-pager__where,
+.one-pager__line {
+  display: block;
+}
+
+.one-pager__category,
+.one-pager__where {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-3);
+}
+
+.one-pager__line {
+  overflow-wrap: anywhere;
+}
+
+/* Print: ink on white, one column, no navigation or controls. */
+
+@media print {
+  @page {
+    margin: 12mm;
+  }
+
+  body {
+    background: #fff;
+    font-size: 11pt;
+  }
+
+  .site-header,
+  .skip-link,
+  .site-footer__link,
+  .chips,
+  .search,
+  .placeholder,
+  .no-print,
+  .verified a[href^='#'],
+  .inst-card--tool {
+    display: none !important;
+  }
+
+  .page {
+    min-height: 0;
+  }
+
+  .site-footer,
+  .card--ink,
+  .map__residents,
+  .split__part {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .site-footer {
+    border-top: 1px solid #000;
+  }
+
+  .site-footer__name,
+  .card--ink .card__title {
+    color: #000;
+  }
+
+  .card,
+  .table-wrap,
+  .split__part,
+  .map__residents {
+    border: 1px solid #999;
+  }
+
+  .card,
+  .inst-card,
+  tr,
+  .steps li {
+    break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+
+  .section,
+  .columns,
+  .hero {
+    padding-block: 12px;
+  }
+
+  .columns {
+    display: block;
+  }
+
+  .columns__side {
+    margin-top: 20px;
+  }
+
+  a,
+  .text-link {
+    color: #000;
+  }
+
+  /* The one-pager must fit a single sheet. */
+  .one-pager h1 {
+    font-size: 22pt;
+  }
+
+  .one-pager .lede {
+    font-size: 11pt;
+  }
+
+  .one-pager__table {
+    min-width: 0;
+  }
+
+  .one-pager__table th,
+  .one-pager__table td {
+    padding: 5px 8px;
+    font-size: 8.5pt;
+    line-height: 1.3;
+  }
+
+  .one-pager__category,
+  .one-pager__where {
+    font-size: 7.5pt;
+  }
 }

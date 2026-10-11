@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
-import { findInstitution, formatDate, NOT_CONFIRMED } from '../data'
+import { findInstitution, formatDate, NOT_CONFIRMED, useTitle } from '../data'
 import { CATEGORIES } from '../categories'
 import type { Person } from '../schema'
 import NotFound from './NotFound'
@@ -59,6 +59,7 @@ function Roster({ caption, people }: { caption: string; people: Person[] }) {
 
 export default function InstitutionPage() {
   const inst = findInstitution(useParams().id)
+  useTitle(inst?.name ?? 'Page not found')
   if (!inst) return <NotFound />
 
   const limits = inst.limits.filter((l) => l !== null)

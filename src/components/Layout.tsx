@@ -29,7 +29,15 @@ export default function Layout() {
   useScrollToSection()
   return (
     <div className="page">
-      <a className="skip-link" href="#main">
+      {/* A plain #main link would be read as a route by the hash router. */}
+      <a
+        className="skip-link"
+        href="#main"
+        onClick={(e) => {
+          e.preventDefault()
+          document.getElementById('main')?.focus()
+        }}
+      >
         Skip to content
       </a>
       <header className="site-header">
@@ -51,7 +59,7 @@ export default function Layout() {
         </div>
       </header>
 
-      <main id="main">
+      <main id="main" tabIndex={-1}>
         <Outlet />
       </main>
 

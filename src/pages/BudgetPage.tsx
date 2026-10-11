@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { budget, findInstitution, formatDate } from '../data'
+import { budget, findInstitution, formatDate, useTitle } from '../data'
 import type { Source } from '../schema'
 
 const money = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
@@ -23,6 +23,7 @@ function SourceLinks({ sources }: { sources: Source[] }) {
 }
 
 export default function BudgetPage() {
+  useTitle('Where the money goes')
   const total = budget.shares.reduce((n, s) => n + s.levy, 0)
 
   return (

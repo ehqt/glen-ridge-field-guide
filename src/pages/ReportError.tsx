@@ -1,8 +1,10 @@
 import { useState, type FormEvent } from 'react'
 import { useLocation } from 'react-router-dom'
+import { useTitle } from '../data'
 import { REPORT_EMAIL } from '../site'
 
 export default function ReportError() {
+  useTitle('Report an error')
   const about: string = useLocation().state?.about ?? ''
   const [page, setPage] = useState(about)
   const [what, setWhat] = useState('')

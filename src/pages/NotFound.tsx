@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
+import { useTitle } from '../data'
 
 export default function NotFound() {
+  useTitle('Page not found')
   return (
     <div className="container section stack">
       <h1>Page not found</h1>
