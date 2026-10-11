@@ -1,0 +1,51 @@
+# Glen Ridge Field Guide: things that come round every year.
+# Regular meetings are not listed here; the calendar page reads those from
+# each institution file. Each entry states only what its sources say, with
+# the 2026 dates as the example.
+
+- when: January
+  kind: Reorganization
+  title: The Borough Council's annual meeting
+  note: >-
+    Newly elected council members are sworn in, and the Mayor makes the
+    year's appointments to boards and commissions, which the Council
+    confirms. In 2026 it was held January 5.
+  institution: mayor-and-council
+  sources:
+    - { title: "Council agendas, January 5 2026 (borough page)", url: "https://www.glenridgenj.org/glen-ridge-adjourned-annual-council-meeting-agendas-01-05-2025/" }
+- when: January
+  kind: Reorganization
+  title: The Board of Education's reorganization meeting
+  note: >-
+    In 2026 it was held January 6. The next one is scheduled for January 5,
+    2027.
+  institution: board-of-education
+  sources:
+    - &boedates { title: "Glen Ridge BOE Meeting Dates 2026 (PDF)", url: "https://drive.google.com/file/d/12mULir1vsh5P2TI7_0nUAGKahYqmG3aE/view?usp=sharing" }
+- when: January
+  kind: Reorganization
+  title: The Library Board of Trustees' annual reorganization
+  note: In 2026 it was held January 14 at 6:00 pm.
+  institution: library-board-of-trustees
+  sources:
+    - { title: "Board of Trustees (library page)", url: "https://www.glenridgelibrary.org/board-of-trustees.html" }
+- when: March to April
+  kind: Budget
+  title: School budget presentation, public hearing and adoption
+  note: >-
+    In 2026 the tentative budget presentation was March 18, and the public
+    hearing and adoption were April 28.
+  institution: board-of-education
+  sources:
+    - *boedates
+    - { title: "Glen Ridge Public Schools 2026-2027 Budget Development Schedule (PDF)", url: "https://drive.google.com/file/d/1Ml1cjRfbeuoIKUSVzo29cUxz_z0zE8YN/view?usp=sharing" }
+- when: April to May
+  kind: Budget
+  title: Borough budget introduction, public hearing and adoption
+  note: >-
+    In 2026 the governing body approved the introduced budget April 13, and
+    held the public hearing and adopted the budget May 11.
+  institution: mayor-and-council
+  sources:
+    - { title: "2026 Glen Ridge Introduced Budget (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/04/2026-Glen-Ridge-Introduced-Budget-0708.pdf" }
+    - { title: "Resolution 89-26, adoption of the 2026 municipal budget (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/05/Resolution-89-26-Budget-Adoption-1-1.pdf" }

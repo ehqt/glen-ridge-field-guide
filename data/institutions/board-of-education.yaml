@@ -86,7 +86,7 @@ meets:
   # From the district's "Meeting Dates 2026" PDF, read 2026-10-10. Tuesdays
   # unless a weekday is given. The PDF marks revisions in bold, which the
   # text extraction does not preserve.
-  dates_2026:
+  dates:
     - { date: 2026-01-06, note: Reorganization }
     - { date: 2026-01-21, note: Wednesday }
     - { date: 2026-01-27 }

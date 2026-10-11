@@ -55,6 +55,8 @@ export default function Layout() {
               </Link>
             ))}
             <Link to="/budget">Where the money goes</Link>
+            <Link to="/calendar">Calendar</Link>
+            <Link to="/people">People</Link>
           </nav>
         </div>
       </header>

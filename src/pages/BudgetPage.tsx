@@ -1,26 +1,10 @@
 import { Link } from 'react-router-dom'
 import { budget, findInstitution, formatDate, useTitle } from '../data'
-import type { Source } from '../schema'
+import SourceLinks from '../components/SourceLinks'
 
 const money = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
 const millions = (n: number) => `$${(n / 1e6).toFixed(1)} million`
 const percent = (n: number) => `${(n * 100).toFixed(1)}%`
-
-function SourceLinks({ sources }: { sources: Source[] }) {
-  return (
-    <span className="fine">
-      Source:{' '}
-      {sources.map((s, i) => (
-        <span key={s.url}>
-          {i > 0 && ' · '}
-          <a className="text-link" href={s.url}>
-            {s.title}
-          </a>
-        </span>
-      ))}
-    </span>
-  )
-}
 
 export default function BudgetPage() {
   useTitle('Where the money goes')

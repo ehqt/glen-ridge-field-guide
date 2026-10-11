@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
-import { budget, institutions, planned } from 'virtual:field-guide-data'
+import { budget, calendar, institutions, planned } from 'virtual:field-guide-data'
 import type { Institution } from './schema'
 
-export { budget, institutions, planned }
+export { budget, calendar, institutions, planned }
 
 export const NOT_CONFIRMED = 'Not yet confirmed'
 export const SITE_NAME = 'Glen Ridge Field Guide'

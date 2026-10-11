@@ -162,6 +162,24 @@ export default function Home() {
             </Link>
           </li>
           <li>
+            <Link to="/calendar" className="card card--link inst-card inst-card--tool">
+              <span className="inst-card__name">Civic calendar</span>
+              <span className="inst-card__summary">
+                When each body meets, the dated meetings coming up, and what comes round every year.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/people" className="card card--link inst-card inst-card--tool">
+              <span className="inst-card__name">People index</span>
+              <span className="inst-card__summary">
+                Everyone named in the guide in one list, so you can see who serves on more than one body.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
             <Link to="/at-a-glance" className="card card--link inst-card inst-card--tool">
               <span className="inst-card__name">Glen Ridge at a glance</span>
               <span className="inst-card__summary">

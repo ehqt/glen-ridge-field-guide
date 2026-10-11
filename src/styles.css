@@ -935,6 +935,54 @@ nav[aria-label='Breadcrumb'] a,
   overflow-wrap: anywhere;
 }
 
+/* Calendar rows and the people index */
+
+.rows {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  padding: 20px 24px;
+}
+
+.row + .row {
+  border-top: 1px solid var(--border);
+}
+
+.row__when {
+  flex: 0 1 220px;
+  min-width: 140px;
+  font-weight: 600;
+}
+
+.row__when--date {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.row__what {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.row__title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.seat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 /* Print: ink on white, one column, no navigation or controls. */
 
 @media print {
@@ -990,6 +1038,7 @@ nav[aria-label='Breadcrumb'] a,
   .card,
   .inst-card,
   tr,
+  .row,
   .steps li {
     break-inside: avoid;
   }

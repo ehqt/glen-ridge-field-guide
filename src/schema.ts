@@ -52,6 +52,8 @@ export const institutionSchema = z.looseObject({
     location: maybe,
     location_note: text.optional(),
     quorum: z.number().int().positive().nullable().optional(),
+    // Dated meetings, when the body publishes a list; feeds the calendar page.
+    dates: z.array(z.strictObject({ date: z.iso.date(), note: text.optional() })).optional(),
   }),
 
   how_to_engage: z.looseObject({
@@ -127,6 +129,18 @@ export const budgetSchema = z.strictObject({
   needs_verification: z.array(text).default([]),
 })
 
+export const calendarSchema = z.array(
+  z.strictObject({
+    when: text,
+    kind: z.enum(['Reorganization', 'Budget', 'Election', 'Deadline']),
+    title: text,
+    note: text,
+    institution: id.nullable().optional(),
+    sources: z.array(source).min(1, 'at least one source is required'),
+  }),
+)
+
+export type CalendarItem = z.infer<typeof calendarSchema>[number]
 export type Source = z.infer<typeof source>
 export type Budget = z.infer<typeof budgetSchema>
 export type Institution = z.infer<typeof institutionSchema>
