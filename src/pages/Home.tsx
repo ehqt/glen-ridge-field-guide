@@ -152,6 +152,15 @@ export default function Home() {
         <h2 id="tools-heading">Everyday questions</h2>
         <ul className="grid">
           <li>
+            <Link to="/tour" className="card card--link inst-card inst-card--tool">
+              <span className="inst-card__name">New here? Take the tour</span>
+              <span className="inst-card__summary">
+                Five things to know about how Glen Ridge is run, each with a place to read more.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
             <Link to="/budget" className="card card--link inst-card inst-card--tool">
               <span className="inst-card__name">Where the money goes</span>
               <span className="inst-card__summary">
@@ -175,6 +184,15 @@ export default function Home() {
               <span className="inst-card__name">Your first public meeting</span>
               <span className="inst-card__summary">
                 What the law says about attending and speaking, and each body's own rules for public comment.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/permits" className="card card--link inst-card inst-card--tool">
+              <span className="inst-card__name">Permit finder</span>
+              <span className="inst-card__summary">
+                Building, changing a historic exterior, removing a tree: which office or board to ask first.
               </span>
               <span className="inst-card__meta">Open →</span>
             </Link>

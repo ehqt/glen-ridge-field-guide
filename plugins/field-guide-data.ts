@@ -80,6 +80,11 @@ export function loadFieldGuideData(root: string) {
       errors.push(`${guideFile}\n  - "${entry.term}": no institution or planned entry "${entry.institution}"`)
     }
   }
+  for (const entry of guide?.permits ?? []) {
+    if (entry.institution && !seen.has(entry.institution)) {
+      errors.push(`${guideFile}\n  - "${entry.project}": no institution or planned entry "${entry.institution}"`)
+    }
+  }
 
   if (errors.length) {
     throw new Error(`Field guide data is invalid:\n\n${errors.join('\n\n')}\n`)

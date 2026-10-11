@@ -7,7 +7,9 @@ import Glossary from './pages/Glossary'
 import Home from './pages/Home'
 import InstitutionPage from './pages/InstitutionPage'
 import NotFound from './pages/NotFound'
+import Tour from './pages/Tour'
 import OnePager from './pages/OnePager'
+import PermitFinder from './pages/PermitFinder'
 import PeoplePage from './pages/PeoplePage'
 import ReportError from './pages/ReportError'
 
@@ -22,6 +24,8 @@ export default function App() {
         <Route path="calendar" element={<CalendarPage />} />
         <Route path="people" element={<PeoplePage />} />
         <Route path="first-meeting" element={<FirstMeeting />} />
+        <Route path="tour" element={<Tour />} />
+        <Route path="permits" element={<PermitFinder />} />
         <Route path="glossary" element={<Glossary />} />
         <Route path="report" element={<ReportError />} />
         <Route path="*" element={<NotFound />} />

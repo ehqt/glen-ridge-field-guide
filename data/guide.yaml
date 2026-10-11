@@ -159,3 +159,105 @@ glossary:
     sources:
       - { title: "Board of Adjustment (borough page)", url: "https://new.glenridgenj.org/?p=992" }
       - { title: "Planning Board (borough page)", url: "https://www.glenridgenj.org/planning-board/" }
+
+# The permit finder. From the borough's Building Department, Easy Access
+# Forms and Municipal Directory pages, read in a browser 2026-10-11, and
+# from the institution files. It says who to ask, not whether a given
+# project will be approved.
+permits:
+  - project: Build, renovate or repair, inside or out
+    who: Building Department
+    body: >-
+      Construction permits are required for all interior and exterior
+      construction work on all structures. The borough asks homeowners to
+      contact the Building Department before starting. Work that needs a
+      building, electrical, plumbing or fire inspection must be filed with
+      the department and approved before a permit is issued.
+    contact: 973-748-8400 ext. 233, building@glenridgenj.org
+    sources:
+      - &building { title: "Building Department (borough page)", url: "https://www.glenridgenj.org/building-department/" }
+  - project: Change the outside of a property in the Historic District
+    who: Historic Preservation Commission
+    body: >-
+      A Certificate of Appropriateness is required before exterior work in
+      the Historic District, which covers over 90% of the borough. The
+      borough's forms page says that in most cases construction that is
+      visible from the street and in a Historic District needs the
+      commission's review. In-kind roofing replacement, and in-kind repair
+      of a few pieces of siding, need no review.
+    contact: hpc@glenridgenj.org
+    institution: historic-preservation-commission
+    sources:
+      - { title: "Historic Preservation Commission (borough page)", url: "https://www.glenridgenj.org/hpc/" }
+      - &forms { title: "Easy Access Forms (borough page)", url: "https://www.glenridgenj.org/permits/" }
+  - project: Build something the zoning ordinances do not allow
+    who: Board of Adjustment
+    body: >-
+      The Board of Adjustment can grant a variance, an exception to the
+      zoning ordinances, when strict enforcement would cause hardship. It
+      hears applications at formal public hearings, and applicants must
+      notify property owners within 200 feet.
+    contact: planning@glenridgenj.org
+    institution: board-of-adjustment
+    sources:
+      - { title: "Board of Adjustment (borough page)", url: "https://new.glenridgenj.org/?p=992" }
+      - { title: "Board of Adjustment bylaws (PDF)", url: "https://new.glenridgenj.org/wp-content/uploads/2025/05/AdustmentBrd2021ByLaws.pdf" }
+  - project: Subdivide a lot, or apply for a site plan or conditional use
+    who: Planning Board
+    body: >-
+      The Planning Board hears applications for major and minor
+      subdivisions, site plan approvals and conditional uses, along with any
+      bulk variances that come with them.
+    contact: 973-748-8444
+    institution: planning-board
+    sources:
+      - { title: "Planning Board (borough page)", url: "https://www.glenridgenj.org/planning-board/" }
+  - project: Remove a tree
+    who: Borough Arborist and Shade Tree Commission
+    body: >-
+      The borough has a tree removal application on its forms page. The
+      Shade Tree Commission controls the planting and care of shade trees
+      along the borough's streets and in its parks. This guide has not
+      confirmed the rules for trees on private property, so ask the
+      Arborist.
+    contact: 973-748-8400 ext. 202, trees@glenridgenj.org
+    institution: shade-tree-commission
+    sources:
+      - *forms
+      - { title: "Shade Tree Commission (borough page)", url: "https://www.glenridgenj.org/shadetree/" }
+      - &directory { title: "Municipal Directory (borough page)", url: "https://www.glenridgenj.org/grdirectory/" }
+  - project: Build or repair a sidewalk or driveway apron
+    who: Department of Public Works
+    body: Application for the permit is made to the Department of Public Works.
+    contact: 973-748-8400 ext. 223
+    sources:
+      - *forms
+  - project: Open or dig in the street
+    who: Building Department
+    body: >-
+      The borough has a street opening permit request application, which
+      sets out inspection and notification requirements. The Building
+      Department manages work within the borough's right-of-way.
+    contact: 973-748-8400
+    sources:
+      - *forms
+      - *building
+  - project: Put a portable storage unit on your property
+    who: Zoning Officer
+    body: >-
+      A portable home storage unit may be placed on a property only once
+      the Zoning Officer has issued a permit.
+    sources:
+      - *forms
+  - project: Place a dumpster
+    who: Police Department Traffic Unit
+    body: The dumpster permit form is on the borough's forms page, which gives the Traffic Unit as the contact.
+    contact: 973-748-5400
+    sources:
+      - *forms
+  - project: Get a Certificate of Occupancy
+    who: Building Department
+    body: The Building Department reviews and issues Certificates of Occupancy.
+    contact: 973-748-8400 ext. 233, building@glenridgenj.org
+    sources:
+      - *building

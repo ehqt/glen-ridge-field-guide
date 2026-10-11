@@ -156,6 +156,18 @@ export const guideSchema = z.strictObject({
       }),
     )
     .min(1),
+  permits: z
+    .array(
+      z.strictObject({
+        project: text,
+        who: text,
+        body: text,
+        contact: text.optional(),
+        institution: id.nullable().optional(),
+        sources,
+      }),
+    )
+    .min(1),
 })
 
 export type Guide = z.infer<typeof guideSchema>

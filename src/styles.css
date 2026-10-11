@@ -836,18 +836,18 @@ a.pill {
   counter-reset: step;
 }
 
-.steps li {
+.steps > li {
   display: flex;
   gap: 20px;
   padding: 20px 24px;
   counter-increment: step;
 }
 
-.steps li + li {
+.steps > li + li {
   border-top: 1px solid var(--border);
 }
 
-.steps li::before {
+.steps > li::before {
   content: counter(step);
   flex: 0 0 40px;
   height: 40px;
