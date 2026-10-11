@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Your first public meeting</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}
+a:hover{color:#0B5F58}
+</style>
+</helmet>
+<div style="background: #F5F6F2; color: #1B2A41; font-family: 'Public Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.5; display: flex; flex-direction: column;">
+
+<div style="border-bottom: 1px solid #D5DAD9; background: #FFFFFF;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px;">
+<a href="Main.dc.html" style="display: flex; align-items: center; gap: 12px; padding: 8px 0; color: #1B2A41;">
+<div style="width: 36px; height: 36px; border-radius: 8px; background: #0B5F58; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 16px;">GR</div>
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px;">Glen Ridge Field Guide</div>
+</a>
+<nav style="display: flex; flex-wrap: wrap; gap: 4px 8px;">
+<a href="Main.dc.html" style="padding: 12px 12px; font-weight: 500;">Institutions</a>
+<a href="Main.dc.html" style="padding: 12px 12px; font-weight: 500;">How it fits together</a>
+<a href="Main.dc.html" style="padding: 12px 12px; font-weight: 500;">People</a>
+</nav>
+</div>
+</div>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 24px 24px; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px;">
+<div style="font-size: 14px; color: #4A5663;"><a href="Main.dc.html" style="color: #0B5F58; font-weight: 500;">Home</a> › First-meeting guide</div>
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 52px; line-height: 1.05; max-width: 780px;">Your first public meeting</h1>
+<p style="margin: 0; font-size: 20px; max-width: 680px; color: #3C4A58;">Public meetings are open to everyone, and nobody is expected to speak. Here is what to expect, so the first one feels ordinary.</p>
+</div>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px 56px 24px; width: 100%; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start;">
+
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px;">
+
+<sc-for list="{{phases}}" as="p" hint-placeholder-count="4">
+<div style="padding: 28px; border: 1px solid #D5DAD9; border-radius: 16px; background: #FFFFFF; display: flex; flex-direction: column; gap: 12px;">
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #0B5F58;">{{p.when}}</div>
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; line-height: 1.2;">{{p.title}}</div>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; color: #3C4A58;">
+<sc-for list="{{p.points}}" as="pt" hint-placeholder-count="3">
+<li>{{pt}}</li>
+</sc-for>
+</ul>
+</div>
+</sc-for>
+
+<div style="display: flex; flex-direction: column; gap: 16px; margin-top: 12px;">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 28px;">Words you’ll hear</h2>
+<div style="border: 1px solid #D5DAD9; border-radius: 12px; background: #FFFFFF; overflow: hidden;">
+<sc-for list="{{terms}}" as="t" hint-placeholder-count="6">
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 16px 24px; border-bottom: 1px solid #D5DAD9;">
+<div style="flex: 0 1 200px; font-weight: 600;">{{t.word}}</div>
+<div style="flex: 1 1 320px; min-width: 0; color: #3C4A58;">{{t.meaning}}</div>
+</div>
+</sc-for>
+</div>
+</div>
+
+</div>
+
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 20px;">
+
+<div style="box-sizing: border-box; padding: 24px; border-radius: 12px; background: #1B2A41; color: #FFFFFF; display: flex; flex-direction: column; gap: 12px;">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px;">Find a meeting</div>
+<div style="color: #D5DEE6;">Pick the board you care about and open its page for the schedule, location and agenda.</div>
+<a href="Main.dc.html" style="display: flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: 0 16px; border-radius: 8px; background: #FFFFFF; color: #1B2A41; font-weight: 600;">Browse institutions →</a>
+</div>
+
+<div style="box-sizing: border-box; padding: 24px; border: 1px solid #D5DAD9; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 12px;">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px;">Quick checklist</div>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; color: #3C4A58;">
+<li>Read the agenda and find your item</li>
+<li>Confirm the time and place the day before</li>
+<li>Write down your name, address and two main points</li>
+<li>Arrive a few minutes early</li>
+</ul>
+</div>
+
+<div style="box-sizing: border-box; padding: 24px; border: 1px solid #D5DAD9; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px;">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px;">Can’t make it?</div>
+<div style="color: #3C4A58;">Minutes are published after a meeting, and you can usually email a comment to the board secretary or clerk ahead of time. Each institution page lists the contact.</div>
+</div>
+
+</div>
+</div>
+
+<div style="background: #1B2A41; color: #D5DEE6;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; font-size: 14px;">
+<div style="font-weight: 600; color: #FFFFFF;">Glen Ridge Field Guide</div>
+<div>An unofficial, nonpartisan reference made by a resident. Not affiliated with the Borough of Glen Ridge or the Glen Ridge Public Schools. Procedures vary by board, so check each board’s own page and notices.</div>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      phases: [
+        { when: 'Before you go', title: 'Check the agenda', points: [
+          'Agendas are usually posted a few days ahead. Find yours on the board’s page.',
+          'Look for your topic and note whether it is a public hearing or a regular business item.',
+          'Confirm the time and place, since meetings sometimes move.'
+        ] },
+        { when: 'When you arrive', title: 'Take a seat. That’s all you have to do', points: [
+          'Meetings are open to the public, and you can sit anywhere in the audience area.',
+          'You don’t need to speak, and watching is a fine way to learn how the board works.',
+          'If there is a sign-in sheet for public comment, add your name before the meeting starts.'
+        ] },
+        { when: 'If you want to speak', title: 'Use the public comment period', points: [
+          'Boards set aside time for residents, and hearings include a time for the public to comment on an application.',
+          'State your name and address, be specific, and stay within any time limit the chair sets.',
+          'Speak to the whole board rather than to other residents.'
+        ] },
+        { when: 'Afterward', title: 'Follow up', points: [
+          'Draft minutes are posted after the board approves them, usually at the next meeting.',
+          'Questions go to the board secretary or borough clerk, listed on each page.',
+          'Read the published minutes to see how the board decided.'
+        ] }
+      ],
+      terms: [
+        { word: 'Consent agenda', meaning: 'A bundle of routine items approved with one vote instead of one at a time.' },
+        { word: 'Executive session', meaning: 'A closed part of a meeting, allowed only for limited topics set by law, such as personnel matters.' },
+        { word: 'Ordinance', meaning: 'A local law. It is introduced at one meeting and normally adopted after a public hearing.' },
+        { word: 'Resolution', meaning: 'A formal decision or statement by the body. It takes effect when adopted and is not a local law.' },
+        { word: 'Variance', meaning: 'Permission to depart from a zoning rule, granted by the Zoning Board of Adjustment.' },
+        { word: 'Public comment', meaning: 'The time set aside for residents to address the board.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

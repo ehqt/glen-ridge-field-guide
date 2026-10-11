@@ -1,0 +1,70 @@
+# Glen Ridge Field Guide: one institution file
+# From the borough's Shade Tree Commission pages and the council's 2026
+# appointments resolution, read 2026-10-11.
+
+id: shade-tree-commission
+name: Shade Tree Commission
+aliases: [Glen Ridge Shade Tree Commission]
+category: borough-government
+
+summary: >
+  Controls the planting and care of shade trees along the borough's streets
+  and in its parks.
+powers:
+  - Control the regulation, planting and care of shade and ornamental trees on public streets and in parks and parkways
+  - Control the use of the public ground around those trees, as far as their growth and care require
+  - With the Borough Forester's advice, remove or require the removal of a tree that is dangerous to public safety
+  - Treat or remove a diseased tree on private property, with the owner's consent and state confirmation of the condition
+  - Encourage arboriculture
+limits:
+  - null   # TO VERIFY
+
+governed_by:
+  ordinance: Ordinance 1543, which established the commission in 2015
+appointed_by: The Mayor, with the Borough Council's approval
+seated_source: { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+reports_to: null
+member_terms: 5 years
+
+members:
+  # Term ends are from Resolution 3-26; the Chair is from the borough page.
+  - { name: Elizabeth K. Baker, role: Chair,  term_ends: "2028-12-31" }
+  - { name: Kayla Armstrong,    role: Member, term_ends: "2027-12-31" }
+  - { name: Joan Lisovicz,      role: Member, term_ends: "2026-12-31" }
+  - { name: Tina Seaboch,       role: Member, term_ends: "2029-12-31" }
+  - { name: Julie Zichelli,     role: Member, term_ends: "2030-12-31" }
+
+professionals:
+  - { name: Michael Zichelli,  role: Borough Staff Liaison }
+  - { name: Richard Wolowicz,  role: Borough Arborist, credentials: NJ Tree Expert }
+
+meets:
+  schedule: null        # TO VERIFY: not on the borough page
+  location: null        # TO VERIFY
+  quorum: null
+roster_as_of: 2026
+
+how_to_engage:
+  public_comment: null  # TO VERIFY
+  contact:
+    email: shadetree@glenridgenj.org
+    arborist_email: trees@glenridgenj.org
+    arborist_phone: 973-748-8400 ext. 202
+
+links:
+  official_page: https://www.glenridgenj.org/shadetree/
+  duties: https://www.glenridgenj.org/shadetreeduties/
+  ordinance: https://www.glenridgenj.org/wp-content/uploads/2025/07/Ordinance1543.doc
+  meetings_url: null
+  agendas_url: null
+
+last_verified: 2026-10-11
+sources:
+  - { title: "Shade Tree Commission (borough page)", url: "https://www.glenridgenj.org/shadetree/" }
+  - { title: "Duties of Shade Tree Commission (borough page)", url: "https://www.glenridgenj.org/shadetreeduties/" }
+  - { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+
+needs_verification:
+  - When and where the commission meets, and whether its meetings are open to the public
+  - The full text of Ordinance 1543, which has not been read
+  - Rules for trees on private property

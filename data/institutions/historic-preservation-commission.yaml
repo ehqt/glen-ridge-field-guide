@@ -1,0 +1,90 @@
+# Glen Ridge Field Guide: one institution file
+# From the borough's Historic Preservation Commission page and the council's
+# 2026 appointments resolution, read 2026-10-11.
+
+id: historic-preservation-commission
+name: Historic Preservation Commission
+aliases: [HPC, Glen Ridge Historic Preservation Commission]
+category: land-use
+
+summary: >
+  Reviews exterior changes to properties in the Glen Ridge Historic District,
+  which covers over 90% of the borough.
+powers:
+  - Review applications for a Certificate of Appropriateness, which is required before exterior work in the Historic District
+  - Hear regular applications (major alterations, additions, new construction, demolition) at its monthly meeting
+  - Approve minor applications through an expedited review
+  - Grant reasonable extensions of a certificate
+limits:
+  - Have the final word. The Planning Board hears appeals of its decisions.
+  - Review in-kind roofing replacement, or in-kind repair of a few pieces of siding. The borough page says those need no review.
+
+governed_by:
+  statute: N.J.S.A. 40:55D-107       # cited in Resolution 3-26
+  ordinance: Historic Preservation Ordinance (updated September 2025)
+  established: Established by municipal ordinance in 1987
+appointed_by: The Mayor, with the Borough Council's approval
+seated_source: { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+reports_to: null
+member_terms: 4 years for regular members, 2 years for alternates
+
+members:
+  # Offices and classes are from the borough page's "2026 Members" list; term
+  # ends are from Resolution 3-26. The resolution prints Jeffrey Link's term
+  # end as 12/21/2027 and labels both alternates "Alternate 1".
+  - { name: Christine Yewaisis, role: Chair (Class A),       term_ends: "2028-12-31" }
+  - { name: Joaquin Stearns,    role: Vice Chair (Class A),  term_ends: "2030-12-31" }
+  - { name: Nicholas Colello,   role: Member (Class B),      term_ends: "2028-12-31" }
+  - { name: Robert Deacon,      role: Member (Class A),      term_ends: "2026-12-31" }
+  - { name: Peter Korian,       role: Member (Class A),      term_ends: "2027-12-31" }
+  - { name: Jeffrey Link,       role: Member (Class C),      term_ends: "2027-12-21" }
+  - { name: Greg Lane,          role: Member (Class C),      term_ends: "2026-12-31" }
+  - { name: Dina DeShan,        role: Alternate 1 (Class C), term_ends: "2026-12-31" }
+  - { name: Josh Barkan,        role: Alternate 2 (Class C), term_ends: "2027-12-31" }
+
+professionals:
+  # The borough page lists both under one heading, "Consultant & Secretary".
+  - { name: Steven Smolyn,  role: Consultant and Secretary (listed jointly), credentials: AIA }
+  - { name: Alexei Tajzler, role: Consultant and Secretary (listed jointly), credentials: RA }
+
+meets:
+  schedule: First Wednesday of each month, 7:30 pm
+  location: Online, by Zoom
+  quorum: null
+roster_as_of: 2026
+
+how_to_engage:
+  public_comment: Meetings are open to the public as required by law.
+  apply:
+    where: >-
+      Email a preliminary regular application to hpc@glenridgenj.org at least
+      20 calendar days before the meeting, then file the final application in
+      hard copy with the Building Department at least 9 calendar days before
+    format: Preliminary application in digital format, final application in hard copy
+    rules:
+      - Minor applications can be emailed at any time
+      - Applications are not considered without the applicant or a representative present
+      - A Certificate of Appropriateness is valid for two years
+  contact:
+    email: hpc@glenridgenj.org
+
+links:
+  official_page: https://www.glenridgenj.org/hpc/
+  ordinance: https://www.glenridgenj.org/wp-content/uploads/2026/01/Historic-Preservation-Ordinance-1827.pdf
+  design_guidelines: https://www.glenridgenj.org/wp-content/uploads/2025/10/GRHD-Historic-Design-Guidelines-2025update.pdf
+  historic_district_map: https://www.glenridgenj.org/wp-content/uploads/2025/07/historicmap14.pdf
+  bylaws: https://www.glenridgenj.org/wp-content/uploads/2026/01/HPC-Bylaws-2026.pdf
+  meetings_url: https://www.glenridgenj.org/wp-content/uploads/2026/01/HPC-Meeting-Schedule-2026.pdf
+  agendas_url: "https://www.glenridgenj.org/agendas-minutes-blog/#hpcagendas"
+  minutes: "https://www.glenridgenj.org/agendas-minutes-blog/#hpcminutes"
+
+last_verified: 2026-10-11
+sources:
+  - { title: "Historic Preservation Commission (borough page)", url: "https://www.glenridgenj.org/hpc/" }
+  - { title: "Planning Board (borough page)", url: "https://www.glenridgenj.org/planning-board/" }
+  - { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+
+needs_verification:
+  - What the member classes (A, B, C) mean; the ordinance defines them and has not been read
+  - Which of the two listed professionals is the consultant and which the secretary
+  - Quorum, and public comment rules at hearings

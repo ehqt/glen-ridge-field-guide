@@ -1,0 +1,35 @@
+# Institutions that do not have a sourced data file yet. They appear on the
+# home page as "coming soon". Names and categories only: no descriptions,
+# rosters or schedules until a file in data/institutions/ sources them. When
+# one gets its own file, delete its entry here (the build fails on a
+# duplicate id).
+#
+# layer puts an entry on the relationship map and must come with the source
+# that backs it (the build fails otherwise):
+#   department  a borough department, listed in the borough's directory
+#   contracted  a service the borough buys from a neighbouring town
+#   above       a separate government that taxes Glen Ridge property
+# Leave layer null when no official source says how the body is seated.
+
+- id: essex-county
+  name: Essex County government
+  category: county-state
+  layer: above
+  source: { title: "NJ Department of Community Affairs, 2025 Property Tax Information (Excel)", url: "https://www.nj.gov/dca/dlgs/resources/Property_Tax/25_data/25taxes.xls" }
+
+- id: police
+  name: Police Department
+  category: services
+  layer: department
+  source: { title: "Municipal Directory (borough page)", url: "https://www.glenridgenj.org/grdirectory/" }
+# The borough's 2026 User Friendly Budget lists fire as a shared service
+# received from Montclair Township, 1/1/2026 to 12/31/2026, $1,033,333.
+- id: fire
+  name: Fire protection (Montclair Township)
+  category: services
+  layer: contracted
+  source: { title: "2026 Glen Ridge User Friendly Budget (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/05/2026-GlenRidge-UserFriendly-Budget-municode0708.pdf" }
+
+# No official source read yet for who hires the Superintendent, so it is not
+# on the map.
+- { id: superintendent, name: Superintendent of Schools, category: schools, layer: null }

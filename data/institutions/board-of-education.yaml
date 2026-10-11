@@ -1,0 +1,161 @@
+# Glen Ridge Field Guide: one institution file
+# Fields set to null could not be confirmed from a source. The district's
+# pages sit behind a JavaScript bot check, so they cannot be fetched by a
+# script; the roster and public comment rules were read in a browser on
+# 2026-10-11.
+
+id: board-of-education
+name: Board of Education
+aliases: [Glen Ridge Board of Education, BOE, school board]
+category: schools
+
+summary: >
+  Governs the Glen Ridge Public Schools: sets district policy, adopts the
+  school budget, and appoints the superintendent and business administrator.
+powers:
+  - Adopt the school district budget
+  - Set district policy
+  - Appoint the superintendent and the business administrator
+limits:
+  - null   # TO VERIFY
+
+district_type: Type II district          # secondary source (Wikipedia)
+size: 9 members                          # secondary source (Wikipedia)
+how_seated: Elected by voters            # Jersey Bee, Nov 2025 general election results
+term_length: 3 years, staggered (three seats up each year)
+elections: November general election (since 2013)   # secondary source
+# News report of the Essex County Clerk's unofficial results; the owner chose
+# to use it until an official record is found (2026-10-11).
+seated_source: { title: "Jersey Bee, Glen Ridge 2025 unofficial general election results for school board, Nov 5 2025", url: "https://jerseybee.org/2025/11/05/glen-ridge-2025-unofficial-general-election-results-for-school-board/" }
+reports_to: null   # TO VERIFY: state oversight (NJ Department of Education)
+
+members:
+  # From the district's "Board of Education Members" page, read 2026-10-11.
+  # The page gives offices and committees but no term-end years. Akinwande,
+  # Ginsburg and Franklin won seats in the November 2025 general election
+  # (Jersey Bee); the report does not give the term length. It also
+  # lists a student representative, who is left out here: this guide
+  # publishes only public officials.
+  - { name: Elisabeth Ginsburg, role: President,          term_ends: null }
+  - { name: Jocelyn Gottlieb,   role: 1st Vice-President, term_ends: null }
+  - { name: "Kristin O'Neil",   role: 2nd Vice-President, term_ends: null }
+  - { name: Tricia Akinwande,   role: Member,             term_ends: null }
+  - { name: Anthony Bonnett,    role: Member,             term_ends: null }
+  - { name: Darius Dehnad,      role: Member,             term_ends: null }
+  - { name: Ray DeLorenzi,      role: Member,             term_ends: null }   # the page's email link spells it "Delorenzi"
+  - { name: Luke Franklin,      role: Member,             term_ends: null }
+  - { name: Duval Graham,       role: Member,             term_ends: null }
+
+professionals:
+  # Listed on the same members page.
+  - { name: Winnie Kievit,  role: Superintendent of Schools }
+  - { name: Barbara Murphy, role: Business Administrator/Board Secretary }
+
+administration:
+  superintendent:
+    name: Winnie Kievit
+    status: Listed as "Superintendent of Schools" on the district members page
+    history:
+      - Kyle Arlington resigned as superintendent in July 2025
+      - Winnie Kievit appointed acting superintendent through Sept 30, 2025
+      - Dirk Phillips preceded Arlington
+    note: The date of the permanent appointment is not confirmed.
+  business_administrator:
+    name: Barbara Murphy
+    verified: true
+
+schools:                                 # 2023-24 data, secondary source
+  - { name: Central School,            grades: PreK-2 }
+  - { name: Forest Avenue School,      grades: PreK-2 }
+  - { name: Linden Avenue School,      grades: PreK-2 }
+  - { name: Ridgewood Avenue School,   grades: 3-6 }
+  - { name: Glen Ridge High School,    grades: 7-12 }
+
+meets:
+  schedule: Tuesdays unless noted, on dates the board sets each year. Public session at 7:00 pm
+  schedule_note: >
+    Remaining 2026 dates: October 27, November 17 and December 15. The next
+    reorganization meeting is January 5, 2027. A closed executive session
+    at 6:00 pm comes before the public session. Meetings are live-streamed
+    on the district's YouTube channel.
+  time: 7:00 pm public session, after a 6:00 pm executive session
+  location: Glen Ridge High School Media Center
+  location_note: >
+    Time and place are from the September 8 and October 6, 2026 agendas.
+    Check each meeting's agenda, since they can change.
+  # From the district's "Meeting Dates 2026" PDF, read 2026-10-10. Tuesdays
+  # unless a weekday is given. The PDF marks revisions in bold, which the
+  # text extraction does not preserve.
+  dates_2026:
+    - { date: 2026-01-06, note: Reorganization }
+    - { date: 2026-01-21, note: Wednesday }
+    - { date: 2026-01-27 }
+    - { date: 2026-02-04, note: Wednesday }
+    - { date: 2026-02-05, note: Thursday }
+    - { date: 2026-02-10 }
+    - { date: 2026-02-24 }
+    - { date: 2026-03-18, note: "Wednesday; date change; tentative budget presentation" }
+    - { date: 2026-04-08, note: "Wednesday; date change" }
+    - { date: 2026-04-21, note: Board retreat }
+    - { date: 2026-04-28, note: Budget public hearing }
+    - { date: 2026-05-13, note: Wednesday }
+    - { date: 2026-06-10, note: Wednesday }
+    - { date: 2026-07-21, note: Board retreat }
+    # August: no meeting unless needed
+    - { date: 2026-09-08 }
+    - { date: 2026-10-06 }
+    - { date: 2026-10-27 }
+    - { date: 2026-11-17 }
+    - { date: 2026-12-15 }
+    - { date: 2027-01-05, note: Reorganization }
+  recorded_video: https://www.glenridge.org/page/board-of-education-meetings-video
+
+how_to_engage:
+  public_comment: >
+    Regular meetings have two public comment periods. The first, near the
+    start, is for items on the agenda. The second, near the end, is for any
+    topic relating to the Glen Ridge schools. Sign up with your name and
+    municipality on the sheet by the podium. Each speaker may speak once per
+    period, for up to two minutes.
+  written_comment: >
+    Email or write to the Business Administrator/Board Secretary with your
+    name and address. Comments must arrive by 10:00 am on the day of the
+    meeting and are read aloud for up to two minutes.
+  contact:
+    district_phone: 973-429-8300
+    district_address: 12 High Street, Glen Ridge, NJ 07028
+    board_email: null   # no board-specific address found
+
+links:
+  official_page: https://www.glenridge.org/page/board-of-education
+  members: https://www.glenridge.org/page/board-of-education-members
+  meeting_procedures: https://www.glenridge.org/page/meeting-procedures
+  agendas: https://www.glenridge.org/page/2026-2027-board-agendas
+  minutes: https://www.glenridge.org/page/2026-2027-board-meeting-minutes
+  meeting_dates_2026: https://drive.google.com/file/d/12mULir1vsh5P2TI7_0nUAGKahYqmG3aE/view?usp=sharing
+  budget: https://www.glenridge.org/page/budget-2026-2027-information
+  board_goals: https://www.glenridge.org/page/2026-2027-board-goals
+  policies: https://www.glenridge.org/page/policies
+  legal_notices: https://www.glenridge.org/page/legal-notices-home
+  meetings_url: null    # later: calendar feed
+
+last_verified: 2026-10-11
+verification_level: roster, 2026 meetings and comment rules; term ends not yet confirmed
+sources:
+  - { title: "Jersey Bee, Glen Ridge 2025 unofficial general election results for school board, Nov 5 2025", url: "https://jerseybee.org/2025/11/05/glen-ridge-2025-unofficial-general-election-results-for-school-board/" }
+  - { title: Board of Education Members (district page), url: "https://www.glenridge.org/page/board-of-education-members" }
+  - { title: "Board agenda, October 6, 2026", url: "https://docs.google.com/document/d/12PGfuR2Bdc-a1D94CJ2tOZjpc0qmERrvId-g2FJizNo/edit?usp=sharing" }
+  - { title: "Board agenda, September 8, 2026", url: "https://docs.google.com/document/d/1Q9Zi_v7PT8bErHUIRpu1wCoCWcsQ-gIrq74QQcJfJmM/edit?usp=sharing" }
+  - { title: Meeting Procedures (district page), url: "https://www.glenridge.org/page/meeting-procedures" }
+  - { title: "Glen Ridge BOE Meeting Dates 2026 (PDF)", url: "https://drive.google.com/file/d/12mULir1vsh5P2TI7_0nUAGKahYqmG3aE/view?usp=sharing" }
+  - { title: Glen Ridge Public Schools site navigation, url: "https://www.glenridge.org" }
+  - { title: Glen Ridge Public Schools (Wikipedia), url: "https://en.wikipedia.org/wiki/Glen_Ridge_Public_Schools" }
+  - { title: "Jersey Bee, acting superintendent, Jul 2025", url: "https://jerseybee.org/2025/07/28/glen-ridge-school-board-appoints-winnie-kievit-to-acting-superintendent-following-arlingtons-resignation/" }
+
+needs_verification:
+  - Each member's term-end year
+  - Whether every regular meeting uses the same time and place (confirmed for two 2026 agendas only)
+  - When the superintendent's permanent appointment was made
+  - Whether the public comment procedures page is current (it describes changes from September 2019 and refers to 2025 meetings)
+  - An official record that board seats are elected; the current source is a news report of the county clerk's unofficial 2025 results
+  - Term length and election timing rest on Wikipedia, which cites district pages from Oct 2025

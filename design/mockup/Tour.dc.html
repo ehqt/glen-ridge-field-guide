@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Glen Ridge in five minutes</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}
+a:hover{color:#0B5F58}
+</style>
+</helmet>
+<div style="background: #F5F6F2; color: #1B2A41; font-family: 'Public Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.5; display: flex; flex-direction: column;">
+
+<div style="border-bottom: 1px solid #D5DAD9; background: #FFFFFF;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px;">
+<a href="Main.dc.html" style="display: flex; align-items: center; gap: 12px; padding: 8px 0; color: #1B2A41;">
+<div style="width: 36px; height: 36px; border-radius: 8px; background: #0B5F58; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 16px;">GR</div>
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px;">Glen Ridge Field Guide</div>
+</a>
+<nav style="display: flex; flex-wrap: wrap; gap: 4px 8px;">
+<a href="Main.dc.html" style="padding: 12px 12px; font-weight: 500;">Institutions</a>
+<a href="Main.dc.html" style="padding: 12px 12px; font-weight: 500;">How it fits together</a>
+<a href="Main.dc.html" style="padding: 12px 12px; font-weight: 500;">People</a>
+</nav>
+</div>
+</div>
+
+<div style="max-width: 880px; margin: 0 auto; padding: 56px 24px 32px 24px; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px;">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #0B5F58;">New to Glen Ridge?</div>
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 52px; line-height: 1.05;">Glen Ridge in five minutes</h1>
+<p style="margin: 0; font-size: 20px; color: #3C4A58;">Five things worth knowing about how decisions get made here. Each step links to the full page when you want more.</p>
+</div>
+
+<div style="max-width: 880px; margin: 0 auto; padding: 0 24px 24px 24px; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px;">
+<sc-for list="{{steps}}" as="s" hint-placeholder-count="5">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 24px; padding: 28px; border: 1px solid #D5DAD9; border-radius: 16px; background: #FFFFFF;">
+<div style="flex: 0 0 56px; width: 56px; height: 56px; border-radius: 50%; background: #0B5F58; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px;">{{s.n}}</div>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 8px;">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; line-height: 1.2;">{{s.title}}</div>
+<div style="color: #3C4A58; font-size: 17px;">{{s.body}}</div>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; color: #0B5F58; font-weight: 600;">{{s.link}} →</a>
+</div>
+</div>
+</sc-for>
+</div>
+
+<div style="max-width: 880px; margin: 0 auto; padding: 8px 24px 56px 24px; width: 100%; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px;">
+<a href="Meeting.dc.html" style="flex: 1 1 320px; box-sizing: border-box; padding: 24px; border-radius: 12px; background: #1B2A41; color: #FFFFFF; display: flex; flex-direction: column; gap: 6px;">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px;">Next: your first public meeting</div>
+<div style="color: #D5DEE6;">What to expect, how to speak, and the words you’ll hear.</div>
+</a>
+<a href="Main.dc.html" style="flex: 1 1 320px; box-sizing: border-box; padding: 24px; border-radius: 12px; background: #FFFFFF; border: 1px solid #D5DAD9; color: #1B2A41; display: flex; flex-direction: column; gap: 6px;">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px;">Browse every institution</div>
+<div style="color: #3C4A58;">Go back to the full guide.</div>
+</a>
+</div>
+
+<div style="background: #1B2A41; color: #D5DEE6;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; font-size: 14px;">
+<div style="font-weight: 600; color: #FFFFFF;">Glen Ridge Field Guide</div>
+<div>An unofficial, nonpartisan reference made by a resident. Not affiliated with the Borough of Glen Ridge or the Glen Ridge Public Schools.</div>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1500}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      steps: [
+        { n: '1', title: 'Two elected bodies make most of the decisions', body: 'The Mayor and Borough Council run the borough. The Board of Education runs the schools. Residents elect both, and each sets its own budget.', link: 'See how it fits together' },
+        { n: '2', title: 'Your tax bill has three big pieces', body: 'Borough, schools and county each take a share. They are separate budgets decided by separate bodies, so a question about one doesn’t go to another.', link: 'Where your tax dollar goes' },
+        { n: '3', title: 'Changing a property goes through land-use boards', body: 'Plans for an addition, a fence or a new building may involve the zoning officer, the Planning Board, the Zoning Board of Adjustment or the Historic Preservation Commission. Which one depends on what you’re doing.', link: 'Find the right board' },
+        { n: '4', title: 'Everyday services have their own offices', body: 'Utilities, the library, police, fire, recreation and public works each have a page with who runs them and who to contact.', link: 'Browse services' },
+        { n: '5', title: 'You can take part, even if you never speak', body: 'Meetings are open to the public, and you can follow what each board decides without ever speaking.', link: 'Read the first-meeting guide' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

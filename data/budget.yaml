@@ -1,0 +1,134 @@
+# Glen Ridge Field Guide: how the property tax levy splits.
+# Every figure is from the Glen Ridge Borough row (MuniCode 0708) of the
+# state's 2025 Property Tax Information workbook, "Municipal Tax Summary"
+# and "Citizens Tax Summary" sheets. Dollar amounts are rounded to the
+# dollar and rates to three decimals. Shares are computed from the levies
+# at build time, not stored here.
+
+tax_year: 2025
+last_verified: 2026-10-11
+sources:
+  - &dca
+    title: "NJ Department of Community Affairs, 2025 Property Tax Information (Excel)"
+    url: "https://www.nj.gov/dca/dlgs/resources/Property_Tax/25_data/25taxes.xls"
+  - title: "NJ DCA Division of Local Government Services, Property Tax Information"
+    url: "https://www.nj.gov/dca/dlgs/resources/Property_Tax_info.shtml"
+  - &ufb
+    title: "2026 Glen Ridge User Friendly Budget (PDF)"
+    url: "https://www.glenridgenj.org/wp-content/uploads/2026/05/2026-GlenRidge-UserFriendly-Budget-municode0708.pdf"
+  - &introduced
+    title: "2026 Glen Ridge Introduced Budget (PDF)"
+    url: "https://www.glenridgenj.org/wp-content/uploads/2026/04/2026-Glen-Ridge-Introduced-Budget-0708.pdf"
+  - title: "Borough Budget Information page"
+    url: "https://www.glenridgenj.org/budgetinfo/"
+  - &adoption
+    title: "Resolution 89-26, adoption of the 2026 municipal budget (PDF)"
+    url: "https://www.glenridgenj.org/wp-content/uploads/2026/05/Resolution-89-26-Budget-Adoption-1-1.pdf"
+  - &schoolcal
+    title: "Glen Ridge Public Schools 2026-2027 Budget Development Schedule (PDF)"
+    url: "https://drive.google.com/file/d/1Ml1cjRfbeuoIKUSVzo29cUxz_z0zE8YN/view?usp=sharing"
+  - &schoolbudget
+    title: "Glen Ridge Public Schools, Budget 2026-2027 Information"
+    url: "https://www.glenridge.org/page/budget-2026-2027-information"
+
+net_valuation_taxable: 1729624400
+total_rate: 3.508                    # per $100 of assessed value
+average_residential_value: 674911    # assessed value, not market value
+average_total_taxes: 23673           # before credits and deductions
+
+# `institution` is the id of the body that sets this budget, when it has a
+# page or a planned page.
+shares:
+  - id: schools
+    name: Schools
+    set_by: the Board of Education
+    institution: board-of-education
+    pays: The Glen Ridge Public Schools budget, which the Board of Education adopts each spring.
+    pays_source: *schoolbudget
+    levy: 36943996
+    rate: 2.136
+    average_taxes: 14416
+    lines:
+      - { name: District school budget, levy: 36943996 }
+  - id: borough
+    name: Borough
+    set_by: the Mayor and Borough Council
+    institution: mayor-and-council
+    pays: >-
+      The borough's budget. Its service categories include public safety,
+      public works, solid waste disposal, and parks and recreation. A separate
+      line funds the library.
+    pays_source: *ufb
+    levy: 14225703
+    rate: 0.822
+    average_taxes: 5551
+    lines:
+      - { name: Local municipal purposes, levy: 13332992 }
+      - { name: Minimum library tax, levy: 892711 }
+  - id: county
+    name: County
+    set_by: Essex County
+    institution: essex-county
+    pays: Essex County's own budget, plus a county open space trust fund.
+    pays_source: *dca
+    levy: 9498253
+    rate: 0.549
+    average_taxes: 3706
+    lines:
+      - { name: County purposes, levy: 9093228 }
+      - { name: County open space trust fund, levy: 405025 }
+
+# The newest figures available, shown as a note beside the certified year.
+latest_note:
+  text: >-
+    For 2026, the borough's budget estimates a total levy of $62,222,690. The
+    borough's taxable valuation rose from $1,729,624,400 to $2,995,727,600,
+    and the average residential assessment from $674,911 to $1,202,700, so
+    2026 rates per $100 will be much lower than the 2025 rates shown here.
+    The school and county amounts in that document are estimates.
+  source: *ufb
+
+# How a budget gets adopted. Each step states only what its sources say,
+# with 2026 as the worked example.
+process:
+  - title: A budget is introduced
+    body: >-
+      The governing body approves a proposed budget at a public meeting. The
+      Borough Council approved the 2026 municipal budget on April 13, 2026.
+      The Board of Education's schedule put its tentative 2026-27 budget in
+      March 2026.
+    sources: [*introduced, *schoolcal]
+  - title: It is advertised
+    body: >-
+      The borough publishes its approved budget under the state's Local
+      Budget Law (N.J.S.A. 40A:4-6); the 2026 budget was published on April
+      15, 2026. The school district sends its budget to
+      the County Superintendent of Schools for review and approval to
+      advertise, then gives notice of the hearing at least four days ahead.
+    sources: [*introduced, *adoption, *schoolcal]
+  - title: The public gets a hearing
+    body: >-
+      The borough's notice says taxpayers and other interested persons may
+      present objections at the hearing. In 2026 it was held May 11 at 7:30
+      pm at 825 Bloomfield Avenue. The Board of Education scheduled its
+      public hearing for April 28, 2026.
+    sources: [*introduced, *schoolcal]
+  - title: The budget is adopted
+    body: >-
+      The Mayor and Council adopted the 2026 municipal budget by Resolution
+      89-26 on May 11, 2026, the same night as the hearing. The Board of
+      Education's schedule also put adoption on the night of its hearing, and
+      calls for posting a user-friendly budget within 48 hours.
+    sources: [*adoption, *schoolcal]
+  - title: The levies become tax rates
+    body: >-
+      Each rate is its levy divided by the borough's total taxable valuation,
+      stated per $100. In 2025, $60.7 million in levies over $1.73 billion in
+      taxable value gave the total rate of 3.508.
+    sources: [*dca, *ufb]
+process_note: Essex County's budget process is not covered here yet.
+
+needs_verification:
+  - Certified 2026 figures. The state had not published a 2026 workbook as of the verified date.
+  - Total budget size for the schools and the county. The figures here are tax levies, not full budgets, which also draw on state aid and other revenue.
+  - Essex County's budget calendar and hearing dates.

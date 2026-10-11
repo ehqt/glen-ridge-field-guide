@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Where the money goes</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}
+a:hover{color:#0B5F58}
+</style>
+</helmet>
+<div style="background: #F5F6F2; color: #1B2A41; font-family: 'Public Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.5; display: flex; flex-direction: column;">
+
+<div style="border-bottom: 1px solid #D5DAD9; background: #FFFFFF;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px;">
+<a href="Main.dc.html" style="display: flex; align-items: center; gap: 12px; padding: 8px 0; color: #1B2A41;">
+<div style="width: 36px; height: 36px; border-radius: 8px; background: #0B5F58; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 16px;">GR</div>
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px;">Glen Ridge Field Guide</div>
+</a>
+<nav style="display: flex; flex-wrap: wrap; gap: 4px 8px;">
+<a href="Main.dc.html" style="padding: 12px 12px; font-weight: 500;">Institutions</a>
+<a href="Main.dc.html" style="padding: 12px 12px; font-weight: 500;">How it fits together</a>
+<a href="Main.dc.html" style="padding: 12px 12px; font-weight: 600; color: #0B5F58;">Everyday tools</a>
+<a href="Main.dc.html" style="padding: 12px 12px; font-weight: 500;">People</a>
+</nav>
+</div>
+</div>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 24px 24px; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px;">
+<div style="font-size: 14px; color: #4A5663;"><a href="Main.dc.html" style="color: #0B5F58; font-weight: 500;">Home</a> › Everyday questions › Budget</div>
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 52px; line-height: 1.05;">Where the money goes</h1>
+<p style="margin: 0; font-size: 20px; max-width: 700px; color: #3C4A58;">Your property tax bill pays for three separate budgets, each set by a different body. Here is who decides what, and when you can weigh in.</p>
+</div>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 8px 24px 24px 24px; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px;">
+<div style="display: flex; flex-wrap: wrap; border-radius: 12px; overflow: hidden; border: 1px solid #D5DAD9;">
+<div style="flex: 1 1 200px; padding: 24px; background: #1B2A41; color: #FFFFFF;">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 28px;">[%]</div>
+<div style="font-weight: 600;">Schools</div>
+</div>
+<div style="flex: 1 1 200px; padding: 24px; background: #0B5F58; color: #FFFFFF;">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 28px;">[%]</div>
+<div style="font-weight: 600;">Borough</div>
+</div>
+<div style="flex: 1 1 200px; padding: 24px; background: #C9D3DB; color: #1B2A41;">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 28px;">[%]</div>
+<div style="font-weight: 600;">County</div>
+</div>
+</div>
+<div style="font-size: 14px; color: #4A5663;">Share of the typical tax bill. Illustrative blocks; real percentages will come from the borough’s tax data and show the year.</div>
+</div>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px 24px 24px; width: 100%; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 20px;">
+<sc-for list="{{budgets}}" as="b" hint-placeholder-count="3">
+<div style="flex: 1 1 300px; min-width: 0; box-sizing: border-box; padding: 28px; border: 1px solid #D5DAD9; border-radius: 16px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px;">
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #0B5F58;">Set by {{b.setBy}}</div>
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px;">{{b.name}}</div>
+<div style="color: #3C4A58;">{{b.pays}}</div>
+<div style="margin-top: auto; padding-top: 12px; border-top: 1px solid #D5DAD9; font-size: 14px; color: #4A5663;">Budget: [$] · Tax rate: [rate]</div>
+</div>
+</sc-for>
+</div>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 24px 24px 56px 24px; width: 100%; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start;">
+
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 28px;">How a budget gets adopted</h2>
+<div style="display: flex; flex-direction: column; border: 1px solid #D5DAD9; border-radius: 12px; background: #FFFFFF; overflow: hidden;">
+<sc-for list="{{steps}}" as="st" hint-placeholder-count="4">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 20px; padding: 20px 24px; border-bottom: 1px solid #D5DAD9;">
+<div style="flex: 0 0 40px; width: 40px; height: 40px; border-radius: 50%; background: #1B2A41; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 600;">{{st.n}}</div>
+<div style="flex: 1 1 320px; min-width: 0;">
+<div style="font-weight: 600; font-size: 18px;">{{st.title}}</div>
+<div style="color: #3C4A58;">{{st.body}}</div>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 20px;">
+<div style="box-sizing: border-box; padding: 24px; border-radius: 12px; background: #1B2A41; color: #FFFFFF; display: flex; flex-direction: column; gap: 8px;">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px;">When to weigh in</div>
+<div style="color: #D5DEE6;">The public hearing before adoption is the moment your comment matters most. Dates are set each year.</div>
+<a href="Calendar.dc.html" style="display: flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: 0 16px; border-radius: 8px; background: #FFFFFF; color: #1B2A41; font-weight: 600;">See the civic calendar →</a>
+</div>
+<div style="box-sizing: border-box; padding: 24px; border: 1px solid #D5DAD9; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px;">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px;">Budget documents</div>
+<a href="#" style="display: flex; align-items: center; min-height: 44px; color: #0B5F58; font-weight: 600;">Borough budget →</a>
+<a href="#" style="display: flex; align-items: center; min-height: 44px; color: #0B5F58; font-weight: 600;">School district budget →</a>
+<a href="#" style="display: flex; align-items: center; min-height: 44px; color: #0B5F58; font-weight: 600;">Essex County budget →</a>
+</div>
+</div>
+</div>
+
+<div style="background: #1B2A41; color: #D5DEE6;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; font-size: 14px;">
+<div style="font-weight: 600; color: #FFFFFF;">Glen Ridge Field Guide</div>
+<div>An unofficial, nonpartisan reference made by a resident. Figures will link to the official budget documents and show the year they cover.</div>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      budgets: [
+        { setBy: 'the Board of Education', name: 'Schools', pays: 'Teachers and staff, buildings, programs and transportation for the public schools.' },
+        { setBy: 'the Mayor and Borough Council', name: 'Borough', pays: 'Police, fire, public works, the library and other local services.' },
+        { setBy: 'Essex County', name: 'County', pays: 'County-level services such as the courts, parks and roads.' }
+      ],
+      steps: [
+        { n: '1', title: 'A draft budget is introduced', body: 'The governing body proposes a budget at a public meeting, and the documents are posted.' },
+        { n: '2', title: 'The public gets a hearing', body: 'Residents can ask questions and comment before a vote.' },
+        { n: '3', title: 'The budget is adopted', body: 'The body votes, sometimes after changes, and sends the result to the state as required.' },
+        { n: '4', title: 'Tax rates are set', body: 'The adopted budgets feed into the rates used on your bill.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

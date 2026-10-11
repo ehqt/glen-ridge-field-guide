@@ -1,0 +1,75 @@
+# Glen Ridge Field Guide: one institution file
+# Everything here is from the borough's own pages and documents, read
+# 2026-10-11. Fields set to null are not stated there.
+
+id: mayor-and-council
+name: Mayor and Borough Council
+aliases: [Mayor and Council, Borough Council, Council, governing body]
+category: borough-government
+
+summary: >
+  The borough's elected governing body: a Mayor and a six-member Borough
+  Council, under the Borough form of New Jersey municipal government.
+powers:
+  - Approve and adopt the borough's municipal budget
+  - Confirm the Mayor's appointments to borough boards, commissions and offices
+  - Set the council's meeting schedule and adopt its own bylaws each January
+limits:
+  - null   # TO VERIFY
+
+how_seated: >-
+  Elected by voters. The Mayor is elected directly to a four-year term. The
+  six Council members are elected at large to three-year terms, with two
+  seats up each year.
+seated_source: { title: "Mayor & Council (borough page)", url: "https://www.glenridgenj.org/council/" }
+reports_to: null
+
+members:
+  # Names, offices and term ends are from the borough's Mayor & Council page.
+  - { name: Deborah Mans,     role: Mayor,             term_ends: "2027-12-31" }
+  - { name: LoriJeane Moody,  role: Council President, term_ends: "2026-12-31" }
+  - { name: David Lefkovits,  role: Councilor,         term_ends: "2026-12-31" }
+  - { name: Rebecca Meyer,    role: Councilor,         term_ends: "2027-12-31" }
+  - { name: Steve Zimet,      role: Councilor,         term_ends: "2027-12-31" }
+  - { name: Rich Law,         role: Councilor,         term_ends: "2028-12-31" }
+  - { name: Anthony Turiano,  role: Councilor,         term_ends: "2028-12-31" }
+
+professionals:
+  - { name: Michael P. Zichelli,    role: Borough Administrator, credentials: "AICP, PP" }
+  - { name: Yenlys Flores-Bolivard, role: Municipal Clerk }
+  - { name: John Malyska,           role: Borough Attorney, credentials: Esq. }
+
+meets:
+  schedule: Second and fourth Monday of each month, 7:30 pm
+  schedule_note: During July and August, meetings are held on the second Monday only.
+  location: Council Chamber, Glen Ridge Municipal Building
+  quorum: null
+
+how_to_engage:
+  public_comment: >
+    Council agendas include a "Comments of the Public" item. Comments are
+    limited to five minutes per person.
+  contact:
+    phone: 973-748-8400
+    address: 825 Bloomfield Avenue, Glen Ridge, NJ 07028
+
+links:
+  official_page: https://www.glenridgenj.org/council/
+  government: https://www.glenridgenj.org/government/
+  budget: https://www.glenridgenj.org/budgetinfo/
+  boards_and_commissions: https://www.glenridgenj.org/boards/
+  meetings_url: null    # later: calendar feed
+  agendas_url: null     # the council page links to agenda and minutes archives
+
+last_verified: 2026-10-11
+sources:
+  - { title: "Mayor & Council (borough page)", url: "https://www.glenridgenj.org/council/" }
+  - { title: "Government (borough page)", url: "https://www.glenridgenj.org/government/" }
+  - { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+  - { title: "Council agendas, January 5 2026 (borough page)", url: "https://www.glenridgenj.org/glen-ridge-adjourned-annual-council-meeting-agendas-01-05-2025/" }
+  - { title: "2026 Glen Ridge Introduced Budget (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/04/2026-Glen-Ridge-Introduced-Budget-0708.pdf" }
+
+needs_verification:
+  - What the Mayor and Council cannot decide
+  - The full list of the governing body's powers; only the two with a borough document behind them are listed
+  - The borough's 2026 User Friendly Budget spells one councilor's surname "Laracy"; the council page says "Law", which is used here

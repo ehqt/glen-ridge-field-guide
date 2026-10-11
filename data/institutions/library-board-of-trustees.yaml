@@ -1,0 +1,80 @@
+# Glen Ridge Field Guide: one institution file
+# From the library's Board of Trustees page and the council's 2026
+# appointments resolution, read 2026-10-11. The library page was read
+# through an automated fetch, not in a browser.
+
+id: library-board-of-trustees
+name: Library Board of Trustees
+aliases: [Glen Ridge Library Board, Library Board, Public Library]
+category: services
+
+summary: >
+  The board of trustees of the Glen Ridge Public Library.
+powers: []   # TO VERIFY: the library page does not describe the board's duties; see its bylaws
+limits:
+  - null   # TO VERIFY
+
+governed_by:
+  statute: N.J.S.A. 40:54-9          # cited in Resolution 3-26
+  bylaws: 2025 bylaws (PDF)
+appointed_by: The Mayor, with the Borough Council's approval
+seated_source: { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+reports_to: null
+member_terms: 5 years for trustees, 1 year for the Mayor's designee
+
+members:
+  # Names and term ends are from Resolution 3-26; offices are from the
+  # library's page. The library page spells two names differently ("Matt
+  # Doyle", "Damein Phoenix") and also lists the Mayor and the Superintendent
+  # of Schools as ex-officio.
+  - { name: Bernice Clark Bonnett, role: President,                        term_ends: "2030-12-31" }
+  - { name: Marilyn Law,           role: Vice President,                   term_ends: "2028-12-31" }
+  - { name: Tina Payne,            role: Secretary,                        term_ends: "2027-12-31" }
+  - { name: David Lefkovits,       role: "Treasurer; Mayor's Designee",    term_ends: "2026-12-31" }
+  - { name: James Doyle,           role: Trustee,                          term_ends: "2029-12-31" }
+  - { name: Edward Kastenmeier,    role: Trustee,                          term_ends: "2028-12-31" }
+  - { name: Rohit Tote,            role: Trustee,                          term_ends: "2030-12-31" }
+  - { name: Jeanna Velechko,       role: Trustee,                          term_ends: "2026-12-31" }
+  - { name: Damien Phoenix,        role: "Superintendent's Designee",      term_ends: "2030-12-31" }
+
+professionals:
+  - { name: Tina Marie Doody, role: Library Director }
+
+meets:
+  schedule: Second Wednesday of the month, 7:30 pm
+  schedule_note: >
+    No meetings in July or August. The 2026 schedule has exceptions: January
+    14 (reorganization, 6:00 pm), June 17, and December 9 (6:00 pm). The
+    schedule may change without notice.
+  location: First floor meeting room, Glen Ridge Public Library, 240 Ridgewood Avenue
+  quorum: null
+roster_as_of: 2026
+
+how_to_engage:
+  public_comment: >
+    The public is welcome at any public session. Agendas are posted by 5:00
+    pm the Friday before each meeting. The library publishes its public
+    comment procedures, including written comments, on a separate page.
+  contact:
+    phone: 973-748-5482
+    address: 240 Ridgewood Avenue, Glen Ridge, NJ 07028
+
+links:
+  official_page: https://www.glenridgelibrary.org/board-of-trustees.html
+  public_comment_procedures: https://www.glenridgelibrary.org/bot_mr.html
+  bylaws: https://www.glenridgelibrary.org/uploads/1/3/7/0/13705243/grpl_by-laws_2025.docx.pdf
+  agendas_url: https://www.glenridgelibrary.org/bot_ma.html
+  contact_page: https://www.glenridgelibrary.org/contact-us.html
+  meetings_url: null
+
+last_verified: 2026-10-11
+verification_level: library page read through an automated fetch; names checked against the council resolution
+sources:
+  - { title: "Board of Trustees (library page)", url: "https://www.glenridgelibrary.org/board-of-trustees.html" }
+  - { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+  - { title: "Municipal Directory (borough page)", url: "https://www.glenridgenj.org/grdirectory/" }
+
+needs_verification:
+  - What the board decides; its bylaws have not been read
+  - The public comment procedures page, which has not been read
+  - One trustee's first name (the resolution says James Doyle, the library page Matt Doyle)

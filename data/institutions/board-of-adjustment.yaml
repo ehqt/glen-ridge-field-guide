@@ -1,0 +1,97 @@
+# Glen Ridge Field Guide: one institution file
+# Every field with a value has a source below. Fields set to null are not
+# published on the borough site and need a human to confirm them.
+
+id: board-of-adjustment
+name: Board of Adjustment            # the borough's own name for it
+aliases: [Zoning Board of Adjustment, Zoning Board, ZBA]
+category: land-use
+
+summary: >
+  Can grant exceptions (variances) to the borough's zoning ordinances when
+  strict enforcement would cause hardship.
+powers:
+  - Grant variances from zoning ordinances
+  - Hear property owners' applications and appeals at formal public hearings
+limits:
+  - null   # TO VERIFY: what it can't decide (e.g. writing the zoning rules)
+
+governed_by:
+  statute: N.J.S.A. 40:55D-69        # cited in the board's bylaws
+  bylaws: 2021 bylaws (PDF); 2025 bylaws adopted Jan 9, 2025
+appointed_by: The Mayor, with the Borough Council's approval   # Resolution 3-26
+seated_source: { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+reports_to: null                     # TO VERIFY: appeals path (likely Superior Court)
+member_terms: 4 years for regular members, 2 years for alternates   # Resolution 3-26
+
+members:
+  # Members and term ends are from Resolution 3-26, on the council's
+  # January 5, 2026 agenda (the PDF's own heading says "January 5, 2025").
+  # It lists seven regular members and two alternates. Chair and Vice Chair
+  # are from the board's Jan 9, 2025 reorganization minutes; the 2026
+  # officers are not confirmed.
+  - { name: Hugh J. Mahoney,    role: Chair,       seated_by: null, term_ends: "2028-12-31" }
+  - { name: Carl A. Bergmanson, role: Vice Chair,  seated_by: null, term_ends: "2027-12-31" }
+  - { name: Felicia Berger,     role: Member,      seated_by: null, term_ends: "2029-12-31" }
+  - { name: Philip Johnson,     role: Member,      seated_by: null, term_ends: "2028-12-31" }
+  - { name: Dennis Krien,       role: Member,      seated_by: null, term_ends: "2028-12-31" }
+  - { name: Raymond Scott,      role: Member,      seated_by: null, term_ends: "2029-12-31" }
+  - { name: Garry Sprong,       role: Member,      seated_by: null, term_ends: "2027-12-31" }
+  - { name: Sean Payne,         role: Alternate 1, seated_by: null, term_ends: "2026-12-31" }
+  - { name: Vijay Chaudhuri,    role: Alternate 2, seated_by: null, term_ends: "2027-12-31" }
+
+professionals:
+  - { name: Alan Trembulak, role: Board Attorney }
+  - { name: Erik DeLine,    role: Board Planner and Secretary, credentials: "AICP, PP" }
+  - { name: Paul Ferriero,  role: Board Engineer, credentials: PE }
+
+meets:
+  schedule: Second Thursday of each month, 7:30 pm
+  schedule_note: >
+    Dates are adopted each January and can change. The 2025 schedule had
+    no August meeting.
+  location: Council Chambers, Glen Ridge Municipal Building
+  location_note: >
+    Bylaws say "Municipal Building"; Jan 2025 minutes say "Council Chambers".
+  quorum: 4
+  recorded: true
+
+how_to_engage:
+  public_comment: >
+    Meetings are open to the public. At hearings the applicant speaks first,
+    then the Building Inspector, then private citizens. Remarks and questions
+    from the floor go through the Chair.
+  notice: Applicants must notify property owners within 200 feet.
+  apply:
+    where: File with the Board Secretary on the board's form
+    format: Hard copy plus a PDF
+    fees: Per the Borough Fee Schedule
+    rules:
+      - Applicants and witnesses are sworn
+      - Individuals may use an attorney; corporations must
+  transcripts: Request within 7 days of the hearing; $50 deposit
+  contact:
+    email: planning@glenridgenj.org
+    phone: 973-748-8444              # planning office; no secretary is named
+
+links:
+  official_page: https://new.glenridgenj.org/?p=992
+  bylaws: https://new.glenridgenj.org/wp-content/uploads/2025/05/AdustmentBrd2021ByLaws.pdf
+  minutes_example: https://www.glenridgenj.org/bminutes/BA2025-01-09.pdf
+  agenda_example: https://new.glenridgenj.org/wp-content/uploads/2025/05/BAAgenda2025-01-09.pdf
+  meetings_url: null                 # later: calendar feed
+  agendas_url: null                  # official page has no agenda/minutes links
+
+last_verified: 2026-10-11
+roster_as_of: 2026                   # Resolution 3-26; the borough page still says "2025 Membership"
+sources:
+  - { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+  - { title: "Resolution 3-25, appointments and terms, Jan 6 2025 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2025/05/3-25Appointments.pdf" }
+  - { title: Borough Board of Adjustment page, url: "https://new.glenridgenj.org/?p=992" }
+  - { title: Board of Adjustment bylaws (PDF), url: "https://new.glenridgenj.org/wp-content/uploads/2025/05/AdustmentBrd2021ByLaws.pdf" }
+  - { title: "Reorganization minutes, Jan 9 2025 (PDF)", url: "https://www.glenridgenj.org/bminutes/BA2025-01-09.pdf" }
+
+needs_verification:
+  - Who the board chose as Chair and Vice Chair at its January 2026 reorganization
+  - Appeals path for denied applications
+  - The minutes' heading says Jan 9, 2024 while the body says Jan 9, 2025

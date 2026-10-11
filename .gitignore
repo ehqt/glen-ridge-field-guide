@@ -1,0 +1,10 @@
+node_modules
+dist
+.DS_Store
+*.local
+
+# Mockup export; kept local, not published
+*.pdf
+
+# Project notes; kept local, not published
+HANDOFF.md

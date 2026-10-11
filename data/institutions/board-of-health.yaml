@@ -1,0 +1,69 @@
+# Glen Ridge Field Guide: one institution file
+# From the borough's Board of Health page, the council's 2026 appointments
+# resolution and the borough's 2026 User Friendly Budget, read 2026-10-11.
+
+id: board-of-health
+name: Board of Health
+aliases: [Glen Ridge Board of Health, Health Department]
+category: borough-government
+
+summary: >
+  Promotes and protects the health of borough residents. Health services
+  themselves are provided through the Bloomfield Health Department.
+powers:
+  - Keep residents current on emerging public health needs
+  - Investigate actual and potential health concerns
+  - Inform residents and town officials about health issues, including the laws and regulations that protect health
+  - Link residents to public health services, through the Bloomfield Health Department
+limits:
+  - null   # TO VERIFY
+
+appointed_by: The Mayor, with the Borough Council's approval
+seated_source: { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+reports_to: null
+member_terms: 2 years
+
+members:
+  # From Resolution 3-26. The borough page still shows a "2024 Members"
+  # list with one different name. No officers are named in either.
+  - { name: Donna Heinzen,        role: Member, term_ends: "2026-12-31" }
+  - { name: Donna Lifson,         role: Member, term_ends: "2026-12-31" }
+  - { name: Deborah Priestman,    role: Member, term_ends: "2026-12-31" }
+  - { name: Josh Konetzni,        role: Member, term_ends: "2027-12-31" }
+  - { name: Pearl Phillips,       role: Member, term_ends: "2027-12-31" }
+  - { name: Michael Sherman,      role: Member, term_ends: "2027-12-31" }
+  - { name: Jacqueline S. Yustein, role: Member, term_ends: "2027-12-31" }
+
+professionals:
+  - { name: Maya Lordo,       role: Health Officer }     # from the page's 2024 list
+  - { name: Michael Zichelli, role: Borough Staff Liaison }
+
+meets:
+  schedule: Third Monday of January, March, May, July, September and November, 6:00 pm
+  schedule_note: The borough page says the board "generally" meets on this schedule.
+  location: Conference room, Glen Ridge Public Library
+  quorum: null
+roster_as_of: 2026
+
+how_to_engage:
+  public_comment: Residents are welcome to attend.
+  contact:
+    bloomfield_health_department_phone: 973-680-4024
+    bloomfield_health_department_email: health@bloomfieldtwpnj.com
+    bloomfield_health_department_address: One Municipal Plaza, Room 111, Bloomfield, NJ 07003
+
+links:
+  official_page: https://www.glenridgenj.org/health/
+  meetings_url: null
+  agendas_url: null
+
+last_verified: 2026-10-11
+sources:
+  - { title: "Board of Health (borough page)", url: "https://www.glenridgenj.org/health/" }
+  - { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+  - { title: "2026 Glen Ridge User Friendly Budget (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/05/2026-GlenRidge-UserFriendly-Budget-municode0708.pdf" }
+
+needs_verification:
+  - Officers, if the board has any
+  - Whether Maya Lordo is still the Health Officer; the name is from the page's 2024 list
+  - The 2026 meeting dates, and where agendas and minutes are posted

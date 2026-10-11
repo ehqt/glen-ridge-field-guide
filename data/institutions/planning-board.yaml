@@ -1,0 +1,84 @@
+# Glen Ridge Field Guide: one institution file
+# From the borough's Planning Board page, the board's 2021 bylaws and the
+# council's 2026 appointments resolution, read 2026-10-11.
+
+id: planning-board
+name: Planning Board
+aliases: [Glen Ridge Planning Board]
+category: land-use
+
+summary: >
+  Hears applications for subdivisions, site plans and conditional uses, and
+  prepares the Borough Master Plan.
+powers:
+  - Hear applications for major and minor subdivisions, site plan approvals and conditional uses
+  - Hear bulk variances that come with a subdivision, site plan or conditional use application
+  - Hear appeals of Historic Preservation Commission decisions
+  - Prepare the Borough Master Plan under the New Jersey Municipal Land Use Law
+  - Recommend changes to the Official Map and the zoning ordinances to the Borough Council
+limits:
+  - Change the zoning ordinances itself. It recommends changes to the Borough Council.
+
+governed_by:
+  statute: N.J.S.A. 40:55D-23        # cited in Resolution 3-26
+  bylaws: 2021 bylaws (PDF)
+appointed_by: The Mayor, with the Borough Council's approval
+seated_source: { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+reports_to: null
+member_terms: 4 years for Class IV members, 2 years for alternates, 1 year for Classes I to III
+
+members:
+  # Classes and term ends are from Resolution 3-26. Chair and Vice Chair are
+  # from the borough page's "2026 Members" list. The resolution names
+  # Alternate 2 as Christina Soto; the borough page says Dolly Soto.
+  - { name: Ravi R. Mehrotra,    role: Chair (Class IV),                   term_ends: "2029-12-31" }
+  - { name: Timothy Hegarty,     role: Vice Chair (Class IV),              term_ends: "2026-12-31" }
+  - { name: Deborah Mans,        role: Mayor (Class I),                    term_ends: "2026-12-31" }
+  - { name: Michael P. Zichelli, role: Borough Administrator (Class II),   term_ends: "2026-12-31" }
+  - { name: LoriJeane Moody,     role: Council Liaison (Class III),        term_ends: "2026-12-31" }
+  - { name: Katherine Bojsza,    role: Member (Class IV),                  term_ends: "2026-12-31" }
+  - { name: Robyn Fields,        role: Member (Class IV),                  term_ends: "2028-12-31" }
+  - { name: Karin Robinson,      role: Member (Class IV),                  term_ends: "2027-12-31" }
+  - { name: Joseph Schuster,     role: Member (Class IV),                  term_ends: "2026-12-31" }
+  - { name: Jamie Tsekhanskiy,   role: Alternate 1,                        term_ends: "2027-12-31" }
+  - { name: Christina Soto,      role: Alternate 2,                        term_ends: "2027-12-31" }
+
+professionals:
+  - { name: Alan Trembulak, role: Planning Board Attorney, credentials: Esq. }
+  - { name: Erik DeLine,    role: Planner and Secretary, credentials: "AICP, PP" }
+
+meets:
+  schedule: Third Wednesday of each month, 7:30 pm
+  schedule_note: >
+    From the board's 2021 bylaws, which let the board set other dates. Check
+    the borough calendar for the current year.
+  location: Glen Ridge Municipal Building
+  quorum: 5
+roster_as_of: 2026
+
+how_to_engage:
+  public_comment: >
+    All regular and special meetings are open to the public. Depending on the
+    application, owners within 200 feet are sent a notice, which tells them
+    of their right to be heard at the meeting.
+  notice: Depending on the type of application, every property owner within 200 feet is notified.
+  contact:
+    phone: 973-748-8444
+
+links:
+  official_page: https://www.glenridgenj.org/planning-board/
+  bylaws: https://www.glenridgenj.org/wp-content/uploads/2025/07/PlanBrd2021ByLaws.pdf
+  meetings_url: https://www.glenridgenj.org/calendar/
+  agendas_url: "https://www.glenridgenj.org/agendas-minutes-blog/#pbagendas"
+  minutes: "https://www.glenridgenj.org/agendas-minutes-blog/#pbminutes"
+
+last_verified: 2026-10-11
+sources:
+  - { title: "Planning Board (borough page)", url: "https://www.glenridgenj.org/planning-board/" }
+  - { title: "Planning Board bylaws, 2021 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2025/07/PlanBrd2021ByLaws.pdf" }
+  - { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+
+needs_verification:
+  - The 2026 meeting dates; the schedule here is from the 2021 bylaws
+  - The name of Alternate 2 (the resolution says Christina Soto, the borough page Dolly Soto)
+  - Public comment time limits, if any
