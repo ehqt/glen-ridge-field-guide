@@ -2,6 +2,8 @@ import { Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import BudgetPage from './pages/BudgetPage'
 import CalendarPage from './pages/CalendarPage'
+import FirstMeeting from './pages/FirstMeeting'
+import Glossary from './pages/Glossary'
 import Home from './pages/Home'
 import InstitutionPage from './pages/InstitutionPage'
 import NotFound from './pages/NotFound'
@@ -19,6 +21,8 @@ export default function App() {
         <Route path="at-a-glance" element={<OnePager />} />
         <Route path="calendar" element={<CalendarPage />} />
         <Route path="people" element={<PeoplePage />} />
+        <Route path="first-meeting" element={<FirstMeeting />} />
+        <Route path="glossary" element={<Glossary />} />
         <Route path="report" element={<ReportError />} />
         <Route path="*" element={<NotFound />} />
       </Route>

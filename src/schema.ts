@@ -140,6 +140,25 @@ export const calendarSchema = z.array(
   }),
 )
 
+const sources = z.array(source).min(1, 'at least one source is required')
+
+export const guideSchema = z.strictObject({
+  last_verified: z.iso.date('last_verified must be a YYYY-MM-DD date'),
+  meeting_basics: z.array(z.strictObject({ title: text, body: text, sources })).min(1),
+  glossary: z
+    .array(
+      z.strictObject({
+        term: text,
+        aliases: z.array(text).default([]),
+        meaning: text,
+        institution: id.nullable().optional(),
+        sources,
+      }),
+    )
+    .min(1),
+})
+
+export type Guide = z.infer<typeof guideSchema>
 export type CalendarItem = z.infer<typeof calendarSchema>[number]
 export type Source = z.infer<typeof source>
 export type Budget = z.infer<typeof budgetSchema>

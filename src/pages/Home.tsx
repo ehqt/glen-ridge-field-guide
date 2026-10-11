@@ -171,6 +171,24 @@ export default function Home() {
             </Link>
           </li>
           <li>
+            <Link to="/first-meeting" className="card card--link inst-card inst-card--tool">
+              <span className="inst-card__name">Your first public meeting</span>
+              <span className="inst-card__summary">
+                What the law says about attending and speaking, and each body's own rules for public comment.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/glossary" className="card card--link inst-card inst-card--tool">
+              <span className="inst-card__name">Glossary</span>
+              <span className="inst-card__summary">
+                Variance, ordinance, executive session and other terms you will meet on an agenda.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
             <Link to="/people" className="card card--link inst-card inst-card--tool">
               <span className="inst-card__name">People index</span>
               <span className="inst-card__summary">

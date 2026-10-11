@@ -1093,3 +1093,10 @@ nav[aria-label='Breadcrumb'] a,
     font-size: 7.5pt;
   }
 }
+
+/* Glossary */
+
+.glossary dd {
+  margin: 0;
+  color: var(--text-2);
+}

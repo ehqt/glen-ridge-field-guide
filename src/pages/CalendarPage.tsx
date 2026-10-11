@@ -137,6 +137,11 @@ export default function CalendarPage() {
                 </Link>
               </li>
               <li>
+                <Link className="text-link" to="/first-meeting">
+                  Your first public meeting →
+                </Link>
+              </li>
+              <li>
                 <Link className="text-link" to="/at-a-glance">
                   Glen Ridge at a glance →
                 </Link>

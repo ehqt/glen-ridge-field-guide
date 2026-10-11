@@ -53,8 +53,16 @@ roster_as_of: 2026
 how_to_engage:
   public_comment: >
     The public is welcome at any public session. Agendas are posted by 5:00
-    pm the Friday before each meeting. The library publishes its public
-    comment procedures, including written comments, on a separate page.
+    pm the Friday before each meeting. Regular meetings have two public
+    comment periods. The first, near the start, is for items on the agenda.
+    The second, near the end, is for any library topic. Sign up with your
+    name and municipality on the sheet by the meeting room door. Each
+    speaker may speak once per period, for up to two minutes.
+  written_comment: >
+    Email or write to the Library Director with your name and address, and
+    say the comments are for the Board of Trustees. Comments are due by 3:00
+    pm on the Monday before the meeting. They are given to the board and
+    summarized under Correspondence.
   contact:
     phone: 973-748-5482
     address: 240 Ridgewood Avenue, Glen Ridge, NJ 07028
@@ -72,9 +80,9 @@ verification_level: library page read through an automated fetch; names checked 
 sources:
   - { title: "Board of Trustees (library page)", url: "https://www.glenridgelibrary.org/board-of-trustees.html" }
   - { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+  - { title: "Public comment procedures (library page)", url: "https://www.glenridgelibrary.org/bot_mr.html" }
   - { title: "Municipal Directory (borough page)", url: "https://www.glenridgenj.org/grdirectory/" }
 
 needs_verification:
   - What the board decides; its bylaws have not been read
-  - The public comment procedures page, which has not been read
   - One trustee's first name (the resolution says James Doyle, the library page Matt Doyle)

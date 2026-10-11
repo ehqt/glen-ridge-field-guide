@@ -1,0 +1,161 @@
+# Glen Ridge Field Guide: the first-meeting guide and the glossary.
+# Each entry states only what its sources say. The state statutes were read
+# from copies hosted by New Jersey state agencies where one was found; the
+# titles below say which copy and how old it is.
+
+last_verified: 2026-10-11
+
+meeting_basics:
+  - title: You can walk in
+    body: >-
+      State law says all meetings of public bodies shall be open to the
+      public at all times, apart from the closed portions described below.
+    sources:
+      - &opma { title: "Open Public Meetings Act, N.J.S.A. 10:4-12 (state copy, updated March 2022; PDF)", url: "https://www.njconsumeraffairs.gov/Documents/legal/Open-Public-Meeting-Act.pdf" }
+  - title: You do not have to speak, but at two bodies you always can
+    body: >-
+      The same law requires a municipal governing body and a board of
+      education to set aside part of every meeting for public comment on any
+      governmental or school district issue. Each body decides how long
+      that part is. Other public bodies may permit, prohibit or regulate
+      public participation, so check the rules for the body you are visiting.
+    sources:
+      - *opma
+  - title: Part of a meeting can be closed
+    body: >-
+      A public body may exclude the public only from the portion of a
+      meeting that deals with certain subjects. The list in the law includes
+      collective bargaining, pending or anticipated litigation, the
+      employment or discipline of a specific employee, buying or leasing
+      real property with public funds, and material whose disclosure would
+      invade an individual's privacy. The Board of Education's agendas
+      schedule a closed executive session at 6:00 pm, before the 7:00 pm
+      public session.
+    sources:
+      - *opma
+      - { title: "Board of Education agenda, October 6, 2026", url: "https://docs.google.com/document/d/12PGfuR2Bdc-a1D94CJ2tOZjpc0qmERrvId-g2FJizNo/edit?usp=sharing" }
+  - title: Hearings on an application run in a set order
+    body: >-
+      At a Board of Adjustment hearing the applicant speaks first, then the
+      Building Inspector, then private citizens. Applicants and witnesses
+      are sworn, and remarks and questions from the floor go through the
+      Chair. Applicants must notify property owners within 200 feet.
+    sources:
+      - &boabylaws { title: "Board of Adjustment bylaws (PDF)", url: "https://new.glenridgenj.org/wp-content/uploads/2025/05/AdustmentBrd2021ByLaws.pdf" }
+
+glossary:
+  - term: Alternate member
+    meaning: >-
+      A member appointed as "Alternate No. 1" or "Alternate No. 2". On a
+      historic preservation commission, state law says alternates may take
+      part in discussions but may vote only when a regular member is absent
+      or disqualified. The Board of Adjustment, Planning Board and Historic
+      Preservation Commission each have alternates.
+    sources:
+      - &mlul { title: "Municipal Land Use Law, historic preservation sections (NJ Historic Preservation Office excerpt, 2017; PDF)", url: "https://www.nj.gov/state/bac/planning/documents/mlul022017.pdf" }
+      - &res326 { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+  - term: Certificate of Appropriateness
+    meaning: >-
+      The approval required before exterior work on a property in the Glen
+      Ridge Historic District. The Historic Preservation Commission reviews
+      the applications. A certificate is valid for two years.
+    institution: historic-preservation-commission
+    sources:
+      - &hpc { title: "Historic Preservation Commission (borough page)", url: "https://www.glenridgenj.org/hpc/" }
+  - term: Class A, B and C members
+    meaning: >-
+      The categories of seat on a historic preservation commission under
+      state law. A Class A member is knowledgeable in building design and
+      construction or architectural history. A Class B member is
+      knowledgeable or has a demonstrated interest in local history. Either
+      may live outside the municipality. The remaining regular members are
+      Class C, who must be citizens of the municipality.
+    institution: historic-preservation-commission
+    sources:
+      - *mlul
+  - term: Executive session
+    aliases: [Closed session]
+    meaning: >-
+      A part of a meeting the public may not attend. State law allows a
+      public body to exclude the public only while it discusses subjects on
+      a set list, such as collective bargaining, litigation or the
+      employment of a specific person. "Executive session" is the name the
+      Board of Education's agendas use.
+    sources:
+      - *opma
+      - { title: "Board of Education agenda, October 6, 2026", url: "https://docs.google.com/document/d/12PGfuR2Bdc-a1D94CJ2tOZjpc0qmERrvId-g2FJizNo/edit?usp=sharing" }
+  - term: Governing body
+    meaning: >-
+      In Glen Ridge, the Mayor and the six-member Borough Council together.
+    institution: mayor-and-council
+    sources:
+      - { title: "Mayor & Council (borough page)", url: "https://www.glenridgenj.org/council/" }
+  - term: Historic District
+    meaning: >-
+      The Glen Ridge Historic District, which the borough says covers over
+      90% of the borough. Exterior work on a property inside it needs a
+      Certificate of Appropriateness.
+    institution: historic-preservation-commission
+    sources:
+      - *hpc
+      - { title: "Historic District map (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2025/07/historicmap14.pdf" }
+  - term: Master Plan
+    meaning: >-
+      A plan the Planning Board may prepare and, after a public hearing,
+      adopt or amend, "to guide the use of lands within the municipality".
+      Glen Ridge's Planning Board prepares the Borough Master Plan.
+    institution: planning-board
+    sources:
+      - *mlul
+      - { title: "Planning Board (borough page)", url: "https://www.glenridgenj.org/planning-board/" }
+  - term: Ordinance
+    meaning: >-
+      An act or regulation of a municipality's governing body that must be
+      put in writing, read at more than one meeting and published.
+    sources:
+      - &ordres { title: "N.J.S.A. 40:49-1 (FindLaw copy, current as of January 1, 2024)", url: "https://codes.findlaw.com/nj/title-40-municipalities-and-counties/nj-st-sect-40-49-1/" }
+  - term: Public comment
+    meaning: >-
+      The part of a meeting set aside for members of the public to speak.
+      State law requires one at every meeting of a municipal governing body
+      and of a board of education, and lets each body decide how long it is.
+    sources:
+      - *opma
+  - term: Reorganization meeting
+    meaning: >-
+      The January meeting at which a body organizes for the year. At the
+      Borough Council's, newly elected members are sworn in and the Mayor makes the
+      year's appointments. At the Board of Adjustment's in January 2025, the
+      board chose its Chair and Vice Chair.
+    sources:
+      - { title: "Council agendas, January 5 2026 (borough page)", url: "https://www.glenridgenj.org/glen-ridge-adjourned-annual-council-meeting-agendas-01-05-2025/" }
+      - { title: "Board of Adjustment reorganization minutes, Jan 9 2025 (PDF)", url: "https://www.glenridgenj.org/bminutes/BA2025-01-09.pdf" }
+  - term: Resolution
+    meaning: >-
+      An act or regulation of a municipality's governing body that must be
+      put in writing but, unlike an ordinance, may be finally passed at the
+      meeting where it is introduced. The Council's yearly appointments and
+      its adoption of the budget are both made by resolution.
+    sources:
+      - *ordres
+      - *res326
+      - { title: "Resolution 89-26, adoption of the 2026 municipal budget (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/05/Resolution-89-26-Budget-Adoption-1-1.pdf" }
+  - term: 200-foot notice
+    meaning: >-
+      The notice an applicant must send to property owners within 200 feet
+      of the property. For Planning Board applications it depends on the
+      type of application, and the notice tells owners of their right to be
+      heard at the meeting.
+    sources:
+      - *boabylaws
+      - { title: "Planning Board (borough page)", url: "https://www.glenridgenj.org/planning-board/" }
+  - term: Variance
+    meaning: >-
+      An exception to the borough's zoning ordinances, which the Board of
+      Adjustment can grant when strict enforcement would cause hardship. The
+      Planning Board hears bulk variances that come with a subdivision, site
+      plan or conditional use application.
+    institution: board-of-adjustment
+    sources:
+      - { title: "Board of Adjustment (borough page)", url: "https://new.glenridgenj.org/?p=992" }
+      - { title: "Planning Board (borough page)", url: "https://www.glenridgenj.org/planning-board/" }

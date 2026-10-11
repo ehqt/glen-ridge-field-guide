@@ -6,7 +6,7 @@ import { basename, join, resolve } from 'node:path'
 import type { Plugin } from 'vite'
 import { parse } from 'yaml'
 import { z } from 'zod'
-import { budgetSchema, calendarSchema, institutionSchema, plannedSchema } from '../src/schema.ts'
+import { budgetSchema, calendarSchema, guideSchema, institutionSchema, plannedSchema } from '../src/schema.ts'
 
 const VIRTUAL_ID = 'virtual:field-guide-data'
 const RESOLVED_ID = '\0' + VIRTUAL_ID
@@ -73,10 +73,18 @@ export function loadFieldGuideData(root: string) {
     }
   }
 
+  const guideFile = join(root, 'data', 'guide.yaml')
+  const guide = check(guideSchema, guideFile, errors)
+  for (const entry of guide?.glossary ?? []) {
+    if (entry.institution && !seen.has(entry.institution)) {
+      errors.push(`${guideFile}\n  - "${entry.term}": no institution or planned entry "${entry.institution}"`)
+    }
+  }
+
   if (errors.length) {
     throw new Error(`Field guide data is invalid:\n\n${errors.join('\n\n')}\n`)
   }
-  return { institutions, planned, budget: budget!, calendar }
+  return { institutions, planned, budget: budget!, calendar, guide: guide! }
 }
 
 export function fieldGuideData(): Plugin {
@@ -92,7 +100,7 @@ export function fieldGuideData(): Plugin {
     load(moduleId) {
       if (moduleId !== RESOLVED_ID) return undefined
       const data = loadFieldGuideData(root)
-      return `export const institutions = ${JSON.stringify(data.institutions)}\nexport const planned = ${JSON.stringify(data.planned)}\nexport const budget = ${JSON.stringify(data.budget)}\nexport const calendar = ${JSON.stringify(data.calendar)}\n`
+      return `export const institutions = ${JSON.stringify(data.institutions)}\nexport const planned = ${JSON.stringify(data.planned)}\nexport const budget = ${JSON.stringify(data.budget)}\nexport const calendar = ${JSON.stringify(data.calendar)}\nexport const guide = ${JSON.stringify(data.guide)}\n`
     },
     configureServer(server) {
       const dataDir = resolve(root, 'data')
