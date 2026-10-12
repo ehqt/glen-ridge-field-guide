@@ -168,6 +168,21 @@ export const guideSchema = z.strictObject({
       }),
     )
     .min(1),
+  tasks: z
+    .array(
+      z.strictObject({
+        want: text,
+        who: text,
+        body: text,
+        contact: text.optional(),
+        institution: id.nullable().optional(),
+        // A page in this guide to send the reader on to.
+        to: z.string().startsWith('/').optional(),
+        to_label: text.optional(),
+        sources,
+      }),
+    )
+    .min(1),
 })
 
 export type Guide = z.infer<typeof guideSchema>

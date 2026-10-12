@@ -5,6 +5,7 @@ import CalendarPage from './pages/CalendarPage'
 import FirstMeeting from './pages/FirstMeeting'
 import Glossary from './pages/Glossary'
 import Home from './pages/Home'
+import IWantTo from './pages/IWantTo'
 import InstitutionPage from './pages/InstitutionPage'
 import NotFound from './pages/NotFound'
 import Tour from './pages/Tour'
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="first-meeting" element={<FirstMeeting />} />
         <Route path="tour" element={<Tour />} />
         <Route path="permits" element={<PermitFinder />} />
+        <Route path="i-want-to" element={<IWantTo />} />
         <Route path="glossary" element={<Glossary />} />
         <Route path="report" element={<ReportError />} />
         <Route path="*" element={<NotFound />} />

@@ -85,6 +85,14 @@ export function loadFieldGuideData(root: string) {
       errors.push(`${guideFile}\n  - "${entry.project}": no institution or planned entry "${entry.institution}"`)
     }
   }
+  for (const entry of guide?.tasks ?? []) {
+    if (entry.institution && !seen.has(entry.institution)) {
+      errors.push(`${guideFile}\n  - "${entry.want}": no institution or planned entry "${entry.institution}"`)
+    }
+    if (Boolean(entry.to) !== Boolean(entry.to_label)) {
+      errors.push(`${guideFile}\n  - "${entry.want}": to and to_label go together`)
+    }
+  }
 
   if (errors.length) {
     throw new Error(`Field guide data is invalid:\n\n${errors.join('\n\n')}\n`)

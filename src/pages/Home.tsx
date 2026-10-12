@@ -161,6 +161,15 @@ export default function Home() {
             </Link>
           </li>
           <li>
+            <Link to="/i-want-to" className="card card--link inst-card inst-card--tool">
+              <span className="inst-card__name">I want to…</span>
+              <span className="inst-card__summary">
+                Request a record, license a dog, hold a block party: which borough office handles it.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
             <Link to="/budget" className="card card--link inst-card inst-card--tool">
               <span className="inst-card__name">Where the money goes</span>
               <span className="inst-card__summary">

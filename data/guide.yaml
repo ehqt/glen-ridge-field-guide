@@ -261,3 +261,144 @@ permits:
     contact: 973-748-8400 ext. 233, building@glenridgenj.org
     sources:
       - *building
+
+# The "I want to..." finder. From the borough's Easy Access Forms,
+# Municipal Directory and Building Department pages, read in a browser
+# 2026-10-11. Offices and extensions only; the people who hold them are
+# left out so the list does not go stale when staff change.
+tasks:
+  - want: Speak at a public meeting
+    who: The body that is meeting
+    body: >-
+      The Borough Council and the Board of Education must take public
+      comment at every meeting. Other bodies set their own rules.
+    to: /first-meeting
+    to_label: Your first public meeting
+    sources:
+      - *opma
+  - want: Build, renovate, or change the outside of a house
+    who: Building Department, and often a board
+    body: The permit finder lists who to ask for each kind of project.
+    to: /permits
+    to_label: Permit finder
+    sources:
+      - *building
+  - want: Volunteer for a board or commission
+    who: The Mayor and Borough Council
+    body: >-
+      The borough's forms page has a volunteer application. The Mayor
+      appoints the members of borough boards and commissions each January,
+      and the Council confirms them.
+    contact: 973-748-8400
+    sources:
+      - *forms
+      - *res326
+  - want: Request a public record
+    who: Borough Clerk's office
+    body: >-
+      The Clerk's office handles requests under the Open Public Records Act
+      (OPRA). The forms page has an online request and a printable form.
+    contact: 973-748-8400 ext. 220
+    sources:
+      - *forms
+  - want: Get a birth, death or marriage certificate
+    who: Vital Statistics
+    body: >-
+      The borough holds birth records for births in Glen Ridge at Hackensack
+      Meridian Mountainside Hospital, death records where the person died in
+      Glen Ridge, and marriage records for marriages in Glen Ridge. The fee
+      is $25.00 for one copy and $10.00 for each additional copy.
+    contact: 973-748-8400 ext. 221
+    sources:
+      - *forms
+  - want: License a dog
+    who: Clerk's office
+    body: >-
+      Dog licenses are issued at the beginning of each year. Renewal is
+      $18.00 for altered dogs and $21.00 for unaltered dogs.
+    contact: 973-748-8400 ext. 222
+    sources:
+      - *forms
+  - want: Hold a garage or yard sale
+    who: Clerk's office
+    body: The forms page has an online garage and yard sale application.
+    contact: 973-748-8400 ext. 222
+    sources:
+      - *forms
+  - want: Hold a block party
+    who: Borough Administrator
+    body: Submit the block party application to the Borough Administrator one week before any Council meeting.
+    contact: 973-748-8400
+    sources:
+      - *forms
+  - want: Run a raffle
+    who: Borough Administrator
+    body: >-
+      Read the applicant letter, then submit the raffle license application
+      to the Borough Administrator at least 30 days before the event.
+    contact: 973-748-8400 ext. 220
+    sources:
+      - *forms
+  - want: Film in Glen Ridge
+    who: Clerk's office
+    body: Filming permits are handled through the Clerk's office. Read the filming welcome letter first, then complete the application.
+    contact: 973-748-8400 ext. 222
+    sources:
+      - *forms
+  - want: Reserve a field or the gazebo, or rent the Senior/Community Center
+    who: Department of Parks & Recreation
+    body: Field and gazebo permits, and Senior/Community Center availability and rates, are handled by the Recreation office.
+    contact: 973-748-2924
+    sources:
+      - *forms
+      - *directory
+  - want: Register an alarm or a security camera
+    who: Police Department
+    body: >-
+      All alarms in Glen Ridge must be registered with the Police
+      Department's Record Bureau. The department also asks residents to
+      register camera systems at their home or business.
+    contact: 973-748-2995
+    sources:
+      - *forms
+  - want: Tell the police my house will be empty
+    who: Police Department
+    body: The forms page has a vacant house notification form for when you are going to be away.
+    contact: 973-748-5400
+    sources:
+      - *forms
+      - *directory
+  - want: Get a police report
+    who: Police Department Record Bureau
+    body: The directory lists a Record Bureau line for police reports. For emergencies, call 911.
+    contact: 973-748-2995
+    sources:
+      - *directory
+  - want: Report a property maintenance problem
+    who: Building Department
+    body: The Building Department responds to property maintenance complaints.
+    contact: 973-748-8400 ext. 233, building@glenridgenj.org
+    sources:
+      - *building
+  - want: Reach the tax collector or the assessor
+    who: Finance
+    body: The directory lists the Tax & Water Collector at extension 236 and the Municipal Assessor at extension 249.
+    contact: 973-748-8400, collector@glenridgenj.org
+    to: /budget
+    to_label: Where the money goes
+    sources:
+      - *directory
+  - want: Reach Public Works
+    who: Department of Public Works
+    body: The department is based at the DPW Maintenance Yard, 122 Carteret Street.
+    contact: 973-748-8400 ext. 223, dpw@glenridgenj.org
+    sources:
+      - *directory
+  - want: Ask about a street tree
+    who: Borough Arborist
+    body: The Shade Tree Commission controls the planting and care of shade trees along the borough's streets and in its parks.
+    contact: 973-748-8400 ext. 202, trees@glenridgenj.org
+    institution: shade-tree-commission
+    sources:
+      - *directory
+      - { title: "Shade Tree Commission (borough page)", url: "https://www.glenridgenj.org/shadetree/" }
