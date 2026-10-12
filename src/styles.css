@@ -1168,3 +1168,187 @@ nav[aria-label='Breadcrumb'] a,
     display: none;
   }
 }
+
+/* Colour pass: a dark hero, tinted tool icons, accented cards. */
+
+.hero-band {
+  background:
+    radial-gradient(900px 420px at 88% -10%, rgba(64, 176, 160, 0.35), transparent 60%),
+    radial-gradient(700px 380px at 0% 110%, rgba(214, 158, 46, 0.22), transparent 60%),
+    linear-gradient(135deg, #14233a 0%, #173a48 55%, #0b5f58 100%);
+  color: #fff;
+}
+
+.hero {
+  padding-block: 72px 56px;
+}
+
+.hero__eyebrow {
+  color: #9fe0d4;
+}
+
+.hero__lede {
+  color: #dbe6ec;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button--light {
+  background: #fff;
+  color: var(--ink);
+}
+
+.button--light:hover {
+  background: #e6f3f0;
+  color: var(--ink);
+}
+
+.button--ghost {
+  background: transparent;
+  color: #fff;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6);
+}
+
+.button--ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.hero__bodies {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero__body {
+  display: inline-flex;
+  border-radius: 12px;
+  transition: transform 0.15s ease;
+}
+
+.hero__body .icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+
+.hero__body:hover {
+  transform: translateY(-2px);
+}
+
+.hero__body:hover .icon {
+  background: #fff;
+  color: var(--teal);
+}
+
+.hero__fine {
+  color: #c3d2db;
+}
+
+.hero__link {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hero__link:hover {
+  color: #9fe0d4;
+}
+
+.hero-band :focus-visible {
+  outline-color: #fff;
+}
+
+.icon--tool {
+  background: var(--ink);
+  color: #fff;
+}
+
+.tools .grid > li:nth-child(3n + 1) .icon--tool {
+  background: var(--teal);
+}
+
+.tools .grid > li:nth-child(3n + 2) .icon--tool {
+  background: #b7791f;
+}
+
+.tools {
+  padding-top: 8px;
+}
+
+.card--link {
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.card--link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(27, 42, 65, 0.1);
+}
+
+.inst-card:not(.inst-card--tool):not(.inst-card--soon) {
+  background: var(--card);
+  border-top: 4px solid var(--teal);
+}
+
+li:has(> .inst-card .icon--schools) > .inst-card {
+  border-top-color: var(--ink);
+}
+
+li:has(> .inst-card .icon--land-use) > .inst-card {
+  border-top-color: #b7791f;
+}
+
+li:has(> .inst-card .icon--services) > .inst-card {
+  border-top-color: #b4412f;
+}
+
+li:has(> .inst-card .icon--county-state) > .inst-card {
+  border-top-color: #5b4a94;
+}
+
+.map__elected {
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  background: #f3f8f7;
+}
+
+.map__residents {
+  background: linear-gradient(135deg, #14233a, #0b5f58);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card--link,
+  .hero__body {
+    transition: none;
+  }
+
+  .card--link:hover,
+  .hero__body:hover {
+    transform: none;
+  }
+}
+
+@media print {
+  .hero-band {
+    background: none;
+    color: #000;
+  }
+
+  .hero__actions,
+  .hero__bodies {
+    display: none;
+  }
+}

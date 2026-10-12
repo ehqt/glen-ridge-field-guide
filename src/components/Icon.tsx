@@ -87,6 +87,74 @@ const ICONS: Record<string, ReactNode> = {
   ),
 }
 
+// Icons for the "Everyday questions" tools, keyed by route.
+const TOOL_ICONS: Record<string, ReactNode> = {
+  // Compass
+  tour: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="m15.5 8.5-2 5-5 2 2-5 5-2Z" />
+    </>
+  ),
+  // Checklist
+  'i-want-to': (
+    <>
+      <path d="m4 6.5 1.5 1.5L8 5.5M4 12.5 5.5 14 8 11.5M4 18.5 5.5 20 8 17.5" />
+      <path d="M11 7h9M11 13h9M11 19h9" />
+    </>
+  ),
+  // Pie chart
+  budget: (
+    <>
+      <path d="M12 3a9 9 0 1 0 9 9h-9V3Z" />
+      <path d="M15 3.5A9 9 0 0 1 20.5 9H15V3.5Z" />
+    </>
+  ),
+  // Calendar
+  calendar: (
+    <>
+      <rect x="3.5" y="5" width="17" height="15" rx="2" />
+      <path d="M3.5 10h17M8 3v4M16 3v4" />
+    </>
+  ),
+  // Speech bubble
+  'first-meeting': (
+    <>
+      <path d="M4 5h16v11H10l-4.5 4v-4H4V5Z" />
+      <path d="M8 9h8M8 12.5h5" />
+    </>
+  ),
+  // Hammer
+  permits: (
+    <>
+      <path d="m13.5 6.5 4 4" />
+      <path d="M11 4.5 15 3l5.5 5.5-1.5 4-3-3L7 18.5a2 2 0 0 1-3-3L13 6.5l-2-2Z" />
+    </>
+  ),
+  // Book with a letter
+  glossary: (
+    <>
+      <path d="M5 4h12a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2V4Z" />
+      <path d="M5 18a2 2 0 0 1 2-2h12M10 12l2-5 2 5M10.8 10.5h2.4" />
+    </>
+  ),
+  // Two people
+  people: (
+    <>
+      <circle cx="9" cy="8.5" r="3" />
+      <path d="M3.5 19c.5-3 2.7-5 5.5-5s5 2 5.5 5" />
+      <path d="M15.5 6a3 3 0 0 1 0 5.5M17 14.5c1.9.6 3.2 2.3 3.5 4.5" />
+    </>
+  ),
+  // Printed page
+  'at-a-glance': (
+    <>
+      <path d="M6 3h9l4 4v14H6V3Z" />
+      <path d="M15 3v4h4M9 11h7M9 14.5h7M9 18h4" />
+    </>
+  ),
+}
+
 const BY_CATEGORY: Record<CategoryId, string> = {
   'borough-government': 'mayor-and-council',
   'land-use': 'planning-board',
@@ -102,6 +170,17 @@ export default function Icon({ id, category, size = 'md' }: { id: string; catego
     <span className={`icon icon--${size} icon--${category}`} aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
         {ICONS[id] ?? ICONS[BY_CATEGORY[category]]}
+      </svg>
+    </span>
+  )
+}
+
+/** The icon for one of the home page's tools. */
+export function ToolIcon({ name }: { name: string }) {
+  return (
+    <span className="icon icon--md icon--tool" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+        {TOOL_ICONS[name]}
       </svg>
     </span>
   )

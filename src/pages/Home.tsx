@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { formatDate, institutions, isAppointed, isElected, matchesQuery, namedMembers, NOT_CONFIRMED, oldestVerified, planned, services, useTitle } from '../data'
 import { CATEGORIES, type CategoryId } from '../categories'
-import Icon from '../components/Icon'
+import Icon, { ToolIcon } from '../components/Icon'
 import type { Institution, Planned, Service, Source } from '../schema'
 
 type Filter = CategoryId | 'all'
@@ -99,6 +99,7 @@ function RelationshipMap() {
         <ul className="map__row">
           {elected.map((b) => (
             <li key={b.id} className="map__elected">
+              <Icon id={b.id} category={b.id === 'board-of-education' ? 'schools' : 'borough-government'} />
               <MapLink item={b} />
             </li>
           ))}
@@ -168,21 +169,45 @@ export default function Home() {
 
   return (
     <>
-      <section className="container hero stack">
-        <div className="eyebrow eyebrow--lg">An unofficial guide for residents</div>
-        <h1 className="hero__title">Who runs what in Glen Ridge?</h1>
-        <p className="lede">
-          Every board, commission and office in the borough and the schools: what each one decides, who sits on it,
-          and where to go when you need something.
-        </p>
-        <p className="fine">
-          {verified && <>Pages last verified {formatDate(verified)} or later · </>}
-          Every page links to its official source ·{' '}
-          <Link className="text-link" to="/report">
-            Spot something wrong? Report an error
-          </Link>
-        </p>
-      </section>
+      <div className="hero-band">
+        <section className="container hero stack">
+          <div className="eyebrow eyebrow--lg hero__eyebrow">An unofficial guide for residents</div>
+          <h1 className="hero__title">Who runs what in Glen Ridge?</h1>
+          <p className="lede hero__lede">
+            Every board, commission and office in the borough and the schools: what each one decides, who sits on
+            it, and where to go when you need something.
+          </p>
+          <div className="hero__actions">
+            <Link className="button button--link button--light" to="/tour">
+              New here? Take the tour →
+            </Link>
+            <Link className="button button--link button--ghost" to="/i-want-to">
+              I want to…
+            </Link>
+          </div>
+          <ul className="hero__bodies" aria-label="Jump to a body">
+            {[...institutions, ...services].map((b) => (
+              <li key={b.id}>
+                <Link
+                  className="hero__body"
+                  to={'layer' in b ? `/services/${b.id}` : `/institutions/${b.id}`}
+                  title={b.name}
+                >
+                  <Icon id={b.id} category={b.category} />
+                  <span className="visually-hidden">{b.name}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="fine hero__fine">
+            {verified && <>Pages last verified {formatDate(verified)} or later · </>}
+            Every page links to its official source ·{' '}
+            <Link className="hero__link" to="/report">
+              Spot something wrong? Report an error
+            </Link>
+          </p>
+        </section>
+      </div>
 
       <section id="map" tabIndex={-1} className="container section stack" aria-labelledby="map-heading">
         <div className="stack stack--sm">
@@ -200,6 +225,7 @@ export default function Home() {
         <ul className="grid">
           <li>
             <Link to="/tour" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="tour" />
               <span className="inst-card__name">New here? Take the tour</span>
               <span className="inst-card__summary">
                 Five things to know about how Glen Ridge is run, each with a place to read more.
@@ -209,6 +235,7 @@ export default function Home() {
           </li>
           <li>
             <Link to="/i-want-to" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="i-want-to" />
               <span className="inst-card__name">I want to…</span>
               <span className="inst-card__summary">
                 Request a record, license a dog, hold a block party: which borough office handles it.
@@ -218,6 +245,7 @@ export default function Home() {
           </li>
           <li>
             <Link to="/budget" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="budget" />
               <span className="inst-card__name">Where the money goes</span>
               <span className="inst-card__summary">
                 How the property tax levy splits among the schools, the borough and the county, and who sets each
@@ -228,6 +256,7 @@ export default function Home() {
           </li>
           <li>
             <Link to="/calendar" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="calendar" />
               <span className="inst-card__name">Civic calendar</span>
               <span className="inst-card__summary">
                 When each body meets, the dated meetings coming up, and what comes round every year.
@@ -237,6 +266,7 @@ export default function Home() {
           </li>
           <li>
             <Link to="/first-meeting" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="first-meeting" />
               <span className="inst-card__name">Your first public meeting</span>
               <span className="inst-card__summary">
                 What the law says about attending and speaking, and each body's own rules for public comment.
@@ -246,6 +276,7 @@ export default function Home() {
           </li>
           <li>
             <Link to="/permits" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="permits" />
               <span className="inst-card__name">Permit finder</span>
               <span className="inst-card__summary">
                 Building, changing a historic exterior, removing a tree: which office or board to ask first.
@@ -255,6 +286,7 @@ export default function Home() {
           </li>
           <li>
             <Link to="/glossary" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="glossary" />
               <span className="inst-card__name">Glossary</span>
               <span className="inst-card__summary">
                 Variance, ordinance, executive session and other terms you will meet on an agenda.
@@ -264,6 +296,7 @@ export default function Home() {
           </li>
           <li>
             <Link to="/people" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="people" />
               <span className="inst-card__name">People index</span>
               <span className="inst-card__summary">
                 Everyone named in the guide in one list, so you can see who serves on more than one body.
@@ -273,6 +306,7 @@ export default function Home() {
           </li>
           <li>
             <Link to="/at-a-glance" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="at-a-glance" />
               <span className="inst-card__name">Glen Ridge at a glance</span>
               <span className="inst-card__summary">
                 Every body on one printable page: what it does, when it meets and how to reach it.
