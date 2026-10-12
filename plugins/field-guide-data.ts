@@ -6,7 +6,7 @@ import { basename, join, resolve } from 'node:path'
 import type { Plugin } from 'vite'
 import { parse } from 'yaml'
 import { z } from 'zod'
-import { budgetSchema, calendarSchema, guideSchema, institutionSchema, plannedSchema } from '../src/schema.ts'
+import { budgetSchema, calendarSchema, guideSchema, institutionSchema, plannedSchema, serviceSchema } from '../src/schema.ts'
 
 const VIRTUAL_ID = 'virtual:field-guide-data'
 const RESOLVED_ID = '\0' + VIRTUAL_ID
@@ -43,10 +43,26 @@ export function loadFieldGuideData(root: string) {
       return [inst]
     })
 
+  const servicesDir = join(root, 'data', 'services')
+  const seen = new Set(institutions.map((i) => i.id))
+  const services = readdirSync(servicesDir)
+    .filter((f) => f.endsWith('.yaml'))
+    .sort()
+    .flatMap((f) => {
+      const file = join(servicesDir, f)
+      const service = check(serviceSchema, file, errors)
+      if (!service) return []
+      if (service.id !== basename(f, '.yaml')) {
+        errors.push(`${file}\n  - id: "${service.id}" must match the file name`)
+      }
+      if (seen.has(service.id)) errors.push(`${file}\n  - id: "${service.id}" is used more than once`)
+      seen.add(service.id)
+      return [service]
+    })
+
   const plannedFile = join(root, 'data', 'planned.yaml')
   const planned = check(plannedSchema, plannedFile, errors) ?? []
 
-  const seen = new Set(institutions.map((i) => i.id))
   for (const p of planned) {
     if (seen.has(p.id)) errors.push(`${plannedFile}\n  - id: "${p.id}" is used more than once`)
     seen.add(p.id)
@@ -97,7 +113,7 @@ export function loadFieldGuideData(root: string) {
   if (errors.length) {
     throw new Error(`Field guide data is invalid:\n\n${errors.join('\n\n')}\n`)
   }
-  return { institutions, planned, budget: budget!, calendar, guide: guide! }
+  return { institutions, services, planned, budget: budget!, calendar, guide: guide! }
 }
 
 export function fieldGuideData(): Plugin {
@@ -113,7 +129,7 @@ export function fieldGuideData(): Plugin {
     load(moduleId) {
       if (moduleId !== RESOLVED_ID) return undefined
       const data = loadFieldGuideData(root)
-      return `export const institutions = ${JSON.stringify(data.institutions)}\nexport const planned = ${JSON.stringify(data.planned)}\nexport const budget = ${JSON.stringify(data.budget)}\nexport const calendar = ${JSON.stringify(data.calendar)}\nexport const guide = ${JSON.stringify(data.guide)}\n`
+      return `export const institutions = ${JSON.stringify(data.institutions)}\nexport const services = ${JSON.stringify(data.services)}\nexport const planned = ${JSON.stringify(data.planned)}\nexport const budget = ${JSON.stringify(data.budget)}\nexport const calendar = ${JSON.stringify(data.calendar)}\nexport const guide = ${JSON.stringify(data.guide)}\n`
     },
     configureServer(server) {
       const dataDir = resolve(root, 'data')

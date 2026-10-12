@@ -81,6 +81,24 @@ export const institutionSchema = z.looseObject({
   needs_verification: z.array(text).default([]),
 })
 
+// A department or contracted service: no members, meetings or public comment.
+export const serviceSchema = z.strictObject({
+  id,
+  name: text,
+  aliases: z.array(text).default([]),
+  category: z.enum(categoryIds),
+  // Where it sits on the relationship map; sources[0] is the backing source.
+  layer: z.enum(['department', 'contracted']),
+  summary: text,
+  facts: z.array(text),
+  people: z.array(z.strictObject({ name: text, role: text, credentials: text.optional(), contact: text.optional() })),
+  contact: z.record(z.string(), text),
+  links: z.record(z.string(), z.url().nullable()),
+  last_verified: z.iso.date('last_verified must be a YYYY-MM-DD date'),
+  sources: z.array(source).min(1, 'at least one source is required'),
+  needs_verification: z.array(text).default([]),
+})
+
 export const plannedSchema = z.array(
   z
     .strictObject({
@@ -191,4 +209,5 @@ export type Source = z.infer<typeof source>
 export type Budget = z.infer<typeof budgetSchema>
 export type Institution = z.infer<typeof institutionSchema>
 export type Person = z.infer<typeof person>
+export type Service = z.infer<typeof serviceSchema>
 export type Planned = z.infer<typeof plannedSchema>[number]

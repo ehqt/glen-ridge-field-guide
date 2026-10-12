@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import IWantTo from './pages/IWantTo'
 import InstitutionPage from './pages/InstitutionPage'
 import NotFound from './pages/NotFound'
+import ServicePage from './pages/ServicePage'
 import Tour from './pages/Tour'
 import OnePager from './pages/OnePager'
 import PermitFinder from './pages/PermitFinder'
@@ -20,6 +21,7 @@ export default function App() {
       <Route element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="institutions/:id" element={<InstitutionPage />} />
+        <Route path="services/:id" element={<ServicePage />} />
         <Route path="budget" element={<BudgetPage />} />
         <Route path="at-a-glance" element={<OnePager />} />
         <Route path="calendar" element={<CalendarPage />} />

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { formatDate, institutions, isAppointed, isElected, matchesQuery, namedMembers, NOT_CONFIRMED, oldestVerified, planned, useTitle } from '../data'
+import { formatDate, institutions, isAppointed, isElected, matchesQuery, namedMembers, NOT_CONFIRMED, oldestVerified, planned, services, useTitle } from '../data'
 import { CATEGORIES, type CategoryId } from '../categories'
-import type { Institution, Planned, Source } from '../schema'
+import type { Institution, Planned, Service, Source } from '../schema'
 
 type Filter = CategoryId | 'all'
 
@@ -23,11 +23,27 @@ function InstitutionCard({ inst }: { inst: Institution }) {
   )
 }
 
-type MapItem = { id: string; name: string; live: boolean; source?: Source }
+function ServiceCard({ service }: { service: Service }) {
+  return (
+    <li>
+      <Link to={`/services/${service.id}`} className="card card--link inst-card">
+        <span className="eyebrow">{CATEGORIES[service.category]}</span>
+        <span className="inst-card__name">{service.name}</span>
+        <span className="inst-card__summary">{service.summary}</span>
+        <span className="inst-card__meta">
+          <span>{service.layer === 'contracted' ? 'Contracted service' : 'Borough department'}</span>
+          <span>Open page →</span>
+        </span>
+      </Link>
+    </li>
+  )
+}
+
+type MapItem = { id: string; name: string; live: boolean; source?: Source; to?: string }
 
 function MapLink({ item, className }: { item: MapItem; className?: string }) {
   return item.live ? (
-    <Link className={className} to={`/institutions/${item.id}`}>
+    <Link className={className} to={item.to ?? `/institutions/${item.id}`}>
       {item.name}
     </Link>
   ) : (
@@ -48,8 +64,12 @@ function RelationshipMap() {
     ...live.filter((i) => isAppointed(i.inst)),
     ...planned.filter((p) => p.layer === 'appointed').map((p) => ({ id: p.id, name: p.name, live: false, source: p.source })),
   ]
-  const plannedIn = (layer: Planned['layer']): MapItem[] =>
-    planned.filter((p) => p.layer === layer).map((p) => ({ id: p.id, name: p.name, live: false, source: p.source }))
+  const plannedIn = (layer: Planned['layer']): MapItem[] => [
+    ...services
+      .filter((s) => s.layer === layer)
+      .map((s) => ({ id: s.id, name: s.name, live: true, source: s.sources[0], to: `/services/${s.id}` })),
+    ...planned.filter((p) => p.layer === layer).map((p) => ({ id: p.id, name: p.name, live: false, source: p.source })),
+  ]
   const rows = [
     { label: 'Borough departments', items: plannedIn('department') },
     { label: 'Bought from a neighbouring town', items: plannedIn('contracted') },
@@ -89,13 +109,26 @@ function RelationshipMap() {
           {rows.map((row) => (
             <div key={row.label} className="map__above">
               <span className="eyebrow eyebrow--muted">{row.label}</span>
-              <span>{row.items.map((a) => a.name).join(' · ')}</span>
+              <span>
+                {row.items.map((a, i) => (
+                  <span key={a.id}>
+                    {i > 0 && ' · '}
+                    {a.live ? (
+                      <Link className="text-link" to={a.to!}>
+                        {a.name}
+                      </Link>
+                    ) : (
+                      a.name
+                    )}
+                  </span>
+                ))}
+              </span>
             </div>
           ))}
         </div>
       </div>
       <p className="fine">
-        Dashed names and the rows below them do not have a page yet. Sources for this diagram:{' '}
+        Dashed names, and names without a link, do not have a page yet. Sources for this diagram:{' '}
         {[...sources.values()].map((s, i) => (
           <span key={s.url}>
             {i > 0 && ' · '}
@@ -117,6 +150,10 @@ export default function Home() {
 
   const inFilter = (c: CategoryId) => filter === 'all' || c === filter
   const shown = institutions.filter((i) => inFilter(i.category) && matchesQuery(i, query))
+  const q = query.trim().toLowerCase()
+  const shownServices = services.filter(
+    (s) => inFilter(s.category) && (!q || [s.name, ...s.aliases, s.summary, ...s.people.map((p) => p.name)].some((t) => t.toLowerCase().includes(q))),
+  )
   const soon = planned.filter((p) => inFilter(p.category) && p.name.toLowerCase().includes(query.trim().toLowerCase()))
 
   return (
@@ -266,13 +303,21 @@ export default function Home() {
           </div>
 
           <p className="fine" aria-live="polite">
-            {shown.length} with a page · {soon.length} coming soon
+            {shown.length + shownServices.length} with a page · {soon.length} coming soon
           </p>
 
           {shown.length > 0 && (
             <ul className="grid">
               {shown.map((inst) => (
                 <InstitutionCard key={inst.id} inst={inst} />
+              ))}
+            </ul>
+          )}
+
+          {shownServices.length > 0 && (
+            <ul className="grid">
+              {shownServices.map((s) => (
+                <ServiceCard key={s.id} service={s} />
               ))}
             </ul>
           )}
@@ -289,7 +334,7 @@ export default function Home() {
             </ul>
           )}
 
-          {shown.length + soon.length === 0 && <p className="muted">Nothing matches that search yet.</p>}
+          {shown.length + shownServices.length + soon.length === 0 && <p className="muted">Nothing matches that search yet.</p>}
         </div>
       </section>
     </>

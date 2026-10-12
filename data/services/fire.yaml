@@ -1,0 +1,34 @@
+# Glen Ridge Field Guide: one service file. From the borough's Fire Service
+# page (read in a browser 2026-10-11) and its 2026 User Friendly Budget.
+
+id: fire
+name: Fire protection (Montclair Township)
+aliases: [Fire Service, Fire Department, Montclair Fire Department]
+category: services
+layer: contracted
+
+summary: >
+  Glen Ridge has no fire department of its own. It contracts emergency fire
+  services from the Montclair Fire Department. In an emergency, call 911.
+facts:
+  - The borough's 2026 budget lists fire as a shared service received from Montclair Township for January 1 to December 31, 2026, at $1,033,333
+  - The Montclair department is made up of full-time paid staff
+  - The borough's page describes it as four firehouses and eighty-five professional firefighters, with three engine companies and two ladder truck companies on duty every shift
+  - The borough's page says response time to alarms within the borough is three minutes or less
+
+people: []
+
+contact:
+  emergency: "911"
+
+links:
+  official_page: https://www.glenridgenj.org/fire/
+
+last_verified: 2026-10-11
+sources:
+  - { title: "2026 Glen Ridge User Friendly Budget (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/05/2026-GlenRidge-UserFriendly-Budget-municode0708.pdf" }
+  - { title: "Fire Service (borough page)", url: "https://www.glenridgenj.org/fire/" }
+
+needs_verification:
+  - The term and text of the agreement with Montclair
+  - A non-emergency number for fire matters; the borough page gives none

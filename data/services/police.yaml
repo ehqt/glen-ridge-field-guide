@@ -1,0 +1,49 @@
+# Glen Ridge Field Guide: one service file (a department or contracted
+# service, not a board: no members or meetings). From the borough's Public
+# Safety page and Municipal Directory, read in a browser 2026-10-11.
+
+id: police
+name: Police Department
+aliases: [Glen Ridge Police Department, GRPD, Public Safety]
+category: services
+layer: department
+
+summary: >
+  The borough's police department, based at 3 Herman Street. For a police,
+  fire or medical emergency, call 911.
+facts:
+  - The Record Bureau handles police reports, and all alarms in Glen Ridge must be registered with it
+  - The borough's directory also lists a Detective Bureau, Crime Prevention and a Juvenile Aid Bureau
+  - School crossing guards staff the intersections marked on the borough's Safe Routes to School map
+  - The department sends community information to residents through the Nixle service
+  - Glen Ridge residents can book a child car seat installation by calling 973-748-4116
+  - The department says its e-mail is monitored Monday through Friday during normal business hours and is not an emergency contact
+  - The Public Safety page links to the department's annual reports and policies
+
+people:
+  - { name: Sean Quinn,       role: Chief of Police, credentials: M.S.F.S., contact: 973-748-5400 ext. 110 }
+  - { name: Dean Gnardellis,  role: Captain,         contact: 973-748-5400 ext. 113 }
+  - { name: Timothy Faranda,  role: Lieutenant,      contact: 973-748-5400 ext. 117 }
+  - { name: Daniel Manley,    role: Lieutenant,      contact: 973-748-5400 ext. 115 }
+
+contact:
+  emergency: "911"
+  main_phone: 973-748-5400
+  records_and_police_reports: 973-748-2995
+  detective_bureau_and_crime_prevention: 973-748-4116
+  juvenile_aid_bureau: 973-748-5400 ext. 120
+  address: 3 Herman Street, Glen Ridge, NJ 07028
+
+links:
+  official_page: https://www.glenridgenj.org/public/
+  community_alerts: https://local.nixle.com/zipcode/07028/
+
+last_verified: 2026-10-11
+sources:
+  - { title: "Municipal Directory (borough page)", url: "https://www.glenridgenj.org/grdirectory/" }
+  - { title: "Public Safety (borough page)", url: "https://www.glenridgenj.org/public/" }
+  - { title: "Easy Access Forms (borough page)", url: "https://www.glenridgenj.org/permits/" }
+
+needs_verification:
+  - Who appoints the Chief of Police
+  - The outcome of the accreditation the department was seeking when the page was read

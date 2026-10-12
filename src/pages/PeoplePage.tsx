@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { institutions, useTitle } from '../data'
+import { institutions, services, useTitle } from '../data'
 
-type Seat = { instId: string; instName: string; role: string }
+type Seat = { instId: string; instName: string; role: string; to: string }
 type PersonEntry = { name: string; sortKey: string; seats: Seat[] }
 
 /**
@@ -12,8 +12,12 @@ type PersonEntry = { name: string; sortKey: string; seats: Seat[] }
  */
 function buildIndex(): PersonEntry[] {
   const byKey = new Map<string, PersonEntry>()
-  for (const inst of institutions) {
-    for (const p of [...inst.members, ...inst.professionals]) {
+  const groups = [
+    ...institutions.map((i) => ({ id: i.id, name: i.name, to: `/institutions/${i.id}`, people: [...i.members, ...i.professionals] })),
+    ...services.map((s) => ({ id: s.id, name: s.name, to: `/services/${s.id}`, people: s.people })),
+  ]
+  for (const inst of groups) {
+    for (const p of inst.people) {
       if (!p.name) continue
       const parts = p.name.replace(/,.*$/, '').split(/\s+/).filter((w) => !/^[A-Z]\.$/.test(w))
       const first = parts[0]
@@ -21,7 +25,7 @@ function buildIndex(): PersonEntry[] {
       const key = `${first} ${last}`.toLowerCase()
       const entry = byKey.get(key) ?? { name: p.name, sortKey: `${last} ${first}`.toLowerCase(), seats: [] }
       if (p.name.length > entry.name.length) entry.name = p.name
-      entry.seats.push({ instId: inst.id, instName: inst.name, role: p.role })
+      entry.seats.push({ instId: inst.id, instName: inst.name, role: p.role, to: inst.to })
       byKey.set(key, entry)
     }
   }
@@ -92,7 +96,7 @@ export default function PeoplePage() {
                       {p.seats.map((s) => (
                         <li key={s.instId + s.role}>
                           {s.role},{' '}
-                          <Link className="text-link" to={`/institutions/${s.instId}`}>
+                          <Link className="text-link" to={s.to}>
                             {s.instName}
                           </Link>
                         </li>

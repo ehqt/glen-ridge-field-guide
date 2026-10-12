@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import { budget, findInstitution, guide, institutions, isElected, planned, useTitle } from '../data'
+import { budget, findInstitution, guide, institutions, isElected, services, useTitle } from '../data'
 import SourceLinks from '../components/SourceLinks'
 import type { Institution, Source } from '../schema'
 
@@ -34,7 +34,7 @@ function steps(): Step[] {
   const elected = institutions.filter(isElected)
   const total = budget.shares.reduce((n, s) => n + s.levy, 0)
   const landUse = institutions.filter((i) => i.category === 'land-use')
-  const contracted = planned.filter((p) => p.layer === 'contracted')
+  const contracted = services.filter((s) => s.layer === 'contracted')
   const health = findInstitution('board-of-health')
   const library = findInstitution('library-board-of-trustees')
 
@@ -91,7 +91,14 @@ function steps(): Step[] {
       body: (
         <ul className="list">
           {contracted.map((p) => (
-            <li key={p.id}>{p.name}</li>
+            <li key={p.id}>
+              <span>
+                <Link className="text-link" to={`/services/${p.id}`}>
+                  {p.name}
+                </Link>
+                : {p.summary}
+              </span>
+            </li>
           ))}
           {health && (
             <li>
@@ -109,7 +116,7 @@ function steps(): Step[] {
           )}
         </ul>
       ),
-      sources: unique([...contracted.map((p) => p.source), officialPage(health), officialPage(library)]),
+      sources: unique([...contracted.map((p) => p.sources[0]), officialPage(health), officialPage(library)]),
       next: { label: 'Glen Ridge at a glance', to: '/at-a-glance' },
     },
     {

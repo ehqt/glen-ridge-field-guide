@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
-import { budget, calendar, guide, institutions, planned } from 'virtual:field-guide-data'
+import { budget, calendar, guide, institutions, planned, services } from 'virtual:field-guide-data'
 import type { Institution } from './schema'
 
-export { budget, calendar, guide, institutions, planned }
+export { budget, calendar, guide, institutions, planned, services }
 
 export const NOT_CONFIRMED = 'Not yet confirmed'
 export const SITE_NAME = 'Glen Ridge Field Guide'
@@ -39,7 +39,7 @@ export function formatDate(iso: string): string {
 
 /** The oldest last_verified across all institution files. */
 export function oldestVerified(): string | undefined {
-  return institutions.map((i) => i.last_verified).sort()[0]
+  return [...institutions, ...services].map((i) => i.last_verified).sort()[0]
 }
 
 export function matchesQuery(inst: Institution, query: string): boolean {
