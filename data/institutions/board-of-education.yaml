@@ -15,7 +15,8 @@ summary: >
 powers:
   - Adopt the school district budget
   - Set district policy
-  - Appoint the superintendent and the business administrator
+  - Appoint the Superintendent of Schools, and approve the Superintendent's contract by a recorded roll call vote at a public meeting
+  - Appoint the business administrator
 limits:
   - null   # TO VERIFY
 
@@ -28,6 +29,24 @@ elections: November general election (since 2013)   # secondary source
 # to use it until an official record is found (2026-10-11).
 seated_source: { title: "Jersey Bee, Glen Ridge 2025 unofficial general election results for school board, Nov 5 2025", url: "https://jerseybee.org/2025/11/05/glen-ridge-2025-unofficial-general-election-results-for-school-board/" }
 reports_to: null   # TO VERIFY: state oversight (NJ Department of Education)
+
+# Extra sourced sections shown on the page.
+notes:
+  - title: The Superintendent of Schools
+    body: >-
+      The board appoints the Superintendent and vests in that office the
+      primary responsibility for running the district. Under board policy
+      the Superintendent is the district's chief executive and
+      administrative officer, carries out the policies the board sets,
+      reports directly to the board, and directly or indirectly supervises
+      everyone the board employs. The Superintendent has a seat on the board
+      and may speak at its meetings, but has no vote. The employment
+      contract runs three to five years, must be approved by a majority of
+      the full board in a recorded roll call vote at a public meeting, and is
+      reviewed by the Executive County Superintendent.
+    sources:
+      - { title: "Board Policy 1220, Employment of Chief School Administrator (PDF)", url: "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5665/Grps/a3a91499-40c1-435d-9180-4ff2121a4615/1220_Employment_of_Chief_School_Administrator.pdf" }
+      - { title: "Board Policy 1230, Superintendent's Duties (PDF)", url: "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5665/Grps/005d5ede-5fb3-4b88-8fb0-39ba97f9e2e2/1230_Superintendent_s_Duties.pdf" }
 
 members:
   # From the district's "Board of Education Members" page, read 2026-10-11.
@@ -146,6 +165,8 @@ sources:
   - { title: Board of Education Members (district page), url: "https://www.glenridge.org/page/board-of-education-members" }
   - { title: "Board agenda, October 6, 2026", url: "https://docs.google.com/document/d/12PGfuR2Bdc-a1D94CJ2tOZjpc0qmERrvId-g2FJizNo/edit?usp=sharing" }
   - { title: "Board agenda, September 8, 2026", url: "https://docs.google.com/document/d/1Q9Zi_v7PT8bErHUIRpu1wCoCWcsQ-gIrq74QQcJfJmM/edit?usp=sharing" }
+  - { title: "Board Policy 1220, Employment of Chief School Administrator (PDF)", url: "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5665/Grps/a3a91499-40c1-435d-9180-4ff2121a4615/1220_Employment_of_Chief_School_Administrator.pdf" }
+  - { title: "Board Policy 1230, Superintendent's Duties (PDF)", url: "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5665/Grps/005d5ede-5fb3-4b88-8fb0-39ba97f9e2e2/1230_Superintendent_s_Duties.pdf" }
   - { title: Meeting Procedures (district page), url: "https://www.glenridge.org/page/meeting-procedures" }
   - { title: "Glen Ridge BOE Meeting Dates 2026 (PDF)", url: "https://drive.google.com/file/d/12mULir1vsh5P2TI7_0nUAGKahYqmG3aE/view?usp=sharing" }
   - { title: Glen Ridge Public Schools site navigation, url: "https://www.glenridge.org" }

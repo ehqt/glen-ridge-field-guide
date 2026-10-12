@@ -120,15 +120,23 @@ process:
       Education's schedule also put adoption on the night of its hearing, and
       calls for posting a user-friendly budget within 48 hours.
     sources: [*adoption, *schoolcal]
+  - title: The county's budget runs on its own calendar
+    body: >-
+      The Board of County Commissioners approved the 2026 county budget on
+      March 4, 2026 and set its public hearing for March 25, 2026 at 5:00
+      pm at the Hall of Records in Newark. The budget raises $468,435,000
+      in county purpose taxes across all Essex County towns, up from
+      $460,435,000 in 2025.
+    sources:
+      - { title: "Essex County 2026 budget (PDF)", url: "https://essexcountynj.org/wp-content/uploads/2026/05/2026-County-Budget.pdf" }
   - title: The levies become tax rates
     body: >-
       Each rate is its levy divided by the borough's total taxable valuation,
       stated per $100. In 2025, $60.7 million in levies over $1.73 billion in
       taxable value gave the total rate of 3.508.
     sources: [*dca, *ufb]
-process_note: Essex County's budget process is not covered here yet.
 
 needs_verification:
   - Certified 2026 figures. The state had not published a 2026 workbook as of the verified date.
   - Total budget size for the schools and the county. The figures here are tax levies, not full budgets, which also draw on state aid and other revenue.
-  - Essex County's budget calendar and hearing dates.
+  - The date the 2026 county budget was adopted.

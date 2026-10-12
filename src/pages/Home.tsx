@@ -59,9 +59,12 @@ function RelationshipMap() {
   const live = institutions
     .filter((i) => i.seated_source)
     .map((i) => ({ id: i.id, name: i.name, live: true, source: i.seated_source, inst: i }))
-  const elected: MapItem[] = live.filter((i) => isElected(i.inst))
+  // The county is elected too, but it is a separate government: it goes in its own row.
+  const local = live.filter((i) => i.inst.category !== 'county-state')
+  const above = live.filter((i) => i.inst.category === 'county-state').map((i) => ({ ...i, to: `/institutions/${i.id}` }))
+  const elected: MapItem[] = local.filter((i) => isElected(i.inst))
   const appointed: MapItem[] = [
-    ...live.filter((i) => isAppointed(i.inst)),
+    ...local.filter((i) => isAppointed(i.inst)),
     ...planned.filter((p) => p.layer === 'appointed').map((p) => ({ id: p.id, name: p.name, live: false, source: p.source })),
   ]
   const plannedIn = (layer: Planned['layer']): MapItem[] => [
@@ -73,7 +76,7 @@ function RelationshipMap() {
   const rows = [
     { label: 'Borough departments', items: plannedIn('department') },
     { label: 'Bought from a neighbouring town', items: plannedIn('contracted') },
-    { label: 'Also taxes Glen Ridge property', items: plannedIn('above') },
+    { label: 'Also taxes Glen Ridge property', items: [...above, ...plannedIn('above')] },
   ].filter((row) => row.items.length > 0)
 
   const sources = new Map<string, Source>()
@@ -303,7 +306,7 @@ export default function Home() {
           </div>
 
           <p className="fine" aria-live="polite">
-            {shown.length + shownServices.length} with a page · {soon.length} coming soon
+            {shown.length + shownServices.length} with a page{soon.length > 0 && ` · ${soon.length} coming soon`}
           </p>
 
           {shown.length > 0 && (

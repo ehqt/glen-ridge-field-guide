@@ -29,6 +29,16 @@
   institution: library-board-of-trustees
   sources:
     - { title: "Board of Trustees (library page)", url: "https://www.glenridgelibrary.org/board-of-trustees.html" }
+- when: March
+  kind: Budget
+  title: County budget approval and public hearing
+  note: >-
+    In 2026 the Board of County Commissioners approved the county budget
+    March 4 and set the public hearing for March 25 at 5:00 pm at the Hall
+    of Records in Newark.
+  institution: essex-county
+  sources:
+    - { title: "Essex County 2026 budget (PDF)", url: "https://essexcountynj.org/wp-content/uploads/2026/05/2026-County-Budget.pdf" }
 - when: March to April
   kind: Budget
   title: School budget presentation, public hearing and adoption

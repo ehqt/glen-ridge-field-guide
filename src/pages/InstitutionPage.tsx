@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import { findInstitution, formatDate, NOT_CONFIRMED, useTitle } from '../data'
 import { CATEGORIES } from '../categories'
+import SourceLinks from '../components/SourceLinks'
 import type { Person } from '../schema'
 import NotFound from './NotFound'
 
@@ -159,6 +160,16 @@ export default function InstitutionPage() {
               </>
             )}
           </section>
+
+          {inst.notes.map((note) => (
+            <section key={note.title} className="stack" aria-label={note.title}>
+              <h2>{note.title}</h2>
+              <div className="card stack stack--sm">
+                <p>{note.body}</p>
+                <SourceLinks sources={note.sources} />
+              </div>
+            </section>
+          ))}
 
           <section id="sources" tabIndex={-1} className="stack" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources</h2>

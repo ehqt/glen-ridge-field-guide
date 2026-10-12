@@ -1,0 +1,119 @@
+# Glen Ridge Field Guide: one institution file
+# Limited to what touches a Glen Ridge resident: the County Executive, the
+# Board of County Commissioners, and the county budget. From the county's
+# site (essexcountynj.org), the commissioners' site (ecfnj.com) and the
+# county's 2026 budget document, read 2026-10-11.
+
+id: essex-county
+name: Essex County government
+aliases: [Essex County, County of Essex, Board of County Commissioners, County Commissioners, County Executive]
+category: county-state
+
+summary: >
+  A separate government that taxes Glen Ridge property. It is led by a
+  County Executive and a nine-member Board of County Commissioners. Glen
+  Ridge is in Commissioner District 5.
+powers:
+  # The board's powers, from its own "Definition of the County Commissioners" page.
+  - Approve the county's annual operating and capital budgets
+  - Pass county ordinances and resolutions
+  - Advise and consent to appointments
+  - Override a veto of the County Executive
+  - Adopt and amend the county's Administrative Code
+  - Conduct investigations
+limits:
+  - null   # TO VERIFY
+
+how_seated: >-
+  Elected by voters. The nine commissioners are elected at the November
+  general election: five from districts and four at large. District 5
+  covers Belleville, Bloomfield, Glen Ridge, Montclair and Nutley.
+seated_source: { title: "Definition of the County Commissioners (commissioners' page)", url: "https://ecfnj.com/cms/15/Definition-of-the-County-Commissioners" }
+reports_to: null
+member_terms: concurrent; the county's 2026 budget lists every commissioner's term as expiring December 31, 2026
+
+members:
+  # Names, offices and seats are from the commissioners' Members page. Term
+  # ends are from the data sheet in the county's 2026 budget.
+  - { name: Carlos M. Pomares,       role: "President; District 5 (includes Glen Ridge)", term_ends: "2026-12-31" }
+  - { name: "A'Dorian Murray-Thomas", role: "Vice President; District 2",                  term_ends: "2026-12-31" }
+  - { name: Robert Mercado,          role: District 1,                                    term_ends: "2026-12-31" }
+  - { name: Tyshammie L. Cooper,     role: District 3,                                    term_ends: "2026-12-31" }
+  - { name: Leonard M. Luciano,      role: District 4,                                    term_ends: "2026-12-31" }
+  - { name: Brendan W. Gill,         role: At-Large,                                      term_ends: "2026-12-31" }
+  - { name: Wayne L. Richardson,     role: At-Large,                                      term_ends: "2026-12-31" }
+  - { name: Patricia Sebold,         role: At-Large,                                      term_ends: "2026-12-31" }
+  - { name: Romaine Sermons,         role: At-Large,                                      term_ends: "2026-12-31" }
+
+professionals:
+  - { name: "Joseph N. DiVincenzo, Jr.", role: County Executive }
+  - { name: Kathy Brown,                 role: Deputy Clerk of the Board of County Commissioners }
+  - { name: Khalifah Shabazz,            role: Board Counsel }
+roster_as_of: 2026
+
+meets:
+  schedule: Wednesdays at 5:00 pm, on dates the board sets each year
+  schedule_note: >
+    Combined conference and board meetings, at which formal action is taken.
+    The board holds its organization meeting in the first week of January
+    and elects its President and Vice-President there. Meetings can be
+    watched at ecfnj.com and on the commissioners' YouTube channel.
+  location: Room 506, 5th floor, Hall of Records, Newark
+  quorum: null
+  # From the commissioners' "Meeting Schedule 2026" page.
+  dates:
+    - { date: 2026-01-07, note: Organization meeting }
+    - { date: 2026-01-14 }
+    - { date: 2026-02-04 }
+    - { date: 2026-02-18 }
+    - { date: 2026-03-04 }
+    - { date: 2026-03-25 }
+    - { date: 2026-04-15 }
+    - { date: 2026-04-29 }
+    - { date: 2026-05-13 }
+    - { date: 2026-05-27 }
+    - { date: 2026-06-10 }
+    - { date: 2026-07-15 }
+    - { date: 2026-08-12 }
+    - { date: 2026-09-02 }
+    - { date: 2026-09-16 }
+    - { date: 2026-10-07 }
+    - { date: 2026-10-21 }
+    - { date: 2026-11-04 }
+    - { date: 2026-12-02 }
+    - { date: 2026-12-16 }
+
+how_to_engage:
+  public_comment: null   # TO VERIFY: not stated on the pages read
+  contact:
+    commissioners_phone: 973-621-4486
+    commissioners_address: 465 Dr. Martin Luther King Jr. Blvd., Room 558, Hall of Records, Newark, NJ 07102
+    county_executive_phone: 973-621-4400
+
+links:
+  official_page: https://essexcountynj.org/
+  county_executive: https://essexcountynj.org/essex-county-executive-2/
+  commissioners: https://ecfnj.com/
+  members: https://ecfnj.com/cms/26/Members
+  districts: https://ecfnj.com/cms/12/Breakdown-of-Commissioner-Districts
+  meetings_url: https://ecfnj.com/cms/18/Meeting-Schedule-2026
+  agendas_url: https://ecode360.com/ES1525/documents/Agendas
+  budget: https://essexcountynj.org/department-of-finance/
+  county_clerk: https://www.essexclerk.com
+
+last_verified: 2026-10-11
+verification_level: executive, commissioners, 2026 meetings and budget dates; other county offices are not covered
+sources:
+  - { title: "Members (commissioners' page)", url: "https://ecfnj.com/cms/26/Members" }
+  - { title: "Definition of the County Commissioners (commissioners' page)", url: "https://ecfnj.com/cms/15/Definition-of-the-County-Commissioners" }
+  - { title: "Breakdown of Commissioner Districts (commissioners' page)", url: "https://ecfnj.com/cms/12/Breakdown-of-Commissioner-Districts" }
+  - { title: "Meeting Schedule 2026 (commissioners' page)", url: "https://ecfnj.com/cms/18/Meeting-Schedule-2026" }
+  - { title: "Essex County Executive (county page)", url: "https://essexcountynj.org/essex-county-executive-2/" }
+  - { title: "Essex County 2026 budget (PDF)", url: "https://essexcountynj.org/wp-content/uploads/2026/05/2026-County-Budget.pdf" }
+
+needs_verification:
+  - The commissioners' Members page gives District 2 to A'Dorian Murray-Thomas and lists Wayne L. Richardson as at-large; their districts page still names Richardson for District 2. The Members page is used here
+  - How long a commissioner's term is, and how and when the County Executive is elected
+  - Public comment rules at commissioners' meetings
+  - The date the 2026 county budget was adopted; the document gives only its approval and hearing dates
+  - The County Clerk, Sheriff, Surrogate and county departments, which this page does not cover

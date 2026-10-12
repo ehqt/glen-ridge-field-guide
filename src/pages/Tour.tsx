@@ -31,7 +31,7 @@ type Step = { title: string; body: ReactNode; sources: Source[]; next: { label: 
 
 /** Every statement here restates a sourced field in data/; the steps carry those sources. */
 function steps(): Step[] {
-  const elected = institutions.filter(isElected)
+  const elected = institutions.filter((i) => isElected(i) && i.category !== 'county-state')
   const total = budget.shares.reduce((n, s) => n + s.levy, 0)
   const landUse = institutions.filter((i) => i.category === 'land-use')
   const contracted = services.filter((s) => s.layer === 'contracted')
@@ -40,7 +40,7 @@ function steps(): Step[] {
 
   return [
     {
-      title: `Voters elect ${elected.length === 2 ? 'two' : elected.length} bodies`,
+      title: `Voters elect ${elected.length === 2 ? 'two' : elected.length} local bodies`,
       body: (
         <>
           {elected.map((inst, i) => (

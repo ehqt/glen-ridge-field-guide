@@ -43,6 +43,8 @@ export const institutionSchema = z.looseObject({
   appoints: z.array(text).nullable().optional(),
 
   members: z.array(person),
+  // Extra sourced sections for the page, each with its own sources.
+  notes: z.array(z.strictObject({ title: text, body: text, sources: z.array(source).min(1) })).default([]),
   professionals: z.array(person).default([]),
   roster_as_of: z.union([text, z.number()]).optional(),
 

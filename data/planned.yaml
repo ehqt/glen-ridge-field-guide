@@ -1,3 +1,4 @@
+# Empty for now: every body the guide set out to cover has a page.
 # Institutions that do not have a sourced data file yet. They appear on the
 # home page as "coming soon". Names and categories only: no descriptions,
 # rosters or schedules until a file in data/institutions/ sources them. When
@@ -12,12 +13,4 @@
 #   above       a separate government that taxes Glen Ridge property
 # Leave layer null when no official source says how the body is seated.
 
-- id: essex-county
-  name: Essex County government
-  category: county-state
-  layer: above
-  source: { title: "NJ Department of Community Affairs, 2025 Property Tax Information (Excel)", url: "https://www.nj.gov/dca/dlgs/resources/Property_Tax/25_data/25taxes.xls" }
-
-# No official source read yet for who hires the Superintendent, so it is not
-# on the map.
-- { id: superintendent, name: Superintendent of Schools, category: schools, layer: null }
+[]
