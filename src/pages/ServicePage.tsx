@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import { formatDate, services, useTitle } from '../data'
 import { CATEGORIES } from '../categories'
+import Icon from '../components/Icon'
 import NotFound from './NotFound'
 
 function label(key: string) {
@@ -27,6 +28,7 @@ export default function ServicePage() {
         </nav>
         <div className="page-head__row">
           <div className="page-head__title stack stack--sm">
+            <Icon id={service.id} category={service.category} size="lg" />
             <div className="eyebrow">
               {service.layer === 'contracted' ? 'Contracted service' : 'Borough department'}
             </div>

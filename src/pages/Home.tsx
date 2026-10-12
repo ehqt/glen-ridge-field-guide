@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { formatDate, institutions, isAppointed, isElected, matchesQuery, namedMembers, NOT_CONFIRMED, oldestVerified, planned, services, useTitle } from '../data'
 import { CATEGORIES, type CategoryId } from '../categories'
+import Icon from '../components/Icon'
 import type { Institution, Planned, Service, Source } from '../schema'
 
 type Filter = CategoryId | 'all'
@@ -11,7 +12,10 @@ function InstitutionCard({ inst }: { inst: Institution }) {
   return (
     <li>
       <Link to={`/institutions/${inst.id}`} className="card card--link inst-card">
-        <span className="eyebrow">{CATEGORIES[inst.category]}</span>
+        <span className="inst-card__head">
+          <Icon id={inst.id} category={inst.category} />
+          <span className="eyebrow">{CATEGORIES[inst.category]}</span>
+        </span>
         <span className="inst-card__name">{inst.name}</span>
         <span className="inst-card__summary">{inst.summary}</span>
         <span className="inst-card__meta">
@@ -27,7 +31,10 @@ function ServiceCard({ service }: { service: Service }) {
   return (
     <li>
       <Link to={`/services/${service.id}`} className="card card--link inst-card">
-        <span className="eyebrow">{CATEGORIES[service.category]}</span>
+        <span className="inst-card__head">
+          <Icon id={service.id} category={service.category} />
+          <span className="eyebrow">{CATEGORIES[service.category]}</span>
+        </span>
         <span className="inst-card__name">{service.name}</span>
         <span className="inst-card__summary">{service.summary}</span>
         <span className="inst-card__meta">

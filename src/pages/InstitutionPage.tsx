@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import { findInstitution, formatDate, NOT_CONFIRMED, useTitle } from '../data'
 import { CATEGORIES } from '../categories'
+import Icon from '../components/Icon'
 import SourceLinks from '../components/SourceLinks'
 import type { Person } from '../schema'
 import NotFound from './NotFound'
@@ -79,6 +80,7 @@ export default function InstitutionPage() {
         </nav>
         <div className="page-head__row">
           <div className="page-head__title stack stack--sm">
+            <Icon id={inst.id} category={inst.category} size="lg" />
             <div className="eyebrow">{CATEGORIES[inst.category]}</div>
             <h1>{inst.name}</h1>
             <p className="lede">{inst.summary}</p>

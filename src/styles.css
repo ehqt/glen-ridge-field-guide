@@ -1100,3 +1100,71 @@ nav[aria-label='Breadcrumb'] a,
   margin: 0;
   color: var(--text-2);
 }
+
+.button--link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Icons: one per body, tinted by category. */
+
+.icon {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #dcebe8;
+  color: var(--teal);
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.icon--lg {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+}
+
+.icon--lg svg {
+  width: 32px;
+  height: 32px;
+}
+
+.icon--schools {
+  background: #dfe5ee;
+  color: var(--ink);
+}
+
+.icon--land-use {
+  background: #f1e6d3;
+  color: #7a4b12;
+}
+
+.icon--services {
+  background: #f3dcd8;
+  color: #8a2c1f;
+}
+
+.icon--county-state {
+  background: #e4e0ee;
+  color: #4a3a78;
+}
+
+.inst-card__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media print {
+  .icon {
+    display: none;
+  }
+}
