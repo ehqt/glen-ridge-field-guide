@@ -12,6 +12,9 @@ summary: >
   The borough's police department, based at 3 Herman Street. For a police,
   fire or medical emergency, call 911.
 facts:
+  - The Mayor's 2026 appointments to the public safety committee were Councilors Law (chair), Meyer and Zimet
+  - The borough code says the chief, captain, lieutenants, sergeants and patrol officers are appointed by the governing body
+  - Under the code the Chief of Police heads the department and answers to the public safety committee, three Borough Council members appointed each year by the Mayor, which the code names as the "appropriate authority" responsible for the department's overall performance
   - The Record Bureau handles police reports, and all alarms in Glen Ridge must be registered with it
   - The borough's directory also lists a Detective Bureau, Crime Prevention and a Juvenile Aid Bureau
   - School crossing guards staff the intersections marked on the borough's Safe Routes to School map
@@ -43,7 +46,9 @@ sources:
   - { title: "Municipal Directory (borough page)", url: "https://www.glenridgenj.org/grdirectory/" }
   - { title: "Public Safety (borough page)", url: "https://www.glenridgenj.org/public/" }
   - { title: "Easy Access Forms (borough page)", url: "https://www.glenridgenj.org/permits/" }
+  - { title: "Borough Code, Chapter 2.32, Police Department (Municode)", url: "https://library.municode.com/nj/glen_ridge_borough/codes/code_of_ordinances?nodeId=TIT2ADPE_CH2.32PODE" }
+  - { title: "Borough Code, Chapter 2.40, Department of Public Safety (Municode)", url: "https://library.municode.com/nj/glen_ridge_borough/codes/code_of_ordinances?nodeId=TIT2ADPE_CH2.40DEPUSA" }
+  - { title: "Council agendas, January 5 2026 (borough page)", url: "https://www.glenridgenj.org/glen-ridge-adjourned-annual-council-meeting-agendas-01-05-2025/" }
 
 needs_verification:
-  - Who appoints the Chief of Police
-  - The outcome of the accreditation the department was seeking when the page was read
+  - The outcome of the accreditation the department was seeking; the notice on the borough page links to a press release filed under September 2024

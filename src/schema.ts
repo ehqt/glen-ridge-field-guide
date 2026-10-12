@@ -136,6 +136,8 @@ export const budgetSchema = z.strictObject({
         institution: id.nullable(),
         pays: text,
         pays_source: source,
+        // The whole budget, which is larger than the tax levy.
+        full_budget: z.strictObject({ text, source }).optional(),
         levy: dollars,
         rate,
         average_taxes: dollars,

@@ -15,6 +15,7 @@ powers:
   - Investigate actual and potential health concerns
   - Inform residents and town officials about health issues, including the laws and regulations that protect health
   - Link residents to public health services, through the Bloomfield Health Department
+  - Under the borough code, enact and put into operation ordinances or a code for the preservation of public health
 limits:
   - null   # TO VERIFY
 
@@ -35,14 +36,27 @@ members:
   - { name: Jacqueline S. Yustein, role: Member, term_ends: "2027-12-31" }
 
 professionals:
-  - { name: Maya Lordo,       role: Health Officer }     # from the page's 2024 list
+  # The borough page's 2024 list says "Maya Lordo". Bloomfield's directory and
+  # 2026 Board of Health schedule, and the state's local health directory
+  # (which lists Glen Ridge under Bloomfield), all say Maya Harlow.
+  - { name: Maya Harlow,      role: "Health Officer, Bloomfield Department of Health", credentials: "MS, MCHES, REHS, HO" }
   - { name: Michael Zichelli, role: Borough Staff Liaison }
 
 meets:
-  schedule: Third Monday of January, March, May, July, September and November, 6:00 pm
-  schedule_note: The borough page says the board "generally" meets on this schedule.
-  location: Conference room, Glen Ridge Public Library
+  schedule: Mondays at 6:00 pm, about every other month, on dates the board sets each year
+  schedule_note: >
+    The 2026 schedule lists January 26, March 16, May 18, July 20 (if
+    necessary), September 21 and November 16. The borough's Board of Health
+    page still describes the third Monday and the library's conference room.
+  location: Mayor's Office, second floor, Glen Ridge Municipal Building, 825 Bloomfield Avenue
   quorum: null
+  dates:
+    - { date: 2026-01-26 }
+    - { date: 2026-03-16 }
+    - { date: 2026-05-18 }
+    - { date: 2026-07-20, note: If necessary }
+    - { date: 2026-09-21 }
+    - { date: 2026-11-16 }
 roster_as_of: 2026
 
 how_to_engage:
@@ -62,8 +76,14 @@ sources:
   - { title: "Board of Health (borough page)", url: "https://www.glenridgenj.org/health/" }
   - { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
   - { title: "2026 Glen Ridge User Friendly Budget (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/05/2026-GlenRidge-UserFriendly-Budget-municode0708.pdf" }
+  - { title: "Health Department staff directory (Bloomfield Township page)", url: "https://bloomfieldtwpnj.com/directory.aspx?did=9" }
+  - { title: "Bloomfield Board of Health 2026 meeting schedule (PDF)", url: "https://www.bloomfieldtwpnj.com/DocumentCenter/View/16768/BOH-2026-Meeting-Schedule-REVISED-12312025" }
+  - { title: "NJ Department of Health, Directory of Local Health Departments, dated October 5 2026 (PDF)", url: "https://www.nj.gov/health/lh/documents/LocalHealthDirectory.pdf" }
+  - { title: "2026 Board of Health Meeting Schedule (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/05/2026-BOH-Meeting-Schedule.pdf" }
+  - { title: "Borough Code, Chapter 2.52, Board of Health (Municode)", url: "https://library.municode.com/nj/glen_ridge_borough/codes/code_of_ordinances?nodeId=TIT2ADPE_CH2.52BOHE" }
 
 needs_verification:
   - Officers, if the board has any
-  - Whether Maya Lordo is still the Health Officer; the name is from the page's 2024 list
-  - The 2026 meeting dates, and where agendas and minutes are posted
+  - The borough's own Board of Health page still shows a 2024 list naming Maya Lordo as Health Officer; the name here is from Bloomfield and the state
+  - Where agendas and minutes are posted
+  - What the board cannot decide

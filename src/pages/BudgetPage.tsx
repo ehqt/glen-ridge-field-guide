@@ -94,6 +94,15 @@ export default function BudgetPage() {
                       </ul>
                     )}
                   </dd>
+                  {s.full_budget && (
+                    <>
+                      <dt>Whole budget</dt>
+                      <dd className="stack stack--sm">
+                        <span>{s.full_budget.text}</span>
+                        <SourceLinks sources={[s.full_budget.source]} />
+                      </dd>
+                    </>
+                  )}
                   <dt>Tax rate</dt>
                   <dd>{s.rate.toFixed(3)} per $100 of assessed value</dd>
                   <dt>On the average residential bill</dt>

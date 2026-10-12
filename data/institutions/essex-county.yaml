@@ -27,7 +27,9 @@ limits:
 how_seated: >-
   Elected by voters. The nine commissioners are elected at the November
   general election: five from districts and four at large. District 5
-  covers Belleville, Bloomfield, Glen Ridge, Montclair and Nutley.
+  covers Belleville, Bloomfield, Glen Ridge, Montclair and Nutley. The
+  County Executive is elected too. The executive, the four at-large seats
+  and the District 5 seat are all on Glen Ridge's 2026 ballot.
 seated_source: { title: "Definition of the County Commissioners (commissioners' page)", url: "https://ecfnj.com/cms/15/Definition-of-the-County-Commissioners" }
 reports_to: null
 member_terms: concurrent; the county's 2026 budget lists every commissioner's term as expiring December 31, 2026
@@ -84,7 +86,10 @@ meets:
     - { date: 2026-12-16 }
 
 how_to_engage:
-  public_comment: null   # TO VERIFY: not stated on the pages read
+  public_comment: >
+    The board's agendas list two public comment periods: one on agenda
+    items only, before the board takes up its business, and a general one
+    at the end of the meeting.
   contact:
     commissioners_phone: 973-621-4486
     commissioners_address: 465 Dr. Martin Luther King Jr. Blvd., Room 558, Hall of Records, Newark, NJ 07102
@@ -110,10 +115,12 @@ sources:
   - { title: "Meeting Schedule 2026 (commissioners' page)", url: "https://ecfnj.com/cms/18/Meeting-Schedule-2026" }
   - { title: "Essex County Executive (county page)", url: "https://essexcountynj.org/essex-county-executive-2/" }
   - { title: "Essex County 2026 budget (PDF)", url: "https://essexcountynj.org/wp-content/uploads/2026/05/2026-County-Budget.pdf" }
+  - { title: "Essex County Clerk, 2026 Official General Election Sample Ballots (PDF)", url: "https://www.essexclerk.com/_Content/pdf/Essex-2026-Sample-Ballots.pdf" }
+  - { title: "County commissioners' agenda, April 15 2026 (PDF)", url: "https://ecode360.com/ES1525/document/753246666.pdf" }
 
 needs_verification:
   - The commissioners' Members page gives District 2 to A'Dorian Murray-Thomas and lists Wayne L. Richardson as at-large; their districts page still names Richardson for District 2. The Members page is used here
-  - How long a commissioner's term is, and how and when the County Executive is elected
-  - Public comment rules at commissioners' meetings
-  - The date the 2026 county budget was adopted; the document gives only its approval and hearing dates
+  - How long a commissioner's or the County Executive's term is
+  - Sign-up rules and time limits for public comment at commissioners' meetings
+  - The meeting at which the 2026 county budget was adopted; adoption was on the March 25 and April 15 agendas, and the minutes have not been read
   - The County Clerk, Sheriff, Surrogate and county departments, which this page does not cover

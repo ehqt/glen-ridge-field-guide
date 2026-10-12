@@ -60,7 +60,8 @@ how_to_engage:
   public_comment: >
     Meetings are open to the public. At hearings the applicant speaks first,
     then the Building Inspector, then private citizens. Remarks and questions
-    from the floor go through the Chair.
+    from the floor go through the Chair. The board's 2026 agendas also list a
+    Public Comment item.
   notice: Applicants must notify property owners within 200 feet.
   apply:
     where: File with the Board Secretary on the board's form
@@ -90,8 +91,9 @@ sources:
   - { title: Borough Board of Adjustment page, url: "https://new.glenridgenj.org/?p=992" }
   - { title: Board of Adjustment bylaws (PDF), url: "https://new.glenridgenj.org/wp-content/uploads/2025/05/AdustmentBrd2021ByLaws.pdf" }
   - { title: "Reorganization minutes, Jan 9 2025 (PDF)", url: "https://www.glenridgenj.org/bminutes/BA2025-01-09.pdf" }
+  - { title: "Board of Adjustment agenda, January 8 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Board-of-Adjustment-Agenda-01-08-2026.pdf" }
 
 needs_verification:
-  - Who the board chose as Chair and Vice Chair at its January 2026 reorganization
-  - Appeals path for denied applications
-  - The minutes' heading says Jan 9, 2024 while the body says Jan 9, 2025
+  - Who the board chose as Chair and Vice Chair on January 8, 2026. The election was on that agenda, but the minutes were not posted when last checked
+  - What the board cannot decide, and the appeals path for denied applications
+  - The January 2025 minutes' heading says Jan 9, 2024 while the body says Jan 9, 2025

@@ -111,15 +111,6 @@ export default function CalendarPage() {
         </div>
 
         <aside className="columns__side stack">
-          <section className="card stack stack--sm" aria-labelledby="missing-heading">
-            <h2 id="missing-heading" className="card__title">
-              Not here yet
-            </h2>
-            <p className="muted">
-              Election dates and property tax due dates are not listed, because this guide has not yet sourced them.
-              Your tax bill and the county clerk have the official dates.
-            </p>
-          </section>
           <section className="card card--ink stack stack--sm" aria-labelledby="feed-heading">
             <h2 id="feed-heading" className="card__title">
               Add it to your calendar

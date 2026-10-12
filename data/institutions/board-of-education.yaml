@@ -22,12 +22,12 @@ limits:
 
 district_type: Type II district          # secondary source (Wikipedia)
 size: 9 members                          # secondary source (Wikipedia)
-how_seated: Elected by voters            # Jersey Bee, Nov 2025 general election results
-term_length: 3 years, staggered (three seats up each year)
+how_seated: >-
+  Elected by voters. Board seats are on the November general election
+  ballot as a school election. Three seats are on the 2026 ballot.
+term_length: 3 years, staggered (three seats up each year)   # reorganization agendas, Jan 2025 and Jan 2026
 elections: November general election (since 2013)   # secondary source
-# News report of the Essex County Clerk's unofficial results; the owner chose
-# to use it until an official record is found (2026-10-11).
-seated_source: { title: "Jersey Bee, Glen Ridge 2025 unofficial general election results for school board, Nov 5 2025", url: "https://jerseybee.org/2025/11/05/glen-ridge-2025-unofficial-general-election-results-for-school-board/" }
+seated_source: { title: "Essex County Clerk, 2026 Official General Election Sample Ballots (PDF)", url: "https://www.essexclerk.com/_Content/pdf/Essex-2026-Sample-Ballots.pdf" }
 reports_to: null   # TO VERIFY: state oversight (NJ Department of Education)
 
 # Extra sourced sections shown on the page.
@@ -43,27 +43,36 @@ notes:
       and may speak at its meetings, but has no vote. The employment
       contract runs three to five years, must be approved by a majority of
       the full board in a recorded roll call vote at a public meeting, and is
-      reviewed by the Executive County Superintendent.
+      reviewed by the Executive County Superintendent. Winnie Kievit, acting
+      superintendent since July 2025, was listed as Superintendent from
+      April 2026. On March 18, 2026 the board approved her contract as
+      Superintendent of Schools for March 19, 2026 through June 30, 2029,
+      with eight members voting yes and one absent.
     sources:
       - { title: "Board Policy 1220, Employment of Chief School Administrator (PDF)", url: "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5665/Grps/a3a91499-40c1-435d-9180-4ff2121a4615/1220_Employment_of_Chief_School_Administrator.pdf" }
       - { title: "Board Policy 1230, Superintendent's Duties (PDF)", url: "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5665/Grps/005d5ede-5fb3-4b88-8fb0-39ba97f9e2e2/1230_Superintendent_s_Duties.pdf" }
+      - { title: "Board minutes, March 18, 2026 (PDF)", url: "https://drive.google.com/file/d/1Re2jEkg8fCrRQEauKEvwIOIPPBks9Sw7/view" }
 
 members:
+  # Term ends: the January 2026 reorganization agenda reports Akinwande,
+  # Franklin and Ginsburg elected to 3-year terms; the January 2025 agenda
+  # reports Bonnett, O'Neil and DeLorenzi elected to 3-year terms. The other
+  # three hold the three seats on the November 2026 ballot (by elimination).
   # From the district's "Board of Education Members" page, read 2026-10-11.
   # The page gives offices and committees but no term-end years. Akinwande,
   # Ginsburg and Franklin won seats in the November 2025 general election
   # (Jersey Bee); the report does not give the term length. It also
   # lists a student representative, who is left out here: this guide
   # publishes only public officials.
-  - { name: Elisabeth Ginsburg, role: President,          term_ends: null }
-  - { name: Jocelyn Gottlieb,   role: 1st Vice-President, term_ends: null }
-  - { name: "Kristin O'Neil",   role: 2nd Vice-President, term_ends: null }
-  - { name: Tricia Akinwande,   role: Member,             term_ends: null }
-  - { name: Anthony Bonnett,    role: Member,             term_ends: null }
-  - { name: Darius Dehnad,      role: Member,             term_ends: null }
-  - { name: Ray DeLorenzi,      role: Member,             term_ends: null }   # the page's email link spells it "Delorenzi"
-  - { name: Luke Franklin,      role: Member,             term_ends: null }
-  - { name: Duval Graham,       role: Member,             term_ends: null }
+  - { name: Elisabeth Ginsburg, role: President,          term_ends: "January 2029" }
+  - { name: Jocelyn Gottlieb,   role: 1st Vice-President, term_ends: "January 2027" }
+  - { name: "Kristin O'Neil",   role: 2nd Vice-President, term_ends: "January 2028" }
+  - { name: Tricia Akinwande,   role: Member,             term_ends: "January 2029" }
+  - { name: Anthony Bonnett,    role: Member,             term_ends: "January 2028" }
+  - { name: Darius Dehnad,      role: Member,             term_ends: "January 2027" }
+  - { name: Ray DeLorenzi,      role: Member,             term_ends: "January 2028" }   # the page's email link spells it "Delorenzi"
+  - { name: Luke Franklin,      role: Member,             term_ends: "January 2029" }
+  - { name: Duval Graham,       role: Member,             term_ends: "January 2027" }
 
 professionals:
   # Listed on the same members page.
@@ -159,8 +168,9 @@ links:
   meetings_url: null    # later: calendar feed
 
 last_verified: 2026-10-11
-verification_level: roster, 2026 meetings and comment rules; term ends not yet confirmed
+verification_level: roster, terms, 2026 meetings and comment rules
 sources:
+  - { title: "Essex County Clerk, 2026 Official General Election Sample Ballots (PDF)", url: "https://www.essexclerk.com/_Content/pdf/Essex-2026-Sample-Ballots.pdf" }
   - { title: "Jersey Bee, Glen Ridge 2025 unofficial general election results for school board, Nov 5 2025", url: "https://jerseybee.org/2025/11/05/glen-ridge-2025-unofficial-general-election-results-for-school-board/" }
   - { title: Board of Education Members (district page), url: "https://www.glenridge.org/page/board-of-education-members" }
   - { title: "Board agenda, October 6, 2026", url: "https://docs.google.com/document/d/12PGfuR2Bdc-a1D94CJ2tOZjpc0qmERrvId-g2FJizNo/edit?usp=sharing" }
@@ -172,11 +182,14 @@ sources:
   - { title: Glen Ridge Public Schools site navigation, url: "https://www.glenridge.org" }
   - { title: Glen Ridge Public Schools (Wikipedia), url: "https://en.wikipedia.org/wiki/Glen_Ridge_Public_Schools" }
   - { title: "Jersey Bee, acting superintendent, Jul 2025", url: "https://jerseybee.org/2025/07/28/glen-ridge-school-board-appoints-winnie-kievit-to-acting-superintendent-following-arlingtons-resignation/" }
+  - { title: "Reorganization meeting agenda, January 6, 2026", url: "https://docs.google.com/document/d/1UPMFgKc3R-5tUW8RHlUgiDN2P4m9nNsEQ_GeCa_-a4A/edit" }
+  - { title: "Reorganization meeting agenda, January 7, 2025", url: "https://docs.google.com/document/d/1VICKBeNRMK_aExAhzRB_cYKEthftjXUI8QLISR8uW_U/edit" }
+  - { title: "Board agenda, March 18, 2026", url: "https://docs.google.com/document/d/1GCDPaVsaGHssqBiFcFmBJdN29NCPYb-Rj__GWn8bmnQ/edit" }
+  - { title: "Board minutes, March 18, 2026 (PDF)", url: "https://drive.google.com/file/d/1Re2jEkg8fCrRQEauKEvwIOIPPBks9Sw7/view" }
+  - { title: "Reorganization meeting minutes, January 6, 2026 (PDF)", url: "https://drive.google.com/file/d/1uMNjFgB8WzBZGvo7RmLdHPTfwi8UmReG/view" }
 
 needs_verification:
-  - Each member's term-end year
+  - Term ends for Gottlieb, Dehnad and Graham are by elimination, since the other six members' terms are stated in reorganization agendas, and three seats are on the 2026 ballot
   - Whether every regular meeting uses the same time and place (confirmed for two 2026 agendas only)
-  - When the superintendent's permanent appointment was made
   - Whether the public comment procedures page is current (it describes changes from September 2019 and refers to 2025 meetings)
-  - An official record that board seats are elected; the current source is a news report of the county clerk's unofficial 2025 results
-  - Term length and election timing rest on Wikipedia, which cites district pages from Oct 2025
+  - What the board cannot decide

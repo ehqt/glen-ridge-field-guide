@@ -59,3 +59,24 @@
   sources:
     - { title: "2026 Glen Ridge Introduced Budget (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/04/2026-Glen-Ridge-Introduced-Budget-0708.pdf" }
     - { title: "Resolution 89-26, adoption of the 2026 municipal budget (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/05/Resolution-89-26-Budget-Adoption-1-1.pdf" }
+- when: February, May, August, November
+  kind: Deadline
+  title: Quarterly property tax payments
+  note: >-
+    The borough lists the four quarterly due dates as February 1, May 1,
+    August 1 and November 1. Your bill has the exact amounts.
+  sources:
+    - { title: "Online Payment Center FAQ (borough page)", url: "https://www.glenridgenj.org/onlinepaymentcenter/opcfaq/" }
+- when: November
+  kind: Election
+  title: General election
+  note: >-
+    In 2026 it is Tuesday, November 3, with polls open 6:00 am to 8:00 pm.
+    Early voting runs October 24 to November 1 at any of the county's
+    early voting sites. The Glen Ridge ballot includes two Borough Council
+    seats, three Board of Education seats, the County Executive, four
+    at-large county commissioners and the District 5 commissioner, along
+    with U.S. Senate and the 11th Congressional District.
+  sources:
+    - { title: "Essex County Clerk, 2026 Official General Election Sample Ballots (PDF)", url: "https://www.essexclerk.com/_Content/pdf/Essex-2026-Sample-Ballots.pdf" }
+    - { title: "Essex County Clerk, Guide to Voting, 2026 General Election (PDF)", url: "https://www.essexclerk.com/_Content/pdf/GUIDE-TO-VOTING-GENERAL-2026.pdf" }

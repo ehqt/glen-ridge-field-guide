@@ -15,9 +15,12 @@ powers:
   - Control the use of the public ground around those trees, as far as their growth and care require
   - With the Borough Forester's advice, remove or require the removal of a tree that is dangerous to public safety
   - Treat or remove a diseased tree on private property, with the owner's consent and state confirmation of the condition
+  - Issue the permit required before anyone cuts, prunes, removes or plants a public tree on a street
   - Encourage arboriculture
 limits:
-  - null   # TO VERIFY
+  # Ordinance 1543, section 12.26-6.
+  - Make, alter, amend or repeal ordinances
+  - Charge an abutting homeowner for planting or removing a public tree
 
 governed_by:
   ordinance: Ordinance 1543, which established the commission in 2015
@@ -63,8 +66,8 @@ sources:
   - { title: "Shade Tree Commission (borough page)", url: "https://www.glenridgenj.org/shadetree/" }
   - { title: "Duties of Shade Tree Commission (borough page)", url: "https://www.glenridgenj.org/shadetreeduties/" }
   - { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+  - { title: "Ordinance 1543, establishing the Shade Tree Commission (Word document)", url: "https://www.glenridgenj.org/wp-content/uploads/2025/07/Ordinance1543.doc" }
 
 needs_verification:
-  - When and where the commission meets, and whether its meetings are open to the public
-  - The full text of Ordinance 1543, which has not been read
-  - Rules for trees on private property
+  - When and where the commission meets, and whether its meetings are open to the public; neither the borough page nor Ordinance 1543 says
+  - Rules for trees on private property; Ordinance 1543 covers public trees, and private ones only when diseased

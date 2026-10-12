@@ -9,8 +9,14 @@ aliases: [Glen Ridge Library Board, Library Board, Public Library]
 category: services
 
 summary: >
-  The board of trustees of the Glen Ridge Public Library.
-powers: []   # TO VERIFY: the library page does not describe the board's duties; see its bylaws
+  The board of trustees of the Glen Ridge Public Library: seven members
+  appointed by the Mayor, plus the Mayor and the Superintendent of Schools
+  (or their alternates) as voting ex-officio members.
+powers:
+  # From the board's 2025 bylaws.
+  - Appoint the Library Director, who runs the library under the board's direction and review
+  - Elect its own President, Vice-President, Treasurer and Secretary each January
+  - Approve actions by a majority vote of the members present
 limits:
   - null   # TO VERIFY
 
@@ -47,7 +53,7 @@ meets:
     14 (reorganization, 6:00 pm), June 17, and December 9 (6:00 pm). The
     schedule may change without notice.
   location: First floor meeting room, Glen Ridge Public Library, 240 Ridgewood Avenue
-  quorum: null
+  quorum: 5
 roster_as_of: 2026
 
 how_to_engage:
@@ -82,7 +88,8 @@ sources:
   - { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
   - { title: "Public comment procedures (library page)", url: "https://www.glenridgelibrary.org/bot_mr.html" }
   - { title: "Municipal Directory (borough page)", url: "https://www.glenridgenj.org/grdirectory/" }
+  - { title: "Bylaws of the Board of Trustees, 2025 (PDF)", url: "https://www.glenridgelibrary.org/uploads/1/3/7/0/13705243/grpl_by-laws_2025.docx.pdf" }
 
 needs_verification:
-  - What the board decides; its bylaws have not been read
-  - One trustee's first name (the resolution says James Doyle, the library page Matt Doyle)
+  - What the board cannot decide
+  - One trustee's first name (the resolution says James Doyle; the library page, re-read in a browser, says Matt Doyle)

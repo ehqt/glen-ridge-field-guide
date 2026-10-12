@@ -44,17 +44,24 @@ members:
 
 professionals:
   # The borough page lists both under one heading, "Consultant & Secretary".
-  - { name: Steven Smolyn,  role: Consultant and Secretary (listed jointly), credentials: AIA }
-  - { name: Alexei Tajzler, role: Consultant and Secretary (listed jointly), credentials: RA }
+  # The commission's bylaws are signed by Smolyn as consultant, and say the
+  # Historic Preservation Consultant serves as Secretary unless the
+  # commission votes otherwise.
+  - { name: Steven Smolyn,  role: Historic Preservation Consultant and Secretary, credentials: AIA }
+  - { name: Alexei Tajzler, role: Consultant and Secretary (as listed on the borough page), credentials: RA }
 
 meets:
   schedule: First Wednesday of each month, 7:30 pm
   location: Online, by Zoom
-  quorum: null
+  quorum: 4
 roster_as_of: 2026
 
 how_to_engage:
-  public_comment: Meetings are open to the public as required by law.
+  public_comment: >
+    Meetings are open to the public. After each applicant presents, members
+    of the public are also heard. The Chair may limit the number of speakers
+    or the length of each presentation. Presentations are informal and
+    unsworn.
   apply:
     where: >-
       Email a preliminary regular application to hpc@glenridgenj.org at least
@@ -83,8 +90,9 @@ sources:
   - { title: "Historic Preservation Commission (borough page)", url: "https://www.glenridgenj.org/hpc/" }
   - { title: "Planning Board (borough page)", url: "https://www.glenridgenj.org/planning-board/" }
   - { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+  - { title: "Historic Preservation Commission bylaws, 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/HPC-Bylaws-2026.pdf" }
+  - { title: "Historic Preservation Ordinance (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Historic-Preservation-Ordinance-1827.pdf" }
 
 needs_verification:
-  - How Glen Ridge's own ordinance defines the member classes (A, B, C); the glossary gives the state law's definitions
-  - Which of the two listed professionals is the consultant and which the secretary
-  - Quorum, and public comment rules at hearings
+  - What Alexei Tajzler's role is; the borough page lists two names under "Consultant & Secretary"
+  - The bylaws posted as "2026" say they were adopted January 7, 2025

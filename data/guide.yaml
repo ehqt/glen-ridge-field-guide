@@ -69,10 +69,14 @@ glossary:
       construction or architectural history. A Class B member is
       knowledgeable or has a demonstrated interest in local history. Either
       may live outside the municipality. The remaining regular members are
-      Class C, who must be citizens of the municipality.
+      Class C, who must be citizens of the municipality. Glen Ridge's
+      ordinance sets seven members and two alternates, requires at least
+      three regular members from Classes A and B, and allows no more than
+      two members who live outside the borough.
     institution: historic-preservation-commission
     sources:
       - *mlul
+      - { title: "Historic Preservation Ordinance (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Historic-Preservation-Ordinance-1827.pdf" }
   - term: Executive session
     aliases: [Closed session]
     meaning: >-
@@ -215,16 +219,17 @@ permits:
   - project: Remove a tree
     who: Borough Arborist and Shade Tree Commission
     body: >-
-      The borough has a tree removal application on its forms page. The
-      Shade Tree Commission controls the planting and care of shade trees
-      along the borough's streets and in its parks. This guide has not
-      confirmed the rules for trees on private property, so ask the
-      Arborist.
+      The borough has a tree removal application on its forms page. Under
+      Ordinance 1543, no one may cut, prune, remove or plant a public tree on
+      a street without a permit from the Shade Tree Commission. That
+      ordinance covers public trees; this guide has not found the rules for
+      trees on private property, so ask the Arborist.
     contact: 973-748-8400 ext. 202, trees@glenridgenj.org
     institution: shade-tree-commission
     sources:
       - *forms
       - { title: "Shade Tree Commission (borough page)", url: "https://www.glenridgenj.org/shadetree/" }
+      - { title: "Ordinance 1543, establishing the Shade Tree Commission (Word document)", url: "https://www.glenridgenj.org/wp-content/uploads/2025/07/Ordinance1543.doc" }
       - &directory { title: "Municipal Directory (borough page)", url: "https://www.glenridgenj.org/grdirectory/" }
   - project: Build or repair a sidewalk or driveway apron
     who: Department of Public Works

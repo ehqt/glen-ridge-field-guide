@@ -68,8 +68,10 @@ sources:
   - { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
   - { title: "Council agendas, January 5 2026 (borough page)", url: "https://www.glenridgenj.org/glen-ridge-adjourned-annual-council-meeting-agendas-01-05-2025/" }
   - { title: "2026 Glen Ridge Introduced Budget (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/04/2026-Glen-Ridge-Introduced-Budget-0708.pdf" }
+  - { title: "Resolution 89-26, adoption of the 2026 municipal budget (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/05/Resolution-89-26-Budget-Adoption-1-1.pdf" }
+  - { title: "Resolution 1-26, adopting the council's 2026 bylaws (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-1-26.pdf" }
 
 needs_verification:
   - What the Mayor and Council cannot decide
-  - The full list of the governing body's powers; only the two with a borough document behind them are listed
-  - The borough's 2026 User Friendly Budget spells one councilor's surname "Laracy"; the council page says "Law", which is used here
+  - The full list of the governing body's powers; only those with a borough document behind them are listed
+  - Quorum and other meeting rules. Resolution 1-26 adopted the council's 2026 bylaws, but the bylaws themselves are not attached to it

@@ -28,8 +28,8 @@ reports_to: null
 member_terms: 4 years for Class IV members, 2 years for alternates, 1 year for Classes I to III
 
 members:
-  # Classes and term ends are from Resolution 3-26. Chair and Vice Chair are
-  # from the borough page's "2026 Members" list. The resolution names
+  # Classes and term ends are from Resolution 3-26. The board elected its
+  # Chair and Vice Chair on January 21, 2026 (minutes). The resolution names
   # Alternate 2 as Christina Soto; the borough page says Dolly Soto.
   - { name: Ravi R. Mehrotra,    role: Chair (Class IV),                   term_ends: "2029-12-31" }
   - { name: Timothy Hegarty,     role: Vice Chair (Class IV),              term_ends: "2026-12-31" }
@@ -48,12 +48,27 @@ professionals:
   - { name: Erik DeLine,    role: Planner and Secretary, credentials: "AICP, PP" }
 
 meets:
-  schedule: Third Wednesday of each month, 7:30 pm
+  schedule: Usually the third Wednesday of each month, 7:30 pm
   schedule_note: >
-    From the board's 2021 bylaws, which let the board set other dates. Check
-    the borough calendar for the current year.
-  location: Glen Ridge Municipal Building
+    The board adopted its 2026 dates at its January 21, 2026 meeting. Two
+    fall on the second Wednesday: October 14 and November 11.
+  location: Council Chambers, Glen Ridge Municipal Building
   quorum: 5
+  # From the minutes of January 21, 2026.
+  dates:
+    - { date: 2026-01-21, note: Reorganization }
+    - { date: 2026-02-18 }
+    - { date: 2026-03-18 }
+    - { date: 2026-04-15 }
+    - { date: 2026-05-20 }
+    - { date: 2026-06-17 }
+    - { date: 2026-07-15 }
+    - { date: 2026-08-19 }
+    - { date: 2026-09-16 }
+    - { date: 2026-10-14 }
+    - { date: 2026-11-11 }
+    - { date: 2026-12-16 }
+    - { date: 2027-01-20 }
 roster_as_of: 2026
 
 how_to_engage:
@@ -77,8 +92,8 @@ sources:
   - { title: "Planning Board (borough page)", url: "https://www.glenridgenj.org/planning-board/" }
   - { title: "Planning Board bylaws, 2021 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2025/07/PlanBrd2021ByLaws.pdf" }
   - { title: "Resolution 3-26, appointments and terms, Jan 5 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/01/Resolution-3-26.pdf" }
+  - { title: "Planning Board minutes, January 21 2026 (PDF)", url: "https://www.glenridgenj.org/wp-content/uploads/2026/03/Planning-Board-Meeting-Minutes-01-21-2026.pdf" }
 
 needs_verification:
-  - The 2026 meeting dates; the schedule here is from the 2021 bylaws
-  - The name of Alternate 2 (the resolution says Christina Soto, the borough page Dolly Soto)
-  - Public comment time limits, if any
+  - The first name of Alternate 2 (the resolution says Christina Soto, the borough page Dolly Soto; the minutes give only the surname)
+  - Public comment time limits, if any. The January 2026 minutes show the Chair opening each hearing to questions and comments from the public

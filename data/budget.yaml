@@ -45,6 +45,12 @@ shares:
     institution: board-of-education
     pays: The Glen Ridge Public Schools budget, which the Board of Education adopts each spring.
     pays_source: *schoolbudget
+    full_budget:
+      text: >-
+        The district's 2026-27 budget totals $46,416,900 across all funds,
+        including a general fund operating budget of $44,236,412. State and
+        federal aid and other revenue cover what the tax levy does not.
+      source: { title: "Glen Ridge Public Schools, User-Friendly Budget 2026-2027 (PDF)", url: "https://drive.google.com/file/d/17zq-1sTcNZkTR72KgGyyK8G8wRGFBQ0E/view?usp=sharing" }
     levy: 36943996
     rate: 2.136
     average_taxes: 14416
@@ -59,6 +65,11 @@ shares:
       public works, solid waste disposal, and parks and recreation. A separate
       line funds the library.
     pays_source: *ufb
+    full_budget:
+      text: >-
+        The 2026 municipal budget, as adopted on May 11, 2026, has total
+        general appropriations of $19,875,835.
+      source: *adoption
     levy: 14225703
     rate: 0.822
     average_taxes: 5551
@@ -71,6 +82,12 @@ shares:
     institution: essex-county
     pays: Essex County's own budget, plus a county open space trust fund.
     pays_source: *dca
+    full_budget:
+      text: >-
+        The 2026 county budget has total appropriations of $905,624,909, of
+        which $468,435,000 is raised by county purpose taxes across all
+        Essex County towns.
+      source: { title: "Essex County 2026 budget (PDF)", url: "https://essexcountynj.org/wp-content/uploads/2026/05/2026-County-Budget.pdf" }
     levy: 9498253
     rate: 0.549
     average_taxes: 3706
@@ -124,11 +141,15 @@ process:
     body: >-
       The Board of County Commissioners approved the 2026 county budget on
       March 4, 2026 and set its public hearing for March 25, 2026 at 5:00
-      pm at the Hall of Records in Newark. The budget raises $468,435,000
-      in county purpose taxes across all Essex County towns, up from
-      $460,435,000 in 2025.
+      pm at the Hall of Records in Newark. Adoption was listed for second
+      reading and public hearing on the board's March 25 agenda and again
+      on its April 15 agenda. The budget raises $468,435,000 in county
+      purpose taxes across all Essex County towns, up from $460,435,000 in
+      2025.
     sources:
       - { title: "Essex County 2026 budget (PDF)", url: "https://essexcountynj.org/wp-content/uploads/2026/05/2026-County-Budget.pdf" }
+      - { title: "County commissioners' agenda, March 25 2026 (PDF)", url: "https://ecode360.com/ES1525/document/753241978.pdf" }
+      - { title: "County commissioners' agenda, April 15 2026 (PDF)", url: "https://ecode360.com/ES1525/document/753246666.pdf" }
   - title: The levies become tax rates
     body: >-
       Each rate is its levy divided by the borough's total taxable valuation,
@@ -137,6 +158,5 @@ process:
     sources: [*dca, *ufb]
 
 needs_verification:
-  - Certified 2026 figures. The state had not published a 2026 workbook as of the verified date.
-  - Total budget size for the schools and the county. The figures here are tax levies, not full budgets, which also draw on state aid and other revenue.
-  - The date the 2026 county budget was adopted.
+  - Certified 2026 figures. The state had not published a 2026 workbook when last checked on the verified date.
+  - The meeting at which the commissioners voted to adopt the 2026 county budget. Adoption was on the March 25 and April 15 agendas; the minutes have not been read.
