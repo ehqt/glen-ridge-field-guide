@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { budget, findInstitution, formatDate, useTitle } from '../data'
 import SourceLinks from '../components/SourceLinks'
+import FinancesSection from '../components/FinancesSection'
 
 const money = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
 const millions = (n: number) => `$${(n / 1e6).toFixed(1)} million`
@@ -113,6 +114,8 @@ export default function BudgetPage() {
           })}
         </div>
       </div>
+
+      <FinancesSection />
 
       <div className="container columns">
         <div className="columns__main stack stack--lg">
