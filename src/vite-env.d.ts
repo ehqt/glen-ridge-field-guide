@@ -4,6 +4,7 @@ type FieldGuideBudget = import('./schema').Budget
 type FieldGuideCalendarItem = import('./schema').CalendarItem
 type FieldGuideGuide = import('./schema').Guide
 type FieldGuideService = import('./schema').Service
+type FieldGuideFinances = import('./schema').Finances
 
 declare module 'virtual:field-guide-data' {
   export const institutions: FieldGuideInstitution[]
@@ -12,4 +13,5 @@ declare module 'virtual:field-guide-data' {
   export const budget: FieldGuideBudget
   export const calendar: FieldGuideCalendarItem[]
   export const guide: FieldGuideGuide
+  export const finances: FieldGuideFinances
 }

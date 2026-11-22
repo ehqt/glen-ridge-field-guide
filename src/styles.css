@@ -1431,3 +1431,50 @@ main {
     color: #000;
   }
 }
+
+/* Borough finances by the numbers */
+
+.fin-value {
+  font-family: var(--font-head);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.peer-range__track {
+  position: relative;
+  height: 14px;
+  margin: 6px 0 2px;
+  border-bottom: 1px solid var(--border);
+}
+
+.peer-range__band {
+  position: absolute;
+  top: 4px;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--table-head);
+}
+
+.peer-range__median {
+  position: absolute;
+  top: 1px;
+  width: 2px;
+  height: 12px;
+  margin-left: -1px;
+  background: var(--text-3);
+}
+
+.peer-range__gr {
+  position: absolute;
+  top: 2px;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.peer-range__key {
+  color: var(--teal);
+}

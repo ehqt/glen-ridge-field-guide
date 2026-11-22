@@ -1,0 +1,156 @@
+# Glen Ridge Field Guide: borough finances by the numbers.
+# Peer figures come from the state's User-Friendly Budget database, which
+# holds each town's self-reported budget data. Peers are 13 Essex County
+# municipalities with data for the year shown. Medians and ranges exclude
+# Glen Ridge. Percentages are stored as fractions (0.0184 = 1.84%).
+# Balance and revenue figures come from the borough's 2026 adopted budget.
+
+budget_year: 2026
+last_verified: 2026-11-22
+sources:
+  - &ufbdb
+    title: "NJ DCA, 2026 User-Friendly Budget Database (Excel)"
+    url: "https://www.nj.gov/dca/dlgs/programs/mc_budget_docs/UFB%20Database%20-%20FINAL.xlsm"
+  - &budgets
+    title: "NJ DCA Division of Local Government Services, Municipal and County Budgets"
+    url: "https://www.nj.gov/dca/dlgs/programs/mc_budgets.shtml"
+  - &adopted
+    title: "2026 Glen Ridge Adopted Municipal Budget (PDF)"
+    url: "https://www.glenridgenj.org/wp-content/uploads/2026/05/2026-GlenRidge-Adopted-Budget-municode0708.pdf"
+  - &presentation
+    title: "2026 Glen Ridge Budget Presentation (PDF)"
+    url: "https://www.glenridgenj.org/wp-content/uploads/2026/05/2026-Glen-Ridge-Budget-Presentation.pdf"
+  - &ufb
+    title: "2026 Glen Ridge User Friendly Budget (PDF)"
+    url: "https://www.glenridgenj.org/wp-content/uploads/2026/05/2026-GlenRidge-UserFriendly-Budget-municode0708.pdf"
+
+intro: >-
+  These figures describe the borough's own budget, not the school or county
+  budgets. Where a comparison is shown, it is against 13 other Essex County
+  municipalities, using the figures each one reports to the state. The state
+  notes that these reports are self-reported and not independently audited.
+
+peers:
+  - Bloomfield
+  - Caldwell
+  - Cedar Grove
+  - Essex Fells
+  - Livingston
+  - Millburn
+  - Montclair
+  - North Caldwell
+  - Nutley
+  - Roseland
+  - South Orange
+  - Verona
+  - West Caldwell
+
+indicators:
+  - id: credit-rating
+    name: Credit rating
+    format: text
+    text_value: Aaa (Moody's)
+    detail: >-
+      Aaa is Moody's highest rating. The borough's budget presentation calls
+      Glen Ridge "an AAA rated municipality with a history of conservative
+      debt issuance in favor of pay-as-you-go capital financing."
+    sources: [*ufbdb, *presentation]
+
+  - id: debt-service
+    name: Debt payments as a share of the budget
+    format: percent
+    value: 0.0184
+    peer_median: 0.1332
+    peer_low: 0.0296
+    peer_high: 0.2515
+    detail: >-
+      Principal and interest budgeted for 2026, divided by the general
+      budget. The lowest share among the 14 towns compared.
+    sources: [*ufbdb]
+
+  - id: net-debt
+    name: Net debt as a share of property value
+    format: percent
+    value: 0.0020
+    peer_median: 0.0108
+    peer_low: 0.0001
+    peer_high: 0.0250
+    detail: >-
+      Borough debt after statutory deductions, divided by the three-year
+      average of equalized property value. State law caps this at 3.5%.
+    sources: [*ufbdb]
+
+  - id: surplus-balance
+    name: Surplus at the end of 2025
+    format: dollars
+    value: 3004366
+    detail: >-
+      The current fund's surplus was $3,093,392 on January 1, 2024,
+      $3,019,281 on January 1, 2025, and $3,004,366 on December 31, 2025.
+      The 2026 budget uses $1,673,500 of it, leaving $1,330,866. The
+      borough's presentation cites the GFOA recommendation of a fund balance
+      "as high as 25% of annual general fund expenditures."
+    sources: [*adopted, *presentation]
+
+  - id: surplus-used
+    name: Surplus used to balance the budget
+    format: percent
+    value: 0.0843
+    peer_median: 0.0852
+    peer_low: 0.0655
+    peer_high: 0.3013
+    detail: >-
+      The $1,673,500 of surplus anticipated as 2026 revenue, divided by the
+      general budget.
+    sources: [*ufbdb, *adopted]
+
+  - id: tax-collection
+    name: Property taxes collected (2025)
+    format: percent
+    value: 0.9936
+    peer_median: 0.9898
+    peer_low: 0.9842
+    peer_high: 0.9974
+    detail: >-
+      Share of the 2025 tax levy collected in 2025.
+    sources: [*ufbdb]
+
+  - id: personnel-growth
+    name: Growth in personnel costs, 2016 to 2026
+    format: percent
+    value: 0.050
+    peer_median: 0.0328
+    detail: >-
+      Average yearly growth in reported total personnel costs, from
+      $6,643,412 in 2016 to $10,821,341 in 2026. Full-time staff was 57 in
+      both years. The budget presentation names health insurance increases
+      and collective bargaining agreements among the main 2026 cost drivers.
+    sources: [*ufbdb, *presentation]
+
+  - id: accrued-leave
+    name: Unused sick and vacation time owed to employees
+    format: dollars
+    value: 1461432
+    detail: >-
+      The value of compensated absences reported for 2026, with no funds
+      reserved against it as of the end of 2025. The 2026 budget
+      appropriates $40,000 to a reserve for accumulated leave. Unreserved,
+      this equals 7.4% of the general budget; the peer median is 4.3%.
+    sources: [*ufbdb, *adopted]
+
+  - id: mountainside
+    name: New revenue from Mountainside Hospital
+    format: dollars
+    value: 900000
+    detail: >-
+      The 2026 budget anticipates $900,000 from a "Mountainside Hospital
+      Service Agreement," a line with no 2025 amount. The state's 2026
+      User-Friendly Budget data for Glen Ridge reports $900,000 of "revenues
+      at risk." The same
+      budget anticipates $795,000 in payments in lieu of taxes from Clarus,
+      up from $635,000 in 2025.
+    sources: [*adopted, *ufbdb]
+
+needs_verification:
+  - Whether the $900,000 reported as revenues at risk is the Mountainside Hospital Service Agreement, and whether that agreement continues past 2026. The budget documents list both amounts but do not connect them.
+  - The year Glen Ridge's Moody's rating reached Aaa. The ratings in the state database are self-reported and inconsistently formatted in earlier years.

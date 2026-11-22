@@ -207,6 +207,48 @@ export const guideSchema = z.strictObject({
     .min(1),
 })
 
+const fraction = z.number().min(0).max(1)
+
+export const financesSchema = z
+  .strictObject({
+    budget_year: z.number().int(),
+    last_verified: z.iso.date('last_verified must be a YYYY-MM-DD date'),
+    sources,
+    intro: text,
+    peers: z.array(text).min(1),
+    indicators: z
+      .array(
+        z.strictObject({
+          id,
+          name: text,
+          format: z.enum(['percent', 'dollars', 'text']),
+          value: z.number().nonnegative().optional(),
+          text_value: text.optional(),
+          peer_median: fraction.optional(),
+          peer_low: fraction.optional(),
+          peer_high: fraction.optional(),
+          detail: text,
+          sources,
+        }),
+      )
+      .min(1),
+    needs_verification: z.array(text).default([]),
+  })
+  .superRefine((f, ctx) => {
+    f.indicators.forEach((ind, i) => {
+      const path = ['indicators', i]
+      if (ind.format === 'text' ? !ind.text_value : ind.value === undefined) {
+        ctx.addIssue({ code: 'custom', path, message: `${ind.id}: ${ind.format} indicators need ${ind.format === 'text' ? 'text_value' : 'value'}` })
+      }
+      if (ind.format === 'percent' && ind.value !== undefined && ind.value > 1) {
+        ctx.addIssue({ code: 'custom', path, message: `${ind.id}: percent values are fractions (0.05 = 5%)` })
+      }
+      if (ind.peer_median !== undefined && ind.format !== 'percent') {
+        ctx.addIssue({ code: 'custom', path, message: `${ind.id}: peer figures are only supported for percent indicators` })
+      }
+    })
+  })
+
 export type Guide = z.infer<typeof guideSchema>
 export type CalendarItem = z.infer<typeof calendarSchema>[number]
 export type Source = z.infer<typeof source>
@@ -215,3 +257,5 @@ export type Institution = z.infer<typeof institutionSchema>
 export type Person = z.infer<typeof person>
 export type Service = z.infer<typeof serviceSchema>
 export type Planned = z.infer<typeof plannedSchema>[number]
+export type Finances = z.infer<typeof financesSchema>
+export type Indicator = Finances['indicators'][number]

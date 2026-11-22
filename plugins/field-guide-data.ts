@@ -6,7 +6,7 @@ import { basename, join, resolve } from 'node:path'
 import type { Plugin } from 'vite'
 import { parse } from 'yaml'
 import { z } from 'zod'
-import { budgetSchema, calendarSchema, guideSchema, institutionSchema, plannedSchema, serviceSchema } from '../src/schema.ts'
+import { budgetSchema, calendarSchema, financesSchema, guideSchema, institutionSchema, plannedSchema, serviceSchema } from '../src/schema.ts'
 
 const VIRTUAL_ID = 'virtual:field-guide-data'
 const RESOLVED_ID = '\0' + VIRTUAL_ID
@@ -110,10 +110,13 @@ export function loadFieldGuideData(root: string) {
     }
   }
 
+  const financesFile = join(root, 'data', 'finances.yaml')
+  const finances = check(financesSchema, financesFile, errors)
+
   if (errors.length) {
     throw new Error(`Field guide data is invalid:\n\n${errors.join('\n\n')}\n`)
   }
-  return { institutions, services, planned, budget: budget!, calendar, guide: guide! }
+  return { institutions, services, planned, budget: budget!, calendar, guide: guide!, finances: finances! }
 }
 
 export function fieldGuideData(): Plugin {
@@ -129,7 +132,7 @@ export function fieldGuideData(): Plugin {
     load(moduleId) {
       if (moduleId !== RESOLVED_ID) return undefined
       const data = loadFieldGuideData(root)
-      return `export const institutions = ${JSON.stringify(data.institutions)}\nexport const services = ${JSON.stringify(data.services)}\nexport const planned = ${JSON.stringify(data.planned)}\nexport const budget = ${JSON.stringify(data.budget)}\nexport const calendar = ${JSON.stringify(data.calendar)}\nexport const guide = ${JSON.stringify(data.guide)}\n`
+      return `export const institutions = ${JSON.stringify(data.institutions)}\nexport const services = ${JSON.stringify(data.services)}\nexport const planned = ${JSON.stringify(data.planned)}\nexport const budget = ${JSON.stringify(data.budget)}\nexport const calendar = ${JSON.stringify(data.calendar)}\nexport const guide = ${JSON.stringify(data.guide)}\nexport const finances = ${JSON.stringify(data.finances)}\n`
     },
     configureServer(server) {
       const dataDir = resolve(root, 'data')
